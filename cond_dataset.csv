@@ -1,0 +1,646 @@
+Electrolyte,Ionic Conductivity,LIC,Solvent_1,Solvent_2,Solvent_3,Solvent_4,Solvent_5,Salt_1,Salt_2,Salt_3,Temperature,Reference
+1 m LiPF6 in EC:DMC (3:7 w/w),11.14,1.05,C1COC(=O)O1:4.49683177761123,COC(=O)OC:8.31501587513044,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,1
+0.1 m LiDFP + 0.4 m LiBOB in EC:DMC (3:7 w/w),5.27,0.72,C1COC(=O)O1:4.49683177761123,COC(=O)OC:8.31501587513044,,,,[Li+].[O-]P(=O)(F)F:0.1,[Li+].[B-]12(OC(=O)C(=O)O1)OC(=O)C(=O)O2:0.4,,25.0,1
+0.1 m LiDFP + 0.4 m LiFSI in EC:DMC (3:7 w/w),7.35,0.87,C1COC(=O)O1:4.49683177761123,COC(=O)OC:8.31501587513044,,,,[Li+].[O-]P(=O)(F)F:0.1,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.4,,25.0,1
+0.1 m LiDFP + 0.4 m LiTFSI in EC:DMC (3:7 w/w),6.21,0.79,C1COC(=O)O1:4.49683177761123,COC(=O)OC:8.31501587513044,,,,[Li+].[O-]P(=O)(F)F:0.1,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:0.4,,25.0,1
+0.5 m LiPF6 in EC:DMC (3:7 w/w),8.5,0.93,C1COC(=O)O1:4.49683177761123,COC(=O)OC:8.31501587513044,,,,[Li+].F[P-](F)(F)(F)(F)F:0.5,,,25.0,1
+1 M LiFSI in DMB,3.8,0.58,COCCCCOC:7.24367870561554,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,3
+1 M LiFSI in FDMB,3.5,0.54,COCC(F)(F)C(F)(F)COC:6.36373198695698,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,3
+1 M LiTFSI in DME,16.4,1.21,COCCOC:9.63160230803373,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,3
+1 M LiTFSI in DMB,4.6,0.66,COCCCCOC:7.24367870561554,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,3
+1 M LiTFSI in FDMB,3.0,0.48,COCC(F)(F)C(F)(F)COC:6.36373198695698,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,3
+1 M LiFSI in DME,16.93,1.23,COCCOC:9.63160230803373,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,4
+2 M LiFSI in DME,10.01,1.0,COCCOC:9.63160230803373,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,4
+0.5 M LiFSI + 0.5 M LiPO2F2 in DME,12.54,1.1,COCCOC:9.63160230803373,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.5,[Li+].FP(F)(=O)([O-]):0.5,,25.0,4
+1 M LiFSI + 1 M LiPO2F2 in DME,9.98,1.0,COCCOC:9.63160230803373,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,[Li+].FP(F)(=O)([O-]):1,,25.0,4
+1 M LiPO2F2 in DME,0.38,-0.42,COCCOC:9.63160230803373,,,,,[Li+].FP(F)(=O)([O-]):1,,,25.0,4
+2 M LiPO2F2 in DME,0.32,-0.49,COCCOC:9.63160230803373,,,,,[Li+].FP(F)(=O)([O-]):2,,,25.0,4
+"1:2 molar ratio LiFSI–TEP (~2.2 mol/L) electrolyte, no additives specified",1.3,0.11,CCOP(=O)(OCC)OCC:5.88516247330541,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.2,,,25.0,8
+LiFSI-TEP 1:5,4.71,0.67,CCOP(=O)(OCC)OCC:5,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,8
+LiFSI-TEP 1:3,2.66,0.42,CCOP(=O)(OCC)OCC:3,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,8
+LiFSI-TEP 1:2,1.4,0.15,CCOP(=O)(OCC)OCC:2,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,8
+LiFSI-TEP 1:1,0.38,-0.42,CCOP(=O)(OCC)OCC:1,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,8
+3.2 M LiFSI in TEP (HCE),0.52,-0.28,CCOP(=O)(OCC)OCC:5.88516247330541,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.2,,,25.0,13
+"2.0 M LiFSI in TEP:BTFE (1:1, mol)",1.13,0.05,CCOP(=O)(OCC)OCC:3.33779,C(C(F)(F)F)OCC(F)(F)F:3.33779,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,,,25.0,13
+"1.5 M LiFSI in TEP:BTFE (1:2, mol)",1.21,0.08,CCOP(=O)(OCC)OCC:2.32948,C(C(F)(F)F)OCC(F)(F)F:4.65896,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,,,25.0,13
+1.2 M LiFSI in TEP:BTFE (1:3 mol),1.29,0.11,CCOP(=O)(OCC)OCC:1.78903,C(C(F)(F)F)OCC(F)(F)F:5.36709,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,13
+1 M LiTFSI in DME,12.99,1.11,COCCOC:9.63160230803373,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,17
+1 M LiDFOB in DME,11.85,1.07,COCCOC:9.63160230803373,,,,,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:1,,,25.0,17
+0.5 M LiTFSI + 0.5 M LiDFOB in DME,12.14,1.08,COCCOC:9.63160230803373,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:0.5,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:0.5,,25.0,17
+3 M LiTFSI in DME,2.43,0.39,COCCOC:9.63160230803373,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:3,,,25.0,17
+4 M LiDFOB in DME,1.99,0.3,COCCOC:9.63160230803373,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:4,,,25.0,17
+2 M LiTFSI + 2 M LiDFOB in DME,2.31,0.36,COCCOC:9.63160230803373,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:2,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:2,,25.0,17
+5 M LiFSI in DME,1.7,0.23,COCCOC:9.63160230803373,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:5,,,25.0,18
+4 M LiFSI in DME,5.7,0.76,COCCOC:9.63160230803373,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4,,,25.0,18
+1 M LiFSI in DME,16.9,1.23,COCCOC:9.63160230803373,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,18
+2 M LiFSI in DME (DME/LiFSI mole ratio 4/1),13.1,1.12,COCCOC:4,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,18
+3 M LiFSI in DME (DME/LiFSI mole ratio 2.2/1),9.4,0.97,COCCOC:2.2,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,18
+3.6 M LiFSI in DME (DME/LiFSI mole ratio 2/1),7.2,0.86,COCCOC:2,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.6,,,25.0,18
+LiFSI:DME = 1:1,1.75,0.24,COCCOC:1,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+"LiFSI:DME = 1:1, 10% HFME by mass",2.21,0.34,COCCOC:1,COC(C(F)(F)F)C(F)(F)F:0.15224,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+"LiFSI:DME = 1:1, 20% HFME by mass",2.71,0.43,COCCOC:1,COC(C(F)(F)F)C(F)(F)F:0.30448,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+"LiFSI:DME = 1:1, 30% HFME by mass",2.98,0.47,COCCOC:1,COC(C(F)(F)F)C(F)(F)F:0.45672,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+"LiFSI:DME = 1:1, 40% HFME by mass",3.24,0.51,COCCOC:1,COC(C(F)(F)F)C(F)(F)F:0.60896,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+"LiFSI:DME = 1:1, 50% HFME by mass",3.17,0.5,COCCOC:1,COC(C(F)(F)F)C(F)(F)F:0.7612,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+"LiFSI:DME = 1:1, 60% HFME by mass",3.0,0.48,COCCOC:1,COC(C(F)(F)F)C(F)(F)F:0.91344,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+"LiFSI:DME = 1:1, 70% HFME by mass",2.29,0.36,COCCOC:1,COC(C(F)(F)F)C(F)(F)F:1.06568,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+"LiFSI:DME = 1:1, 80% HFME by mass",1.74,0.24,COCCOC:1,COC(C(F)(F)F)C(F)(F)F:1.21792,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+"LiFSI:DME = 1:1, 90% HFME by mass",0.89,-0.05,COCCOC:1,COC(C(F)(F)F)C(F)(F)F:1.37016,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+LiFSI:DME = 1:24 (mol ratio),8.44,0.93,COCCOC:24,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+LiFSI:DME = 1:20 (mol ratio),9.97,1.0,COCCOC:20,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+LiFSI:DME = 1:16 (mol ratio),12.18,1.09,COCCOC:16,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+LiFSI:DME = 1:12 (mol ratio),15.15,1.18,COCCOC:12,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+LiFSI:DME = 1:10 (mol ratio),16.87,1.23,COCCOC:10,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+LiFSI:DME = 1:8 (mol ratio),18.37,1.26,COCCOC:8,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+LiFSI:DME = 1:6 (mol ratio),18.73,1.27,COCCOC:6,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+LiFSI:DME = 1:4 (mol ratio),14.82,1.17,COCCOC:4,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+LiFSI:DME = 1:2 (mol ratio),7.98,0.9,COCCOC:2,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+LiFSI:DME = 1:1.5 (mol ratio),5.83,0.77,COCCOC:1.5,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+LiFSI:DME = 1:1.2 (mol ratio),4.3,0.63,COCCOC:1.2,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+LiFSI:DME = 1:1 (mol ratio),1.74,0.24,COCCOC:1,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,19
+"7 M LiTFSI in DOL/DME (1/1, v/v)",0.79,-0.1,COCCOC:4.81580115401687,O1CCOC1:7.15462080509733,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:7,,,25.0,19
+"7 M LiTFSI in DOL/DME (1/1, v/v), 10% HFME by mass",1.19,0.08,COCCOC:4.81580115401688,O1CCOC1:7.15462080509734,COC(C(F)(F)F)C(F)(F)F:1.633216,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:7,,,25.0,19
+"7 M LiTFSI in DOL/DME (1/1, v/v), 20% HFME by mass",1.38,0.14,COCCOC:4.81580115401689,O1CCOC1:7.15462080509735,COC(C(F)(F)F)C(F)(F)F:3.266432,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:7,,,25.0,19
+"7 M LiTFSI in DOL/DME (1/1, v/v), 30% HFME by mass",1.49,0.17,COCCOC:4.81580115401690,O1CCOC1:7.15462080509736,COC(C(F)(F)F)C(F)(F)F:4.899648,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:7,,,25.0,19
+"7 M LiTFSI in DOL/DME (1/1, v/v), 40% HFME by mass",1.56,0.19,COCCOC:4.81580115401691,O1CCOC1:7.15462080509737,COC(C(F)(F)F)C(F)(F)F:6.532864,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:7,,,25.0,19
+"7 M LiTFSI in DOL/DME (1/1, v/v), 50% HFME by mass",1.6,0.2,COCCOC:4.81580115401692,O1CCOC1:7.15462080509738,COC(C(F)(F)F)C(F)(F)F:8.16608,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:7,,,25.0,19
+"7 M LiTFSI in DOL/DME (1/1, v/v), 60% HFME by mass",1.5,0.18,COCCOC:4.81580115401693,O1CCOC1:7.15462080509739,COC(C(F)(F)F)C(F)(F)F:9.799296,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:7,,,25.0,19
+"7 M LiTFSI in DOL/DME (1/1, v/v), 70% HFME by mass",1.29,0.11,COCCOC:4.81580115401694,O1CCOC1:7.15462080509740,COC(C(F)(F)F)C(F)(F)F:11.432512,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:7,,,25.0,19
+"7 M LiTFSI in DOL/DME (1/1, v/v), 80% HFME by mass",0.86,-0.07,COCCOC:4.81580115401695,O1CCOC1:7.15462080509741,COC(C(F)(F)F)C(F)(F)F:13.065728,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:7,,,25.0,19
+"7 M LiTFSI in DOL/DME (1/1, v/v), 90% HFME by mass",0.42,-0.37,COCCOC:4.81580115401696,O1CCOC1:7.15462080509742,COC(C(F)(F)F)C(F)(F)F:14.698944,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:7,,,25.0,19
+"6 M LiTFSI in DOL/DME (1/1, v/v)",2.34,0.37,COCCOC:4.81580115401687,O1CCOC1:7.15462080509733,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:6,,,25.0,19
+"6 M LiTFSI in DOL/DME (1/1, v/v), 10% HFME by mass",3.26,0.51,COCCOC:4.81580115401688,O1CCOC1:7.15462080509734,C(F)(F)(F)C(OC)C(F)(F)(F):1.47554,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:6,,,25.0,19
+"6 M LiTFSI in DOL/DME (1/1, v/v), 20% HFME by mass",3.6,0.56,COCCOC:4.81580115401689,O1CCOC1:7.15462080509735,C(F)(F)(F)C(OC)C(F)(F)(F):2.95108,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:6,,,25.0,19
+"6 M LiTFSI in DOL/DME (1/1, v/v), 30% HFME by mass",3.82,0.58,COCCOC:4.81580115401690,O1CCOC1:7.15462080509736,C(F)(F)(F)C(OC)C(F)(F)(F):4.42662,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:6,,,25.0,19
+"6 M LiTFSI in DOL/DME (1/1, v/v), 40% HFME by mass",3.65,0.56,COCCOC:4.81580115401691,O1CCOC1:7.15462080509737,C(F)(F)(F)C(OC)C(F)(F)(F):5.90216,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:6,,,25.0,19
+"6 M LiTFSI in DOL/DME (1/1, v/v), 50% HFME by mass",3.49,0.54,COCCOC:4.81580115401692,O1CCOC1:7.15462080509738,C(F)(F)(F)C(OC)C(F)(F)(F):7.3777,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:6,,,25.0,19
+"6 M LiTFSI in DOL/DME (1/1, v/v), 60% HFME by mass",3.25,0.51,COCCOC:4.81580115401693,O1CCOC1:7.15462080509739,C(F)(F)(F)C(OC)C(F)(F)(F):8.85324,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:6,,,25.0,19
+"6 M LiTFSI in DOL/DME (1/1, v/v), 70% HFME by mass",2.61,0.42,COCCOC:4.81580115401694,O1CCOC1:7.15462080509740,C(F)(F)(F)C(OC)C(F)(F)(F):10.32878,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:6,,,25.0,19
+"6 M LiTFSI in DOL/DME (1/1, v/v), 80% HFME by mass",1.94,0.29,COCCOC:4.81580115401695,O1CCOC1:7.15462080509741,C(F)(F)(F)C(OC)C(F)(F)(F):11.80432,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:6,,,25.0,19
+"6 M LiTFSI in DOL/DME (1/1, v/v), 90% HFME by mass",0.87,-0.06,COCCOC:4.81580115401696,O1CCOC1:7.15462080509742,C(F)(F)(F)C(OC)C(F)(F)(F):13.27986,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:6,,,25.0,19
+"2 M LiFSI + 1 M LiTFSI in DOL:DME (1:1 vol/vol), total 3 M salt",12.2,1.09,COCCOC:4.81580115401696,O1CCOC1:7.15462080509742,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,25.0,20
+"1 M LiFSI + 2 M LiTFSI in DOL:DME (1:1 vol/vol), total 3 M salt",3.97,0.6,COCCOC:4.81580115401696,O1CCOC1:7.15462080509742,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:2,,25.0,20
+3 M LiTFSI in DOL:DME (1:1 vol/vol),5.45,0.74,COCCOC:4.81580115401696,O1CCOC1:7.15462080509742,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:3,,,25.0,20
+1.0 M LiTFPFB in PC,5.4,0.73,CC1COC(=O)O1:11.7545646892877,,,,,[Li+].F[B-](F)(F)OC(C(F)(F)(F))(C(F)(F)(F))C(F)(F)(F):1,,,25.0,21
+1.0 M LiBF4 in PC,1.8,0.26,CC1COC(=O)O1:11.7545646892877,,,,,[Li+].F[B-](F)(F)(F):1,,,25.0,21
+"2.0 M LiPF6 in tetrahydrofuran (THF)/2-methyl tetrahydrofuran (MTHF), 1:1 volume ratio (mixTHF), no additives",5.4,0.73,C1CCOC1:6.15777210695662,O1C(C)CCC1:4.95762219900151,,,,[Li+].F[P-](F)(F)(F)(F)F:2,,,25.0,22
+"1.18 M LiFSI in DMC:BTFE (1.1:2.2 molar ratio, DMC:BTFE), corresponding to LiFSI:DMC:BTFE = 0.51:1.1:2.2 molar ratio",2.67,0.43,COC(=O)OC:1.1,C(C(F)(F)F)OCC(F)(F)F:2.2,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.51,,,30.0,23
+"1.77 M LiFSI in DMC:BTFE (1.1:1.65 molar ratio, DMC:BTFE), corresponding to LiFSI:DMC:BTFE = 0.64:1.1:1.65 molar ratio",2.54,0.4,COC(=O)OC:1.1,C(C(F)(F)F)OCC(F)(F)F:1.65,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.64,,,30.0,23
+"2.52 M LiFSI in DMC:BTFE (1.1:1.1 molar ratio, DMC:BTFE), corresponding to LiFSI:DMC:BTFE = 0.75:1.1:1.1 molar ratio",2.51,0.4,COC(=O)OC:1.1,C(C(F)(F)F)OCC(F)(F)F:1.1,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.75,,,30.0,23
+"3.83 M LiFSI in DMC:BTFE (1.1:0.55 molar ratio, DMC:BTFE), corresponding to LiFSI:DMC:BTFE = 0.94:1.1:0.55 molar ratio",1.8,0.26,COC(=O)OC:1.1,C(C(F)(F)F)OCC(F)(F)F:0.55,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.94,,,30.0,23
+"5.49 M LiFSI in DMC, corresponding to LiFSI:DMC = 1.0:1.1 molar ratio",1.0,0.0,COC(=O)OC:1.1,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,,,30.0,23
+"3.74 M LiFSI in DMC, corresponding to LiFSI:DMC = 1.0:2.0 molar ratio",6.41,0.81,COC(=O)OC:2.0,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,,,30.0,23
+"1.21 M LiFSI in DMC, corresponding to LiFSI:DMC = 1.0:9.0 molar ratio",7.23,0.86,COC(=O)OC:9.0,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,,,30.0,23
+"1.0 M LiPF6 in EC:EMC (4:6 by wt), corresponding to LiPF6:EC:EMC = 2.19:1.0:1.27 molar ratio",10.67,1.03,C1COC(=O)O1:1.0,CCOC(=O)OC:1.27,,,,[Li+].F[P-](F)(F)(F)(F)F:2.19,,,30.0,23
+3.25 m LiTFSI-0.1 m LiNO3 in sulfolane (SL),1.0,0.0,O=S1(=O)CCCC1:10.4935549101682,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:3.25,[Li+].[N+](=O)([O-])[O-]:0.1,,30.0,24
+3.25 m LiTFSI in sulfolane (SL),1.06,0.03,O=S1(=O)CCCC1:10.4935549101682,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:3.25,,,30.0,24
+1 m LiTFSI in sulfolane (SL),1.83,0.26,O=S1(=O)CCCC1:10.4935549101682,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,30.0,24
+"LiFSI:DMC (1:12 molar ratio), corresponding to 0.91 mol/L LiFSI in DMC",7.73,0.89,COC(=O)OC:12,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,25
+"LiFSI:DMC (1:8 molar ratio), corresponding to 1.35 mol/L LiFSI in DMC",10.74,1.03,COC(=O)OC:8,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,25
+"LiFSI:DMC (1:6 molar ratio), corresponding to 1.73 mol/L LiFSI in DMC",11.93,1.08,COC(=O)OC:6,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,25
+"LiFSI:DMC (1:4 molar ratio), corresponding to 2.41 mol/L LiFSI in DMC",10.5,1.02,COC(=O)OC:4,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,25
+"LiFSI:DMC (1:3 molar ratio), corresponding to 3.00 mol/L LiFSI in DMC",7.52,0.88,COC(=O)OC:3,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,25
+"LiFSI:DMC (1:2 molar ratio), corresponding to 3.89 mol/L LiFSI in DMC",3.89,0.59,COC(=O)OC:2,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,25
+"LiFSI:DMC (1:1.5 molar ratio), corresponding to 4.65 mol/L LiFSI in DMC",2.3,0.36,COC(=O)OC:1.5,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,25
+"LiFSI:DMC (1:1.2 molar ratio), corresponding to 5.15 mol/L LiFSI in DMC",1.51,0.18,COC(=O)OC:1.2,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,25
+"LiFSI:DMC:TTE (1:1.5:0.5 molar ratio), corresponding to 3.42 mol/L LiFSI, 1.35 mol/L DMC, 1.16 mol/L TTE",2.27,0.36,COC(=O)OC:1.5,FC(F)C(F)(F)COC(F)(F)C(F)F:0.5,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,25
+"LiFSI:DMC:TTE (1:1.5:1 molar ratio), corresponding to 2.78 mol/L LiFSI, 1.35 mol/L DMC, 2.32 mol/L TTE",2.1,0.32,COC(=O)OC:1.5,FC(F)C(F)(F)COC(F)(F)C(F)F:1,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,25
+"LiFSI:DMC:TTE (1:1.5:1.5 molar ratio), corresponding to 2.27 mol/L LiFSI, 1.35 mol/L DMC, 3.48 mol/L TTE",1.7,0.23,COC(=O)OC:1.5,FC(F)C(F)(F)COC(F)(F)C(F)F:1.5,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,25
+"LiFSI:DMC:TTE (1:1.5:2 molar ratio), corresponding to 1.95 mol/L LiFSI, 1.35 mol/L DMC, 4.64 mol/L TTE",1.38,0.14,COC(=O)OC:1.5,FC(F)C(F)(F)COC(F)(F)C(F)F:2,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,25
+3 M LiFNFSI in DOL:DME (1:1 v/v),5.36,0.73,COCCOC:4.81580115401687,O1CCOC1:7.15462080509733,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F:3,,,25.0,26
+3 M LiTFSI in DOL:DME (1:1 v/v),7.41,0.87,COCCOC:4.81580115401687,O1CCOC1:7.15462080509733,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:3,,,25.0,26
+"5m LiTFSI in ethyl acetate (EA), with dichloromethane (DCM) diluent (1:4 by volume, EA:DCM) — termed '5m-1-4 co-solvent electrolyte'",3.0,0.48,O=C(OCC)C:2.0475801325706,ClCCl:12.5276691941789,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:5,,,25.0,28
+"1.8 M LiFSI in diethyl ether (DEE):bis(2,2,2-trifluoroethyl) ether (BTFE) (1:4 w/w)",2.1,0.32,CCOCC:3.17394900618212,C(C(F)(F)F)OCC(F)(F)F:5.16835318639261,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.8,,,25.0,30
+9 M LiFSI in diethyl ether (DEE),1.8,0.26,CCOCC:9.624932542,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:9,,,25.0,30
+1 M LiFSI in DME (no additive),16.4,1.21,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,31
+1 M LiFSI in DME-TFEO (1:9 by weight; 1.2:3 by mole),1.43,0.16,COCCOC:1.57427821635861,FC(COC(OCC(F)(F)F)OCC(F)(F)F)(F)F:3.93019107160855,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,31
+1 M LiPF6 in EC-EMC (3:7 by wt.) + 2 wt.% VC,8.31,0.92,C1COC(=O)O1:3.62,CCOC(=O)OC:7.15,C1=COC(=O)O1:0.29,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,32
+"LiFSI-1.2DME (high concentration electrolyte, HCE)",4.18,0.62,COCCOC:1.2,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,32
+"LiFSI-1.2DME-3TTE (localized high concentration electrolyte, LHCE)",2.44,0.39,COCCOC:1.2,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,32
+1 M LiPF6 in EC/DMC (1:1 by volume),11.8,1.07,C1COC(=O)O1:7.5,COC(=O)OC:5.94,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,33
+4.2 M LiFSI in FEMC/FEC (2:1 by volume),3.05,0.48,C1C(OC(=O)O1)F:9.14,COC(=O)OCC(F)(F)F:2.82,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4.2,,,25.0,33
+1.28 M LiFSI in FEMC/FEC/D2 (2:1:7 by volume),2.3,0.36,C1C(OC(=O)O1)F:1.3709996794086,COC(=O)OCC(F)(F)F:1.69534413,C(C(F)(F)F)OC(C(F)F)(F)F:5.20283509277031,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.28,,,25.0,33
+0.7 M LiBETI in DEC/FEC/M3 (2.5:0.5:7 by volume),1.08,0.03,O=C(OCC)OCC:2.064,C1C(OC(=O)O1)F:0.686,COC(C(C(C(F)(F)F)(F)F)(F)F)(F)F:4.256,,,[Li+].C1=CN=CN1.C(C(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(C(F)(F)F)(F)F)(F)(F)F:0.7,,,25.0,33
+"1 M LiPF6 in EC:DEC (3:7, by wt.)",6.9,0.84,C1COC(=O)O1:4.73,O=C(OCC)OCC:8.23,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,37
+"1 M LiDFOB in EC:DEC (3:7, by wt.)",4.71,0.67,C1COC(=O)O1:4.73,O=C(OCC)OCC:8.23,,,,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:1,,,25.0,37
+1.0 M LiPF6 in EC:DMC (1:1 by volume),8.36,0.92,C1COC(=O)O1:7.5,COC(=O)OC:5.94,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,38
+1.0 M LiPF6 in FEC:DMC (1:1 by volume),10.53,1.02,C1C(OC(=O)O1)F:7,COC(=O)OC:5.94,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,38
+1.0 M LiPF6 in FEC:DMC (1:1 by volume) with 1 wt% 12-Crown-4,11.14,1.05,C1C(OC(=O)O1)F:6.85499839704302,COC(=O)OC:5.9392970536646,O1CCOCCOCCOCC1:0.0802406814673568,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,38
+1 mol/L LiTFSI in EC:DMC (1:1 vol/vol),6.69,0.83,C1COC(=O)O1:7.5,COC(=O)OC:5.94,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,41
+0.7 mol/L LiTFSI and 0.3 mol/L LiNO3 in (EC) : ethylene glycol diacetate (EGD) (1:1 vol/vol),6.09,0.78,C1COC(=O)O1:7.494719629,CC(=O)OCCOC(=O)C:3.777199945,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:0.7,[Li+].[N+](=O)([O-])[O-]:0.3,,25.0,41
+0.1 M LiFSA in DEG-FTEG,0.43,-0.37,COCCOCCOCC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)COCCOCCOC:1.970238008,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.1,,,30.0,42
+0.1 M LiFSA in DME-FTEG,0.07,-1.14,COCCOCC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)COCCOC:2.300004182,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.1,,,30.0,42
+0.1 M LiFSA in MME-FTEG,0.0,-2.62,COCOCC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)COCOC:2.429450563,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.1,,,30.0,42
+1 M LiFSA in DEG-FTEG,2.4,0.38,COCCOCCOCC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)COCCOCCOC:1.970238008,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,42
+1 M LiFSA in DME-FTEG,0.91,-0.04,COCCOCC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)COCCOC:2.300004182,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,42
+0.1 M LiFSA in DEG-FTriEG,0.08,-1.09,COCCOCCOCC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)COCCOCCOC:2.428987253,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.1,,,30.0,42
+0.1 M LiFSA in DME-FTriEG,0.03,-1.59,COCCOCC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)COCCOC:2.950514267,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.1,,,30.0,42
+0.1 M LiFSA in MME-FTriEG,0.0,-2.32,COCOCC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)COCOC:3.16699209,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.1,,,30.0,42
+1 M LiFSA in DEG-FTriEG,0.27,-0.57,COCCOCCOCC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)COCCOCCOC:2.428987253,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,42
+1 M LiFSA in DME-FTriEG,0.24,-0.62,COCCOCC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)COCCOC:2.950514267,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,42
+0.1 M LiFSA in Tetraglyme,2.0,0.3,COCCOCCOCCOCCOC:4.539401465,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.1,,,30.0,42
+1 M LiFSA in Tetraglyme,25.0,1.4,COCCOCCOCCOCCOC:4.539401465,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,42
+1 M LiFSA in tetraglyme:TTE (1:1 v/v),25.0,1.4,COCCOCCOCCOCCOC:2.269700732,FC(F)C(F)(F)COC(F)(F)C(F)F:3.301203885,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,42
+"1.5 M LiPF6 in FEC:EMC:DMC (34.6:57.2:8.2 mass%), with 1 wt% TMSB (tris(trimethylsilyl) borate) additive",9.8,0.99,C1C(OC(=O)O1)F:3.82000036255522,CCOC(=O)OC:6.04863215220908,COC(=O)OC:1.13369249854537,C[Si](C)(C)OB(O[Si](C)(C)C)O[Si](C)(C)C:0.04817260856,,[Li+].F[P-](F)(F)(F)(F)F:1.5,,,25.0,43
+1.5 M LiPF6 in FEC:EMC:DMC (34.6:57.2:8.2 mass%) 'FED',8.4,0.92,C1C(OC(=O)O1)F:3.82000036255522,CCOC(=O)OC:6.04863215220908,COC(=O)OC:1.13369249854537,,,[Li+].F[P-](F)(F)(F)(F)F:1.5,,,25.0,43
+LiFSI:DME:BTFE (1:1.2:3 molar ratio); overall salt concentration 1.65 M,4.88,0.69,COCCOC:1.98,C(C(F)(F)F)OCC(F)(F)F:4.95,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.65,,,25.0,44
+LiFSI:DME:TTE (1:1.2:3 molar ratio); overall salt concentration 1.49 M,2.44,0.39,COCCOC:1.2,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,44
+LiFSI:DME:BTFEC (1:1.2:3 molar ratio); overall salt concentration 1.49 M,2.64,0.42,COCCOC:1.788,C(C(F)(F)F)OC(=O)OCC(F)(F)F:4.47,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.49,,,25.0,44
+LiFSI:DME:TFEB (1:1.4:3 molar ratio); overall salt concentration 1.17 M,1.88,0.27,COCCOC:1.638,B(OCC(F)(F)F)(OCC(F)(F)F)OCC(F)(F)F:3.51,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.17,,,25.0,44
+LiFSI:DME:TFEO (1:1.2:3 molar ratio); overall salt concentration 1.15 M,1.61,0.21,COCCOC:1.38,FC(COC(OCC(F)(F)F)OCC(F)(F)F)(F)F:3.45,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.15,,,25.0,44
+1.0 M LiFSI in THF,5.86,0.77,C1CCOC1:12.3155442139132,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.1,45
+"1.0 M LiFSI in 1,4-DX",2.02,0.31,O1CCOCC1:10.3789288162146,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.2,45
+1.0 M LiFSI in MeTHF,6.18,0.79,CC1CCC(C)O1:9.91524439800302,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.3,45
+1.0 M LiFSI in DMeTHF,2.69,0.43,CC1CCC(C)O1:8.31702544031311,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.4,45
+2 m LiFSI in FEC,4.72,0.67,C1C(OC(=O)O1)F:13.709996794086,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,47
+4 m LiFSI in FEC,1.65,0.22,C1C(OC(=O)O1)F:13.709996794086,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4,,,25.0,47
+7 m LiFSI in FEC,1.24,0.09,C1C(OC(=O)O1)F:13.709996794086,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:7,,,25.0,47
+1 M LiClO4 in ES (ethylene sulfite),2.09,0.32,C1COS(=O)O1:16.80057222,,,,,[Li+].[O-]Cl(=O)(=O)=O:1,,,20.0,49
+1 M LiClO4 in EC-DMC (1:1 by volume ethylene carbonate:dimethyl carbonate),2.5,0.4,C1COC(=O)O1:7.49471962935205,COC(=O)OC:5.939297054,,,,[Li+].[O-]Cl(=O)(=O)=O:1,,,20.0,49
+1 M LiClO4 in EC-ES (1:1 by volume ethylene carbonate:ethylene sulfite),2.18,0.34,C1COC(=O)O1:7.49471962935205,C1COS(=O)O1:8.4002861087546,,,,[Li+].[O-]Cl(=O)(=O)=O:1,,,20.0,49
+LiFSI:SL (1:10.3 molar ratio),3.04,0.48,O=S1(=O)CCCC1:10.3,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,50
+LiFSI:SL (1:3.0 molar ratio),1.95,0.29,O=S1(=O)CCCC1:3,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,50
+LiFSI:SL (1:2.5 molar ratio),1.71,0.23,O=S1(=O)CCCC1:2.5,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,50
+2 M LiFSI in DMC,12.38,1.09,COC(=O)OC:11.8785941073292,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,52
+4 M LiFSI in DMC,8.27,0.92,COC(=O)OC:11.8785941073292,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4,,,25.0,52
+6 M LiFSI in DMC,5.38,0.73,COC(=O)OC:11.8785941073292,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:6,,,25.0,52
+10 M LiFSI in DMC,1.58,0.2,COC(=O)OC:11.8785941073292,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:10,,,25.0,52
+"1 M LiPF6 in methyl 3,3,3-trifluoropropionate (MTFP)/fluoroethylene carbonate (FEC) (9:1 v/v)",4.27,0.63,COC(=O)CC(F)(F)F:7.86106418918919,C1C(OC(=O)O1)F:1.3709996794086,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,53
+1 M LiPF6 in methyl propionate (MP)/fluoroethylene carbonate (FEC) (9:1 v/v),13.78,1.14,CCC(=O)OC:10.38474634,C1C(OC(=O)O1)F:1.3709996794086,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,53
+1 M LiPF6 in ethylene carbonate (EC)/diethyl carbonate (DEC) (1:1 v/v),7.01,0.85,C1COC(=O)O1:7.494719629,O=C(OCC)OCC:4.126809447,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,53
+1.0 M LiPF6 in EC:DMC (1:1 v/v),12.15,1.08,C1COC(=O)O1:7.494719629,COC(=O)OC:5.939297054,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,54
+30% dual-salt: 70 vol% 1.0 M LiPF6 in EC:DMC (1:1 v/v) + 30 vol% 0.5 M LiNO3 in TEGDME,10.08,1.0,C1COC(=O)O1:5.246303741,COC(=O)OC:4.157507938,COCCOCCOCCOCCOC:2.889480692,,,[Li+].F[P-](F)(F)(F)(F)F:0.7,[Li+].[N+](=O)([O-])[O-]:0.15,,25.0,54
+50% dual-salt: 50 vol% 1.0 M LiPF6 in EC:DMC (1:1 v/v) + 50 vol% 0.5 M LiNO3 in TEGDME,7.25,0.86,C1COC(=O)O1:3.74735981467602,COC(=O)OC:2.9696485268323,COCCOCCOCCOCCOC:4.81580115401687,,,[Li+].F[P-](F)(F)(F)(F)F:0.5,[Li+].[N+](=O)([O-])[O-]:0.25,,25.0,54
+70% dual-salt: 30 vol% 1.0 M LiPF6 in EC:DMC (1:1 v/v) + 70 vol% 0.5 M LiNO3 in TEGDME,2.36,0.37,C1COC(=O)O1:2.24841588880561,COC(=O)OC:1.78178911609938,COCCOCCOCCOCCOC:6.74212161562361,,,[Li+].F[P-](F)(F)(F)(F)F:0.3,[Li+].[N+](=O)([O-])[O-]:0.35,,25.0,54
+0.5 M LiNO3 in TEGDME,0.11,-0.95,COCCOCCOCCOCCOC:4.539401465,,,,,[Li+].[N+](=O)([O-])[O-]:0.5,,,25.0,54
+"4.6 m LiFSI + 2.3 m LiTFSI in DME (BSEE, Bisalt Ether Electrolyte)",4.2,0.62,COCCOC:9.63160230803373,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4.6,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:2.3,,25.0,56
+"4.6 m LiFSI in DME (SSEE, Single Salt Ether Electrolyte)",8.35,0.92,COCCOC:9.63160230803373,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4.6,,,25.0,56
+3.46 m LiFSI + 3.46 m LiTFSI in DME (EXP),3.28,0.52,COCCOC:9.63160230803373,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.46,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:3.46,,25.0,56
+"LiFSI-8TMS (molar ratio 1:8, total 1.18 M)",2.93,0.47,O=S1(=O)CCCC1:8,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,57
+"LiFSI-3TMS (molar ratio 1:3, total 2.62 M)",1.74,0.24,O=S1(=O)CCCC1:3,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,57
+"LiFSI-3TMS-3TTE (molar ratio 1:3:3, total 1.20 M)",2.03,0.31,O=S1(=O)CCCC1:3,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,57
+"[LiFSI]:[AN]:[VC] = 0.23:1:0.09 (4.5 m LiFSI in AN, with 0.09 mol VC per 1 mol AN)",37.02,1.57,CC#N:1,C1=COC(=O)O1:0.09,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.23,,,25.0,59
+"[LiFSI]:[AN]:[VC] = 0.31:1:0.09 (6 m LiFSI in AN, with 0.09 mol VC per 1 mol AN)",30.2,1.48,CC#N:1,C1=COC(=O)O1:0.09,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.31,,,25.0,59
+"[LiFSI]:[AN]:[VC] = 0.52:1:0.09 (10 m LiFSI in AN, with 0.09 mol VC per 1 mol AN)",16.13,1.21,CC#N:1,C1=COC(=O)O1:0.09,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.52,,,25.0,59
+"[LiFSI]:[AN]:[VC] = 0.78:1:0.09 (15 m LiFSI in AN, with 0.09 mol VC per 1 mol AN)",7.46,0.87,CC#N:1,C1=COC(=O)O1:0.09,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.78,,,25.0,59
+"[LiFSI]:[AN]:[VC] = 1.04:1:0.09 (20 m LiFSI in AN, with 0.09 mol VC per 1 mol AN)",3.2,0.5,CC#N:1,C1=COC(=O)O1:0.09,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.04,,,25.0,59
+1 M LiFSI in DOL:DME,17.0,1.23,COCCOC:4.81580115401687,O1CCOC1:7.15462080509733,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,23.0,61
+1 M LiClO4 in DOL:DME,6.36,0.8,COCCOC:4.81580115401687,O1CCOC1:7.15462080509733,,,,[Li+].[O-]Cl(=O)(=O)=O:1,,,23.0,61
+0.1 M LiFSI in DOL:DME,1.24,0.09,COCCOC:4.81580115401687,O1CCOC1:7.15462080509733,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.1,,,23.0,61
+0.5 M LiFSI in DOL:DME,15.12,1.18,COCCOC:4.81580115401687,O1CCOC1:7.15462080509733,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.5,,,23.0,61
+0.1 M LiFSI in DEE,0.01,-1.93,CCOCC:9.62493254182407,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.1,,,23.0,61
+0.5 M LiFSI in DEE,0.8,-0.1,CCOCC:9.62493254182407,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.5,,,23.0,61
+1 M LiFSI in DEE,0.96,-0.02,CCOCC:9.62493254182407,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,23.0,61
+1.2 M LiFSI in DEE,11.0,1.04,CCOCCOCC:7.125207325,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,62
+1.2 M LiFSI in F3DEE,6.18,0.79,FC(F)(F)COCCOCC:6.21558194112043,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,62
+1.2 M LiFSI in F6DEE,4.48,0.65,FC(F)(F)COCCOCC(F)(F)(F):6.19129327271762,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,62
+1.2 M LiFSI in F4DEE,4.76,0.68,FC(F)COCCOCC(F)(F):6.52151046597244,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,62
+1.2 M LiFSI in F5DEE,5.01,0.7,FC(F)COCCOCC(F)(F)(F):6.19798973728211,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,62
+LiFSI:DMC:TTE (1:2.2:3 molar ratio),0.96,-0.02,COC(=O)OC:2.2,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,64
+LiFSI:TMS:TTE (1:3:3 molar ratio),2.03,0.31,O=S1(=O)CCCC1:3,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,64
+LiFSI:TEP:TTE (1:1.4:3 molar ratio),0.93,-0.03,CCOP(=O)(OCC)OCC:1.4,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,64
+LiFSI:DME:TTE (1:1:3 molar ratio),1.59,0.2,COCCOC:1,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,64
+1 M LiPF6 in FEC:FEMC:HFE (2:6:2 by weight),5.1,0.71,C1C(OC(=O)O1)F:2.57069238639734,COC(=O)OCC(F)(F)F:5.333139431,C(C(F)(F)F)OC(C(F)F)(F)F:1.36272498,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,65
+1 M LiPF6 in DMC,6.8,0.83,COC(=O)OC:11.87859411,,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,65
+1 M LiPF6 in PC,5.4,0.73,CC1COC(=O)O1:11.75456469,,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,65
+"LiFSI:TEP (1:1 molar ratio) (i.e., 1 mol LiFSI : 1 mol TEP), nonflammable liquid electrolyte",0.39,-0.41,CCOP(=O)(OCC)OCC:1,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,66
+"LiFSI:TEP (1:3 molar ratio) (i.e., 1 mol LiFSI : 3 mol TEP), nonflammable liquid electrolyte",2.82,0.45,CCOP(=O)(OCC)OCC:3,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,66
+"LiFSI:TEP (1:5 molar ratio) (i.e., 1 mol LiFSI : 5 mol TEP), nonflammable liquid electrolyte",5.04,0.7,CCOP(=O)(OCC)OCC:5,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,66
+7 M LiTFSI/DOL+DME ,0.6,-0.22,COCCOC:4.81580115401687,O1CCOC1:7.15462080509733,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:7,,,25.0,66
+4.2 M LiTFSI/AN,0.98,-0.01,CC#N:19.14551566,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:4.2,,,25.0,66
+3 M LiTFSI/DME,2.43,0.39,COCCOC:9.631602308,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:3,,,25.0,66
+2 M LiTFSI+2M LiDFOB/DME,2.31,0.36,COCCOC:9.631602308,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:2,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:2,,25.0,66
+1.2M LiFSI/DMC-BTFE(1:2 by mol) ,1.8,0.26,COC(=O)OC:2.91,C(C(F)(F)F)OCC(F)(F)F:5.82,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,66
+2.2 M LiFSI in TEP (1:2 by mol),1.3,0.11,CCOP(=O)(OCC)OCC:2,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.2,,,25.0,66
+3 M LiFSI in TEP (1:1.5 by mol),0.71,-0.15,CCOP(=O)(OCC)OCC:1.5,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,66
+LiFSI: 1.2 DME,2.2,0.34,COCCOC:1.2,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,67
+LiFSI: 1.2 DME: 3 FB,3.69,0.57,COCCOC:1.2,C1=CC=C(C=C1)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,67
+4 M LiFSI in DME (HCE),6.75,0.83,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4,,,25.0,68
+1 M LiFSI in DME:TTE (1:2 v/v) (dHCE),7.16,0.86,COCCOC:3.210534103,FC(F)C(F)(F)COC(F)(F)C(F)F:4.40160518,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,68
+"1.2 M LiTFSI, 1 M acetonitrile (AN) in fluoromethane (FM)",9.0,0.95,FC:16.3659869542222,CC#N:1,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,20.0,69
+0.9 M LiFSI/DME,21.33,1.33,COCCOC:9.63160230803373,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.9,,,25.0,71
+2.5 M LiFSI/DME,11.74,1.07,COCCOC:9.63160230803373,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.5,,,25.0,71
+3.6 M LiFSI/DME,9.54,0.98,COCCOC:9.63160230803373,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.6,,,25.0,71
+6.6 M LiFSI/DME,1.8,0.26,COCCOC:9.63160230803373,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:6.6,,,25.0,71
+3.3 M LiFSI/DME:PFB (1:1),4.2,0.62,COCCOC:4.53688,CC(F)(F)CC(F)(F)F:4.53688,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.3,,,25.0,71
+2.6 M LiFSI/DME:PFB (1:2),5.81,0.76,COCCOC:2.9673,CC(F)(F)CC(F)(F)F:5.93461,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.6,,,25.0,71
+1.8 M LiFSI/DME:PFB (1:3),4.18,0.62,COCCOC:2.2046,CC(F)(F)CC(F)(F)F:6.6138,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.8,,,25.0,71
+3.2 M LiFSI/DME:FB (1:1),3.75,0.57,COCCOC:5.04947,C1=CC=C(C=C1)F:5.04947,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.2,,,25.0,71
+2.6 M LiFSI/DME:FB (1:2),4.46,0.65,COCCOC:3.42165,C1=CC=C(C=C1)F:6.8433,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.6,,,25.0,71
+1.9 M LiFSI/DME:FB (1:3),3.55,0.55,COCCOC:2.5875,C1=CC=C(C=C1)F:7.76252,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.9,,,25.0,71
+2.7 M LiFSI/DME:TTE (1:1),2.96,0.47,COCCOC:3.91719,FC(F)C(F)(F)COC(F)(F)C(F)F:3.91719,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.7,,,25.0,71
+1.7 M LiFSI/DME:TTE (1:2),2.68,0.43,COCCOC:2.45854,FC(F)C(F)(F)COC(F)(F)C(F)F:4.91708,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.7,,,25.0,71
+1.3 M LiFSI/DME:TTE (1:3),2.01,0.3,COCCOC:1.79145,FC(F)C(F)(F)COC(F)(F)C(F)F:5.37437,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.3,,,25.0,71
+1.0 M LiFSI/Diethyl Ether,1.35,0.13,CCOCC:9.624932542,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,71
+2.7 M LiFSI/Diethyl Ether,3.48,0.54,CCOCC:9.624932542,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.7,,,25.0,71
+3.1 M LiFSI/Diethyl Ether,2.79,0.45,CCOCC:9.624932542,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.1,,,25.0,71
+4.5 M LiFSI/Diethyl Ether,0.9,-0.05,CCOCC:9.624932542,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4.5,,,25.0,71
+2.6 M LiFSI/Diethyl Ether:PFB (1:1),1.62,0.21,CCOCC:4.53541,CC(F)(F)CC(F)(F)F:4.53541,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.6,,,25.0,71
+2.0 M LiFSI/Diethyl Ether:PFB (1:2),1.34,0.13,CCOCC:2.96667,CC(F)(F)CC(F)(F)F:5.93334,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,71
+1.3 M LiFSI/Diethyl Ether:PFB (1:3),1.07,0.03,CCOCC:2.20425,CC(F)(F)CC(F)(F)F:6.61275,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.3,,,25.0,71
+3.0 M LiFSI/Diethyl Ether:FB (1:1),1.73,0.24,CCOCC:5.04764,C1=CC=C(C=C1)F:5.04764,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,71
+1.9 M LiFSI/Diethyl Ether:FB (1:2),1.35,0.13,CCOCC:3.42081,C1=CC=C(C=C1)F:6.84162,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.9,,,25.0,71
+1.5 M LiFSI/Diethyl Ether:FB (1:3),1.08,0.03,CCOCC:2.58703,C1=CC=C(C=C1)F:7.76109,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,,,25.0,71
+2.3 M LiFSI/Diethyl Ether:TTE (1:1),0.95,-0.02,CCOCC:3.91609,FC(F)C(F)(F)COC(F)(F)C(F)F:3.91609,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.3,,,25.0,71
+1.2 M LiFSI/Diethyl Ether:TTE (1:2),0.55,-0.26,CCOCC:2.45811,FC(F)C(F)(F)COC(F)(F)C(F)F:4.91622,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,71
+0.8 M LiFSI/Diethyl Ether:TTE (1:3),0.36,-0.44,CCOCC:1.79123,FC(F)C(F)(F)COC(F)(F)C(F)F:5.37369,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.8,,,25.0,71
+0.9 M LiFSI/THF,19.79,1.3,C1CCOC1:12.31554,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.9,,,25.0,71
+2.4 M LiFSI/THF,15.35,1.19,C1CCOC1:12.31554,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.4,,,25.0,71
+3.6 M LiFSI/THF,6.06,0.78,C1CCOC1:12.31554,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.6,,,25.0,71
+5.3 M LiFSI/THF,0.93,-0.03,C1CCOC1:12.31554,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:5.3,,,25.0,71
+2.4 M LiFSI/THF:PFB (1:1),2.61,0.42,C1CCOC1:5.05589,CC(F)(F)CC(F)(F)F:5.05589,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.4,,,25.0,71
+1.7 M LiFSI/THF:PFB (1:2),2.53,0.4,C1CCOC1:3.18087,CC(F)(F)CC(F)(F)F:6.36174,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.7,,,25.0,71
+1.2 M LiFSI/THF:PFB (1:3),1.99,0.3,C1CCOC1:2.32034,CC(F)(F)CC(F)(F)F:6.96104,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,71
+3.0 M LiFSI/THF:FB (1:1),2.52,0.4,C1CCOC1:5.7008,C1=CC=C(C=C1)F:5.7008,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,71
+2.0 M LiFSI/THF:FB (1:2),2.62,0.42,C1CCOC1:3.70879,C1=CC=C(C=C1)F:7.41758,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,71
+1.6 M LiFSI/THF:FB (1:3),2.29,0.36,C1CCOC1:2.74842,C1=CC=C(C=C1)F:8.24526,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.6,,,25.0,71
+2.0 M LiFSI/THF:TTE (1:1),1.57,0.2,C1CCOC1:4.29815,FC(F)C(F)(F)COC(F)(F)C(F)F:4.29815,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,71
+1.4 M LiFSI/THF:TTE (1:2),1.2,0.08,C1CCOC1:2.60336,FC(F)C(F)(F)COC(F)(F)C(F)F:5.20672,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.4,,,25.0,71
+1.0 M LiFSI/THF:TTE (1:3),0.87,-0.06,C1CCOC1:1.86714,FC(F)C(F)(F)COC(F)(F)C(F)F:5.60142,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,71
+3.3 M LiFSI/DMC,5.16,0.71,COC(=O)OC:11.87859,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.3,,,25.0,71
+4.2 M LiFSI/DMC,2.74,0.44,COC(=O)OC:11.87859,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4.2,,,25.0,71
+5.2 M LiFSI/DMC,1.58,0.2,COC(=O)OC:11.87859,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:5.2,,,25.0,71
+5.3 M LiFSI/DMC,1.25,0.1,COC(=O)OC:11.87859,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:5.3,,,25.0,71
+2.4 M LiFSI/DMC:PFB (1:1),2.69,0.43,COC(=O)OC:4.98068,CC(F)(F)CC(F)(F)F:4.98068,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.4,,,25.0,71
+1.6 M LiFSI/DMC:PFB (1:2),2.34,0.37,COC(=O)OC:3.15093,CC(F)(F)CC(F)(F)F:6.30186,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.6,,,25.0,71
+1.2 M LiFSI/DMC:PFB (1:3),1.84,0.26,COC(=O)OC:2.30437,CC(F)(F)CC(F)(F)F:6.91313,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,71
+2.7 M LiFSI/DMC:FB (1:1),2.54,0.4,COC(=O)OC:5.60535,C1=CC=C(C=C1)F:5.60535,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.7,,,25.0,71
+1.9 M LiFSI/DMC:FB (1:2),2.38,0.38,COC(=O)OC:3.66815,C1=CC=C(C=C1)F:7.33631,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.9,,,25.0,71
+1.4 M LiFSI/DMC:FB (1:3),1.51,0.18,COC(=O)OC:2.72604,C1=CC=C(C=C1)F:8.17812,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.4,,,25.0,71
+2.0 M LiFSI/DMC:TTE (1:1),1.52,0.18,COC(=O)OC:4.24367,FC(F)C(F)(F)COC(F)(F)C(F)F:4.24367,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,71
+1.3 M LiFSI/DMC:TTE (1:2),1.1,0.04,COC(=O)OC:2.58327,FC(F)C(F)(F)COC(F)(F)C(F)F:5.16655,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.3,,,25.0,71
+0.9 M LiFSI/DMC:TTE (1:3),0.67,-0.17,COC(=O)OC:1.85678,FC(F)C(F)(F)COC(F)(F)C(F)F:5.57036,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.9,,,25.0,71
+3.4 M LiFSI/DEC,1.48,0.17,O=C(OCC)OCC:8.25361889443833,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.4,,,25.0,71
+4.0 M LiFSI/DEC,1.26,0.1,O=C(OCC)OCC:8.25361889443833,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4,,,25.0,71
+"0.5 M LiFSI/1,4-DX",0.65,-0.19,O1CCOCC1:10.3789288162146,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.5,,,25.0,71
+"0.9 M LiFSI/1,4-DX",2.0,0.3,O1CCOCC1:10.3789288162146,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.9,,,25.0,71
+"1.3 M LiFSI/1,4-DX",2.71,0.43,O1CCOCC1:10.3789288162146,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.3,,,25.0,71
+2.0 M LiFSI/TEP,1.6,0.2,CCOP(=O)(OCC)OCC:5.88516247330541,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,71
+2.5 M LiFSI/TEP,0.76,-0.12,CCOP(=O)(OCC)OCC:5.88516247330541,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.5,,,25.0,71
+3.1 M LiFSI/TEP,0.45,-0.35,CCOP(=O)(OCC)OCC:5.88516247330541,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.1,,,25.0,71
+4.7 M LiFSI/EA,2.31,0.36,O=C(OCC)C:10.237900662853,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4.7,,,25.0,71
+2.7 M LiFSI/EA:FB (1:1),3.29,0.52,O=C(OCC)C:5.21127,C1=CC=C(C=C1)F:5.21127,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.7,,,25.0,71
+1.9 M LiFSI/EA:FB (1:2),3.25,0.51,O=C(OCC)C:3.49519,C1=CC=C(C=C1)F:6.99038,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.9,,,25.0,71
+1.4 M LiFSI/EA:FB (1:3),2.49,0.4,O=C(OCC)C:2.62934,C1=CC=C(C=C1)F:7.88803,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.4,,,25.0,71
+2.7 M LiFSI/EA:TTE (1:0.5),2.57,0.41,O=C(OCC)C:5.76681,FC(F)C(F)(F)COC(F)(F)C(F)F:2.8834,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.7,,,25.0,71
+2.0 M LiFSI/EA:TTE (1:1),2.47,0.39,O=C(OCC)C:4.01387,FC(F)C(F)(F)COC(F)(F)C(F)F:4.01387,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,71
+1.3 M LiFSI/EA:TTE (1:2),1.54,0.19,O=C(OCC)C:2.49628,FC(F)C(F)(F)COC(F)(F)C(F)F:4.99256,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.3,,,25.0,71
+0.9 M LiFSI/PC,8.63,0.94,CC1COC(=O)O1:11.7545646892877,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.9,,,25.0,71
+1.7 M LiFSI/PC,6.02,0.78,CC1COC(=O)O1:11.7545646892877,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.7,,,25.0,71
+2.4 M LiFSI/PC,3.72,0.57,CC1COC(=O)O1:11.7545646892877,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.4,,,25.0,71
+2.9 M LiFSI/PC,2.75,0.44,CC1COC(=O)O1:11.7545646892877,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.9,,,25.0,71
+1.7 M LiFSI/PC:PFB (1:0.5),3.34,0.52,CC1COC(=O)O1:6.97503,CC(F)(F)CC(F)(F)F:3.48751,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.7,,,25.0,71
+1.1 M LiFSI/PC:PFB (1:1),5.4,0.73,CC1COC(=O)O1:4.95875,CC(F)(F)CC(F)(F)F:4.95875,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.1,,,25.0,71
+0.6 M LiFSI/PC:PFB (1:2),5.44,0.74,CC1COC(=O)O1:3.14214,CC(F)(F)CC(F)(F)F:6.28428,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.6,,,25.0,71
+3.3 M LiFSI/PC:FB (1:0.5),1.46,0.16,CC1COC(=O)O1:7.56537,C1=CC=C(C=C1)F:3.78269,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.3,,,25.0,71
+1.6 M LiFSI/PC:FB (1:1),4.38,0.64,CC1COC(=O)O1:5.57759,C1=CC=C(C=C1)F:5.57759,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.6,,,25.0,71
+0.8 M LiFSI/PC:FB (1:2),5.97,0.78,CC1COC(=O)O1:3.65624,C1=CC=C(C=C1)F:7.31249,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.8,,,25.0,71
+2.1 M LiFSI/PC:TTE (1:0.5),1.61,0.21,CC1COC(=O)O1:6.21878,FC(F)C(F)(F)COC(F)(F)C(F)F:3.10939,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.1,,,25.0,71
+1.4 M LiFSI/PC:TTE (1:1),2.02,0.31,CC1COC(=O)O1:4.22774,FC(F)C(F)(F)COC(F)(F)C(F)F:4.22774,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.4,,,25.0,71
+0.8 M LiFSI/PC:TTE (1:2),1.64,0.21,CC1COC(=O)O1:2.57737,FC(F)C(F)(F)COC(F)(F)C(F)F:5.15472,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.8,,,25.0,71
+0.9 M LiFSI/EC,7.02,0.85,C1COC(=O)O1:14.9894392587041,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.9,,,25.0,71
+2.4 M LiFSI/EC,5.24,0.72,C1COC(=O)O1:14.9894392587041,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.4,,,25.0,71
+3.5 M LiFSI/EC,2.15,0.33,C1COC(=O)O1:14.9894392587041,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.5,,,25.0,71
+4.6 M LiFSI/EC,1.28,0.11,C1COC(=O)O1:14.9894392587041,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4.6,,,25.0,71
+2.0 M LiFSI in DME,6.79,0.83,COCCOC:9.63160230803373,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,72
+2.0 M LiFSI in DEE,6.43,0.81,CCOCCOCC:7.12520732491622,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,72
+2.0 M LiFSI in DPE,2.72,0.43,CC(C)OCCOC(C)C:5.60783455520298,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,72
+2.0 M LiFSI in DEP,1.51,0.18,CCOCC(C)OCC:6.27846109623444,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,72
+"LiFSI:DMDC 1:2 (molar ratio), no additive",7.12,0.85,COC(=O)OC(=O)OC:2,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,22.0,73
+"LiFSI:DMDC 2:3 (molar ratio), no additive",4.51,0.65,COC(=O)OC(=O)OC:3,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,22.0,73
+"LiFSI:DMDC 4:5 (molar ratio), no additive",3.15,0.5,COC(=O)OC(=O)OC:5,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4,,,22.0,73
+LiFSI-DMDC/TTE 2/1 V/V bi-solvent electrolyte; LiFSI:DMDC 1:2,5.08,0.71,COC(=O)OC(=O)OC:2,FC(F)C(F)(F)COC(F)(F)C(F)F:0.708,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,22.0,73
+LiFSI-DMDC/TTE 2/1 V/V bi-solvent electrolyte; LiFSI:DMDC 2:3,3.42,0.53,COC(=O)OC(=O)OC:3,FC(F)C(F)(F)COC(F)(F)C(F)F:1.062,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,22.0,73
+LiFSI-DMDC/TTE 2/1 V/V bi-solvent electrolyte; LiFSI:DMDC 4:5,2.8,0.45,COC(=O)OC(=O)OC:5,FC(F)C(F)(F)COC(F)(F)C(F)F:1.770633716,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4,,,22.0,73
+0.2 M LiClO4 + 1.0 M LiFSI in FEC/EMC (3/7 v/v),7.97,0.9,C1C(OC(=O)O1)F:4.112999037,CCOC(=O)OC:6.764389457,,,,[Li+].[O-]Cl(=O)(=O)=O:0.2,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,25.0,74
+0.4 M LiClO4 + 0.8 M LiFSI in FEC/EMC (3/7 v/v),7.4,0.87,C1C(OC(=O)O1)F:4.112999037,CCOC(=O)OC:6.764389457,,,,[Li+].[O-]Cl(=O)(=O)=O:0.4,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.8,,25.0,74
+0.6 M LiClO4 + 0.6 M LiFSI in FEC/EMC (3/7 v/v),6.78,0.83,C1C(OC(=O)O1)F:4.112999037,CCOC(=O)OC:6.764389457,,,,[Li+].[O-]Cl(=O)(=O)=O:0.6,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.6,,25.0,74
+0.8 M LiClO4 + 0.4 M LiFSI in FEC/EMC (3/7 v/v),6.26,0.8,C1C(OC(=O)O1)F:4.112999037,CCOC(=O)OC:6.764389457,,,,[Li+].[O-]Cl(=O)(=O)=O:0.8,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.4,,25.0,74
+1.0 M LiClO4 + 0.2 M LiFSI in FEC/EMC (3/7 v/v),5.53,0.74,C1C(OC(=O)O1)F:4.112999037,CCOC(=O)OC:6.764389457,,,,[Li+].[O-]Cl(=O)(=O)=O:1,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.2,,25.0,74
+"1 M LiBF4 + 1 M LiDFOB in tFEP/FEC (1:2, vol %)",3.03,0.48,CCOC(=O)CC(F)(F)F:2.545376895,C1C(OC(=O)O1)F:9.13999786,,,,[Li+].F[B-](F)(F)(F):1,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:1,,25.0,75
+"1 M LiBF4 + 1 M LiDFOB in mFEP/FEC (1:2, vol %)",3.2,0.51,CCOC(=O)C(C)F:2.766677767,C1C(OC(=O)O1)F:9.13999787,,,,[Li+].F[B-](F)(F)(F):1,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:1,,25.0,75
+"1 M LiBF4 + 1 M LiDFOB in pFEP/FEC (1:2, vol %)",1.19,0.08,CCOC(=O)C(C(F)(F)F)(F)F:2.254269055,C1C(OC(=O)O1)F:9.13999788,,,,[Li+].F[B-](F)(F)(F):1,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:1,,25.0,75
+1 M LiBF4 + 1 M LiDFOB in pure tFEP,0.54,-0.27,CCOC(=O)CC(F)(F)F:7.636130685,,,,,[Li+].F[B-](F)(F)(F):1,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:1,,25.0,75
+1 M LiPF6 in AN,44.13,1.64,CC#N:19.14551566,,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,75
+1 M LiFSI in AN,43.18,1.64,CC#N:19.14551567,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.1,75
+1 M LiTFSI in AN,34.15,1.53,CC#N:19.14551568,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,26.0,75
+1 M LiClO4 in AN,29.16,1.46,CC#N:19.14551569,,,,,[Li+].[O-]Cl(=O)(=O)=O:1,,,25.2,75
+1 M LiDFOB in AN,28.22,1.45,CC#N:19.14551570,,,,,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:1,,,27.0,75
+1 M LiBF4 in AN,17.55,1.24,CC#N:19.14551571,,,,,[Li+].F[B-](F)(F)(F):1,,,25.3,75
+1 M LiOTf in AN,10.32,1.01,CC#N:19.14551572,,,,,[Li+].[O-]S(=O)(=O)C(F)(F)F:1,,,28.0,75
+0.5 M LiTFSI in FEC,3.27,0.52,C1C(OC(=O)O1)F:13.70999679,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:0.5,,,25.0,77
+0.1 M LiTFSI in FEC:FB (2:8 by volume),0.72,-0.14,C1C(OC(=O)O1)F:2.741999358,C1=CC=C(C=C1)F:8.491155048,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:0.1,,,25.0,77
+1.5 M LiTFSI in TEP,4.14,0.62,CCOP(=O)(OCC)OCC:5.88516247330541,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1.5,,,25.0,78
+1.5 M LiTFSI in TEP with 0.47 wt% LiNO3,4.07,0.61,CCOP(=O)(OCC)OCC:5.88516247330541,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1.5,[Li+].[N+](=O)([O-])[O-]:0.1024276215,,25.0,78
+1.5 M LiTFSI in TEP with 5.00 wt% DME,4.6,0.66,CCOP(=O)(OCC)OCC:5.88516247330541,COCCOC:0.7569865623,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1.5,,,25.0,78
+1.5 M LiTFSI in TEP with 4.53 wt% DME and 0.47 wt% LiNO3,4.31,0.63,CCOP(=O)(OCC)OCC:5.88516247330541,COCCOC:0.7569865623,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1.5,[Li+].[N+](=O)([O-])[O-]:0.1024276215,,25.0,78
+"1 M LiFSI BTP/5FB (BTP: 1,3-bis(trimethylsilyloxy)propane; FB: fluorobenzene; mole ratio BTP:FB = 1:5)",1.6,0.2,C[Si](C)(C)OCCCO[Si](C)(C)C:1.3632714621122,C1=CC=C(C=C1)F:6.816357310561,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,80
+"1 M LiFSI BTP/5DCE (BTP: 1,3-bis(trimethylsilyloxy)propane; DCE: 1,2-dichloroethane; mole ratio BTP:DCE = 1:5)",2.3,0.36,C[Si](C)(C)OCCCO[Si](C)(C)C:1.51908,C(CCl)Cl:7.59542,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,80
+"LiFSI/DME/TTE (1:1.2:3, mole ratio)",2.4,0.38,COCCOC:1.2,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,80
+"LiFSI/DMC/TTE (1:1.5:1.5, mole ratio)",1.7,0.23,COC(=O)OC:1.5,FC(F)C(F)(F)COC(F)(F)C(F)F:1.5,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,80
+"1 M LiFSI in 1,4-dioxane",1.2,0.08,O1CCOCC1:10.3789288162146,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,80
+"0.5 M LiFSI in 1,4-dioxane",0.54,-0.27,O1CCOCC1:10.3789288162146,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.5,,,25.0,80
+1.2 M LiPF6 in EC:EMC (3:7 vol/vol),8.18,0.91,C1COC(=O)O1:4.496831778,CCOC(=O)OC:6.764389457,,,,[Li+].F[P-](F)(F)(F)(F)F:1.2,,,25.0,81
+1.2 M LiPF6 in FEC:EMC (3:7 vol/vol),9.42,0.97,C1C(OC(=O)O1)F:4.112999037,CCOC(=O)OC:6.764389457,,,,[Li+].F[P-](F)(F)(F)(F)F:1.2,,,25.0,81
+1.2 M LiPF6 in DFEC:EMC (3:7 vol/vol),7.72,0.89,FC1OC(=O)OC1F:3.676233474,CCOC(=O)OC:6.764389457,,,,[Li+].F[P-](F)(F)(F)(F)F:1.2,,,25.0,81
+1.2 M LiPF6 in TFPC:EMC (3:7 vol/vol),7.36,0.87,O=C1OCC(C(F)(F)F)O1:2.987312572,CCOC(=O)OC:6.764389457,,,,[Li+].F[P-](F)(F)(F)(F)F:1.2,,,25.0,81
+1.2 M LiPF6 in NPFEC:EMC (3:7 vol/vol),4.34,0.64,C1C(OC(=O)O1)CC(C(C(C(F)(F)F)(F)F)(F)F)(F)F:1.358907875,CCOC(=O)OC:6.764389457,,,,[Li+].F[P-](F)(F)(F)(F)F:1.2,,,25.0,81
+LiFSI:DEE:TTE (1:1.6:3 molar ratio),7.22,0.86,CCOCCOCC:1.6,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,82
+LiFSI:ClDEE:TTE (1:1.6:3 molar ratio),1.52,0.18,ClCCOCCOCCCl:1.6,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,82
+LiFSI:FDEE:TTE (1:1.6:3 molar ratio),3.18,0.5,FCCOCCOCCF:1.6,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,82
+0.3 M LiFSI in DME,6.19,0.79,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.3,,,25.0,84
+1 M LiFSI in DME,17.14,1.23,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,84
+5 M LiFSI in DME,7.3,0.86,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:5,,,25.0,84
+1 M LiFSI in DME/HFE (1:4 by vol.),4.45,0.65,COCCOC:1.9263204616,FC(F)C(F)(F)COC(F)(F)C(F)F:5.281926216,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,84
+0.3 M LiFSI in DME/HFE (1:15.7 by vol.),0.85,-0.07,COCCOC:0.576742653173653,FC(F)C(F)(F)COC(F)(F)C(F)F:6.20705401131737,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.3,,,25.0,84
+1 M LiTFSI in DOL/DME (1:1 by vol.),13.15,1.12,O1CCOC1:7.15462080509733,COCCOC:4.81580115401687,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,84
+1.25 m LiPF6 in DEC with 20% FEC and 5% VC,5.99,0.78,O=C(OCC)OCC:6.288471538,C1C(OC(=O)O1)F:2.61142796,C1=COC(=O)O1:0.7471086895,,,[Li+].F[P-](F)(F)(F)(F)F:1.25,,,25.0,87
+"1.25 m LiPF6 in ethyl(2,2,2-trifluoroethyl) carbonate (asymF-DEC) with 20% FEC and 5% VC",5.52,0.74,O=C(OCC(F)(F)(F))OCC:5.547162502,C1C(OC(=O)O1)F:2.61142796,C1=COC(=O)O1:0.7471086895,,,[Li+].F[P-](F)(F)(F)(F)F:1.25,,,25.0,87
+"1.25 m LiPF6 in bis(2,2,2-trifluoroethyl) carbonate (symF-DEC) with 20% FEC and 5% VC",1.67,0.22,O=C(OCC(F)(F)(F))OCC(F)(F)(F):5.089026366,C1C(OC(=O)O1)F:2.61142796,C1=COC(=O)O1:0.7471086895,,,[Li+].F[P-](F)(F)(F)(F)F:1.25,,,25.0,87
+LiFSI:EmimFSI:None (1:2:0 mol/mol) (neat ionic liquid electrolyte FE),5.28,0.72,,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,CCN1C=C[N+](=C1)C.[N-](S(=O)(=O)F)S(=O)(=O)F:2,,20.0,90
+"LiFSI:EmimFSI:BnF (1:2:0.55 mol/mol) (locally concentrated ionic liquid electrolyte, FEF)",6.8,0.83,C1=CC=C(C=C1)F:0.55,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,CCN1C=C[N+](=C1)C.[N-](S(=O)(=O)F)S(=O)(=O)F:2,,20.0,90
+"LiFSI:EmimFSI:BnCF (1:2:0.55 mol/mol) (locally concentrated ionic liquid electrolyte, FECF)",6.1,0.79,C1=CC=C(C=C1)OC(F)(F)F:0.55,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,CCN1C=C[N+](=C1)C.[N-](S(=O)(=O)F)S(=O)(=O)F:2,,20.0,90
+"LiFSI:EmimFSI:BnOCF (1:2:0.55 mol/mol) (locally concentrated ionic liquid electrolyte, FEOCF)",6.38,0.8,C1=CC=C(C=C1)OC(F)(F)F:0.55,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,CCN1C=C[N+](=C1)C.[N-](S(=O)(=O)F)S(=O)(=O)F:2,,20.0,90
+"LiFSI:EmimFSI:BTFE (1:2:2 molar ratio), EmiBE; LiFSI concentration: 1.35 mol/L (at 20 °C)",9.46,0.98,C(C(F)(F)F)OCC(F)(F)F:2,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,CCN1C=C[N+](=C1)C.[N-](S(=O)(=O)F)S(=O)(=O)F:2,,20.0,91
+"LiFSI:Pyr14FSI:BTFE (1:2:2 molar ratio), PyrBE; LiFSI concentration: 1.20 mol/L (at 20 °C)",4.02,0.6,C(C(F)(F)F)OCC(F)(F)F:2,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,CCCC[N+]1(CCCC1)C.[N-](S(=O)(=O)F)S(=O)(=O)F:2,,20.0,91
+"LiFSI:EmimFSI 1:2 (0.243:0.757 mass ratio), FE",5.28,0.72,,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,CCN1C=C[N+](=C1)C.[N-](S(=O)(=O)F)S(=O)(=O)F:2,,20.0,92
+"LiFSI:EmimFSI:dFBn 1:2:2 (0.187:0.584:0.229 mass ratio), FEdF",8.84,0.95,C1=CC=C(C(=C1)F)F:2,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,CCN1C=C[N+](=C1)C.[N-](S(=O)(=O)F)S(=O)(=O)F:2,,20.0,92
+1 M LiPF6 in EC:DMC:FEC (10:10:1 by volume),9.91,1.0,C1COC(=O)O1:7.13782821904762,COC(=O)OC:5.65647338571429,C1C(OC(=O)O1)F:0.65285699,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,96
+1 M LiPF6 + 0.1 M LiTFA in EC:DMC:FEC (10:10:1 by volume),9.72,0.99,C1COC(=O)O1:7.13782821904762,COC(=O)OC:5.65647338571429,C1C(OC(=O)O1)F:0.65285699,,,[Li+].F[P-](F)(F)(F)(F)F:1,[Li+].C(=O)(C(F)(F)F)[O-]:0.1,,25.0,96
+1 M LiPF6 + 0.1 M LiTFA + 0.1 M LiNO3 in EC:DMC:FEC (10:10:1 by volume),9.63,0.98,C1COC(=O)O1:7.13782821904762,COC(=O)OC:5.65647338571429,C1C(OC(=O)O1)F:0.65285699,,,[Li+].F[P-](F)(F)(F)(F)F:1,[Li+].[N+](=O)([O-])[O-]:0.1,[Li+].C(=O)(C(F)(F)F)[O-]:0.1,25.0,96
+1.0 M LiFSI in FEC:FEMC:DME (3:3:2 v/v) + 0.5 wt% LiNO3,9.88,0.99,C1C(OC(=O)O1)F:5.14124879778226,COC(=O)OCC(F)(F)F:3.17877024291498,COCCOC:2.40790057700843,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,[Li+].[N+](=O)([O-])[O-]:0.1027306019,,25.0,97
+0.75 M LiFSI in FEC:FEMC:DME (3:3:2 v/v) + 0.5 wt% LiNO3,9.27,0.97,C1C(OC(=O)O1)F:5.14124879778226,COC(=O)OCC(F)(F)F:3.17877024291498,COCCOC:2.40790057700843,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.75,[Li+].[N+](=O)([O-])[O-]:0.1027306019,,25.0,97
+1.0 M LiFSI in FEC:FEMC (1:1 v/v),9.8,0.99,C1C(OC(=O)O1)F:6.854998397,COC(=O)OCC(F)(F)F:4.238360324,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,97
+DEE-2:1 (molar ratio: 2:1 LiDFOB:18-crown-6 ether),0.06,-1.21,O1CCOCCOCCOCCOCCOCC1:1,,,,,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:2,,,25.0,98
+DEE-4:1 (molar ratio: 4:1 LiDFOB:18-crown-6 ether),0.07,-1.18,O1CCOCCOCCOCCOCCOCC1:1,,,,,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:4,,,25.0,98
+DEE-6:1 (molar ratio: 6:1 LiDFOB:18-crown-6 ether),0.07,-1.16,O1CCOCCOCCOCCOCCOCC1:1,,,,,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:6,,,25.0,98
+DEE-8:1 (molar ratio: 8:1 LiDFOB:18-crown-6 ether),0.07,-1.15,O1CCOCCOCCOCCOCCOCC1:1,,,,,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:8,,,25.0,98
+2 m LiFSI in DEE,11.13,1.05,CCOCCOCC:7.12520732491622,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,99
+4 m LiFSI in DEE,5.5,0.74,CCOCCOCC:7.12520732491622,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4,,,25.0,99
+"2 M LiFSI PhH/DEE (1:1, v)",9.83,0.99,C1=CC=CC=C1:5.607476635,CCOCCOCC:3.5626036625,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,99
+"BE: 1.2 M LiPF6 in FEC:EMC (1:5, vol%)",5.61,0.75,C1C(OC(=O)O1)F:2.28499946568101,CCOC(=O)OC:8.05284459130613,,,,[Li+].F[P-](F)(F)(F)(F)F:1.2,,,25.0,101
+"AF: 1.2 M LiPF6 in FEC:FEMC (1:5, vol%)",2.31,0.36,C1C(OC(=O)O1)F:2.28499946568101,COC(=O)OCC(F)(F)F:7.0639338731444,,,,[Li+].F[P-](F)(F)(F)(F)F:1.2,,,25.0,101
+AF-HCE: 4.5 M LiFSI in FEC/FEMC/TTE (1:5:2 vol%),2.08,0.32,C1C(OC(=O)O1)F:1.71374959926075,COC(=O)OCC(F)(F)F:5.2979504048583,FC(F)C(F)(F)COC(F)(F)C(F)F:1.6506019424169,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4.5,,,25.0,101
+1 m LiTFSI in DOL/FEC (5/5 vol/vol),0.38,-0.42,O1CCOC1:7.154620805,C1C(OC(=O)O1)F:6.85499839704302,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,102
+1 m LiTFSI in DME/FEC (5/5 vol/vol),0.48,-0.32,COCCOC:4.815801154,C1C(OC(=O)O1)F:6.85499839704302,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,102
+1 m LiTFSI in G2/FEC (5/5 vol/vol),1.22,0.09,COCCOCCOC:3.491838712,C1C(OC(=O)O1)F:6.85499839704302,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,102
+1 m LiTFSI in G3/FEC (5/5 vol/vol),0.84,-0.07,COCCOCCOCCOCCOC:2.766088762,C1C(OC(=O)O1)F:6.85499839704302,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,102
+"1.0 M LiPF6 EC/DEC/TEP (1:1:1 by vol)+5 wt% FEC+2 wt% LiNO3, HSPE",7.71,0.89,C1COC(=O)O1:4.99647975290137,O=C(OCC)OCC:2.75120629814611,CCOP(=O)(OCC)OCC:1.96172082443514,C1C(OC(=O)O1)F:0.6007497753,,[Li+].F[P-](F)(F)(F)(F)F:1,[Li+].[N+](=O)([O-])[O-]:0.2,,25.0,104
+"1.4M LiPF6 EC/DEC/TEP (1:1:1 by vol)+5 wt% FEC, SSPE",7.75,0.89,C1COC(=O)O1:4.99647975290137,O=C(OCC)OCC:2.75120629814611,CCOP(=O)(OCC)OCC:1.96172082443514,C1C(OC(=O)O1)F:0.6007497753,,[Li+].F[P-](F)(F)(F)(F)F:1.4,,,25.0,104
+"1 M LiPF6 EC/DEC (1:1 by vol)+5 wt% FEC, CCE",8.68,0.94,C1COC(=O)O1:7.494719629,O=C(OCC)OCC:4.126809447,C1C(OC(=O)O1)F:0.6007497753,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,104
+1 M LiFSI in DME with 1% LiDFBP + 1% LiNO3,15.0,1.18,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,[Li+].[P-](F)(F)12(OC(=O)C(=O)O1)OC(=O)C(=O)O2:0.05666812227,[Li+].[N+](=O)([O-])[O-]:0.2070297317,25.0,105
+"1 M LiFSI in DME/DMCF3SA (3/7, v/v) with 1% LiDFBP + 1% LiNO3",6.8,0.83,COCCOC:2.88948069241012,CN(C)S(=O)(=O)C(F)(F)F:5.53203499858877,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,[Li+].[P-](F)(F)12(OC(=O)C(=O)O1)OC(=O)C(=O)O2:0.05666812227,[Li+].[N+](=O)([O-])[O-]:0.2070297317,25.0,105
+"1 M LiFSI in DME/TFSPP (3/7, v/v) with 1% LiDFBP + 1% LiNO3",5.9,0.77,COCCOC:2.88948069241012,C1CCCN(C1)S(=O)(=O)C(F)(F)F:4.3506284241057,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,[Li+].[P-](F)(F)12(OC(=O)C(=O)O1)OC(=O)C(=O)O2:0.05527868201,[Li+].[N+](=O)([O-])[O-]:0.2019535895,25.0,105
+"LiFSI : TG = (1 : 2.27 mol/mol), About 2 M (TG-MCE)",3.45,0.54,COCCOCCOCCOCCOC:2.27,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,106
+"LiFSI : TG = (1 : 0.61 mol/mol), About 5 M (TG-HCE)",0.46,-0.34,COCCOCCOCCOCCOC:0.61,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,106
+"LiFSI : TG : TTE = (1 : 0.61 : 1.98 mol/mol/mol), Whole ≈ 2 M, Local ≈ 5 M (TG-DHCE)",4.91,0.69,COCCOCCOCCOCCOC:0.61,FC(F)C(F)(F)COC(F)(F)C(F)F:0.98,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,106
+1.5 M LiDFOB in FEC:TFP (1:2 by volume),4.4,0.64,C1C(OC(=O)O1)F:4.56999893136201,C(C(F)(F)F)OP(=O)(OCC(F)(F)F)OCC(F)(F)F:3.02525648850525,,,,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:1.5,,,25.0,107
+1 M LiFSI in DTDL,1.4,0.15,COC1(OCC(O1)C(F)(F)F)OC:6.480977589,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,109
+1 m LiDFOB + 0.5 m LiNO3 in DME:PFPN (7:3 vol/vol),5.54,0.74,COCCOC:6.74212161562361,CCOP1(=NP(=NP(=N1)(F)F)(F)F)F:1.70188006836612,,,,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:1,[Li+].[N+](=O)([O-])[O-]:0.5,,30.0,110
+1 m LiPF6 in FEC:FEMC:TTE (2:6:2 vol/vol),3.29,0.52,C1C(OC(=O)O1)F:2.74199935881721,COC(=O)OCC(F)(F)F:5.08603238866397,FC(F)C(F)(F)COC(F)(F)C(F)F:1.32048155393352,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,30.0,110
+LiFSI:DME:TFSF = 1:1.2:3 (molar ratio),2.38,0.38,COCCOC:1.2,C(C(F)(F)F)OS(=O)(=O)C(F)(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,111
+1.8 M LiFSI in DME,13.74,1.14,COCCOC:9.63160230803373,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.8,,,25.0,111
+"1 M LiPF6 in EC:DEC (molar ratio 1:4:4), abbreviated as ED",6.4,0.81,C1COC(=O)O1:4,O=C(OCC)OCC:4,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,112
+"1 M LiPF6 in FEC:ETFEC (molar ratio 1:4:4), abbreviated as FE",3.3,0.52,C1C(OC(=O)O1)F:4,O=C(OCC(F)(F)(F))OCC:4,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,112
+"1 M LiPF6 in FEC:ETFEC:PFPN (molar ratio 1:3.8:3.8:0.4), abbreviated as FEP",3.1,0.49,C1C(OC(=O)O1)F:3.8,O=C(OCC(F)(F)(F))OCC:3.8,CCOP1(=NP(=NP(=N1)(F)F)(F)F)F:0.4,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,112
+1 M LiFSI in THF2,2.22,0.35,CC1CCCO1:9.91593516325299,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,114
+"1 M LiFSI in THF2/TTE (0.2/0.75, v/v)",0.64,-0.19,CC1CCCO1:2.08756529747368,FC(F)C(F)(F)COC(F)(F)C(F)F:5.21242718684211,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,114
+"1 M LiFSI in THF2/TTE/FMP (0.2/0.625/0.125, v/v)",0.76,-0.12,CC1CCCO1:2.08756529747368,FC(F)C(F)(F)COC(F)(F)C(F)F:4.34368932236842,C(C(C(C(F)(F)F)(F)F)(F)F)(C(F)(F)F)(C(F)(F)F)F:0.668715630040668,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,114
+"1 M LiTFSI in DOL/DME (1/1, v/v)",13.43,1.13,O1CCOC1:7.15462080509733,COCCOC:4.81580115401687,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,114
+"1.0 mol/L LiPF6 in EC:EMC:DMC (1:1:1 by mass), denoted as EED electrolyte",11.48,1.06,C1COC(=O)O1:4.227407963,CCOC(=O)OC:3.575981711,COC(=O)OC:4.132796021,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,115
+"1.0 mol/L LiPF6 in EC:EMC:DMC:TFEC (5 wt% TFEC added, denoted as EEDT electrolyte)",10.9,1.04,C1COC(=O)O1:4.227407963,CCOC(=O)OC:3.575981711,COC(=O)OC:4.132796021,C(C(F)(F)F)OC(=O)OCC(F)(F)F:0.2805900072,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,115
+1.0 M LiFSI in BFME,2.32,0.37,FCCOCOCCF:8.778190123,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,116
+1.2 M LiFSI in F2DEM,3.01,0.48,FCCOCOCCF:8.778190123,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,117
+1.6 M LiFSI in F2DEM,3.31,0.52,FCCOCOCCF:8.778190123,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.6,,,25.0,117
+2 M LiFSI in F2DEM,3.58,0.55,FCCOCOCCF:8.778190123,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,117
+3 M LiFSI in F2DEM,3.12,0.49,FCCOCOCCF:8.778190123,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,117
+1.2 M LiFSI in DEM,3.27,0.51,CCOCOCC:7.97887662,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,117
+1.6 M LiFSI in DEM,2.99,0.48,CCOCOCC:7.97887662,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.6,,,25.0,117
+2 M LiFSI in DEM,4.85,0.69,CCOCOCC:7.97887662,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,117
+3 M LiFSI in DEM,1.57,0.2,CCOCOCC:7.97887662,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,117
+1.2 M LiFSI in F5DEE,2.29,0.36,FC(F)COCCOCC(F)(F)(F):6.19798973728211,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,117
+1.6 M LiFSI in F5DEE,1.92,0.28,FC(F)COCCOCC(F)(F)(F):6.19798973728211,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.6,,,25.0,117
+2 M LiFSI in F5DEE,1.85,0.27,FC(F)COCCOCC(F)(F)(F):6.19798973728211,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,117
+"1 M LiFSI in FEC:EMC (1:1 vol/vol) (DE, dilute electrolyte, baseline control)",9.73,0.99,C1C(OC(=O)O1)F:6.854998397,CCOC(=O)OC:4.83170675478368,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,118
+"1 M LiFSI in EMC:FEC:D2 (1.5:1.5:7 by volume) (LPE, low-polarity electrolyte)",2.87,0.46,CCOC(=O)OC:1.449512026,C1C(OC(=O)O1)F:2.056499519,C(C(F)(F)F)OC(C(F)F)(F)F:5.20283509277031,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,118
+"1 M LiFSI in EMC:FEC:DTF (1.5:1.5:7 by volume) (DCE, decoordination electrolyte)",3.12,0.49,CCOC(=O)OC:1.449512026,C1C(OC(=O)O1)F:2.056499519,C(C(F)F)OS(=O)(=O)C(F)(F)F:5.26691887347625,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,118
+"1 mol L−1 LiTFSI in FDMA/EC (FDMA:EC, 1:1 vol/vol)",7.34,0.87,CN(C)C(=O)C(F)(F)F:4.464981786,C1COC(=O)O1:7.494719629,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,119
+"1 mol L−1 LiTFSI in FDMA/FEC (FDMA:FEC, 1:1 vol/vol)",5.79,0.76,CN(C)C(=O)C(F)(F)F:4.464981786,C1C(OC(=O)O1)F:6.854998397,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,119
+"1 mol L−1 LiTFSI in FDMA/DFEC (FDMA:DFEC, 1:1 vol/vol)",3.65,0.56,CN(C)C(=O)C(F)(F)F:4.464981786,FC1OC(=O)OC1F:6.127055788,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,119
+1 mol L-1 LiTFSI in EC solvent,0.8,-0.1,C1COC(=O)O1:14.98943926,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,119
+1 mol L-1 LiTFSI in FEC solvent,0.39,-0.41,C1C(OC(=O)O1)F:13.70999679,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,119
+1 mol L-1 LiTFSI in DFEC solvent,0.26,-0.59,FC1OC(=O)OC1F:12.25411158,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,119
+2 M LiFSI in DME,10.48,1.02,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,122
+2 M LiFSI in DMP,7.66,0.88,COCC(C)OC:8.20931349,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,122
+2 M LiFSI in TFDMP,7.4,0.87,COCC(C(F)(F)(F))OC:7.08322792815583,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,123
+0.5 M LiFSI in diethyl ether (DEE) ,0.28,-0.55,CCOCC:9.624932542,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.5,,,30.0,124
+1 M LiFSI in diethyl ether (DEE) ,0.9,-0.05,CCOCC:9.624932542,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,124
+1.5 M LiFSI in diethyl ether (DEE) ,1.39,0.14,CCOCC:9.624932542,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,,,30.0,124
+2 M LiFSI in diethyl ether (DEE) ,1.81,0.26,CCOCC:9.624932542,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,30.0,124
+2.5 M LiFSI in diethyl ether (DEE),1.89,0.28,CCOCC:9.624932542,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.5,,,30.0,124
+0.5 M LiFSI in bis(2-fluoroethyl) ether (BFE) ,5.39,0.73,C(F)COCCF:8.900756564,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.5,,,30.0,124
+1 M LiFSI in bis(2-fluoroethyl) ether (BFE) ,7.5,0.88,C(F)COCCF:8.900756564,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,124
+1.5 M LiFSI in bis(2-fluoroethyl) ether (BFE) ,7.79,0.89,C(F)COCCF:8.900756564,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,,,30.0,124
+2 M LiFSI in bis(2-fluoroethyl) ether (BFE) ,7.99,0.9,C(F)COCCF:8.900756564,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,30.0,124
+2.5 M LiFSI in bis(2-fluoroethyl) ether (BFE) ,7.87,0.9,C(F)COCCF:8.900756564,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.5,,,30.0,124
+0.9 M LiFSI in DME,23.4,1.37,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.9,,,25.0,125
+3 M LiFSI in DME,10.1,1.0,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,125
+0.9 M LiFSI in DEE,11.0,1.04,CCOCCOCC:7.125207325,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.9,,,25.0,125
+3 M LiFSI in DEE,8.11,0.91,CCOCCOCC:7.125207325,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,125
+0.9 M LiFSI in DMM,2.93,0.47,COCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.9,,,25.0,125
+3 M LiFSI in DMM,8.03,0.9,COCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,125
+0.9 M LiFSI in DEM,0.88,-0.05,CCOCOCC:7.97887662,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.9,,,25.0,125
+3 M LiFSI in DEM,2.73,0.44,CCOCOCC:7.97887662,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,125
+1 M LiTFSI in DME,16.4,1.21,COCCOC:9.631602308,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,126
+1 M LiSTFSI in DME,9.88,0.99,COCCOC:9.631602308,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)C(F)(F)F:1,,,25.0,126
+1 M LiBSTFSI in DME,0.74,-0.13,COCCOC:9.631602308,,,,,[Li+].C(F)(F)(F)S(=O)[N-]S(=O)C(F)(F)F:1,,,25.0,126
+1 M LiFSI in DME,21.3,1.33,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,126
+1 M LiFSI + 0.2 M LiNO3 in DME (E-DME),16.66,1.22,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,[Li+].[N+](=O)([O-])[O-]:0.2,,25.0,126
+1 M LiFSI + 0.2 M LiNO3 in DME + 0.3 M LiDFOB (E-LiDFOB),15.46,1.19,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,[Li+].[N+](=O)([O-])[O-]:0.2,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:0.3,25.0,126
+1 M LiFSI + 0.2 M LiNO3 in DME + 0.3 M LiSTFSI (E-LiSTFSI),15.34,1.19,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,[Li+].[N+](=O)([O-])[O-]:0.2,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)C(F)(F)F:0.3,25.0,126
+1 M LiFSI + 0.2 M LiNO3 in DME + 0.3 M LiBSTFSI (E-LiBSTFSI),10.01,1.0,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,[Li+].[N+](=O)([O-])[O-]:0.2,[Li+].C(F)(F)(F)S(=O)[N-]S(=O)C(F)(F)F:0.3,25.0,126
+1.2 m LiFSI in DME,14.71,1.17,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,127
+1.2 m LiFSI in DMC,10.69,1.03,COC(=O)OC:11.87859411,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,127
+1.2 m LiFSI in BMC + 0.75 wt.% LiNO3 + 1 wt.% LiDFBOP,2.48,0.39,COCCOC(=O)OCCOC:5.999551016,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,[Li+].[N+](=O)([O-])[O-]:0.1406980421,[Li+].[P-](F)(F)12(OC(=O)C(=O)O1)OC(=O)C(=O)O2:0.05134910679,25.0,127
+1.2 m LiFSI in BMC,2.56,0.41,COCCOC(=O)OCCOC:5.999551016,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,127
+2.2 M LiFSI in DME:MFSI (1:1.2:2 mol/mol),2.34,0.37,COCCOC:1.2, S(F)(=O)(=O)N(C)S(=O)(=O)F:2,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,128
+1 M LiFSI in DME:TFF (1:1.2:7 mol/mol),3.31,0.52,COCCOC:1.2,C1(F)(F)C(F)(F)COC1:7,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,128
+1.6 M LiFSI in DmTFSA,1.36,0.13,C(F)(F)(F)S(=O)(=O)N(C)C:7.338413774,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.6,,,25.0,129
+1.6 M LiFSI in AzTFSA,1.05,0.02,C(F)(F)(F)S(=O)(=O)N1CCC1:6.872488898,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.6,,,25.0,129
+1.6 M LiFSI in PyTFSA,0.73,-0.14,C(F)(F)(F)S(=O)(=O)N1CCCC1:6.398897421,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.6,,,25.0,129
+1 M LiFSI in PiTFSA,0.32,-0.49,C(F)(F)(F)S(=O)(=O)N1CCCCC1:5.986369497,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,129
+1 M LiFSI in MoTFSA,0.11,-0.97,C(F)(F)(F)S(=O)(=O)N1CCOCC1:5.930656934,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,129
+1.8 M LiFSI in DPE,0.61,-0.22,CCCOCCC:7.203186627,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.8,,,25.0,130
+1.8 M LiFSI in DEE,1.35,0.13,CCOCC:9.624932542,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.8,,,25.0,130
+1.8 M LiFSI in DME,13.58,1.13,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.8,,,25.0,130
+1.8 M LiFSI in DIG,6.45,0.81,COCCOCCOC:6.983677424,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.8,,,25.0,130
+1 M LiFSI in DME,22.5,1.35,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,131
+1 M LiFSI in BTFM:DME (7:1 vol/vol),2.7,0.43,C(C(F)(F)F)OCOCC(F)(F)F:5.7923523035,COCCOC:1.2039502885,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,131
+2 M LiFSI in BTFM:DME (3:1 vol/vol),5.5,0.74,C(C(F)(F)F)OCOCC(F)(F)F:4.964873403,COCCOC:2.407900577,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,131
+1.5 M LiFSI in DME:HFME:Hex (1:2.1:0.9 v/v/v),6.21,0.79,COCCOC:2.407900577,C(F)(F)(F)C(OC)C(F)(F)(F):4.00829396888,CCCCCC:2.2940889786,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,,,25.0,132
+1.5 M LiFSI in DME:HFME (1:3 v/v),6.26,0.8,COCCOC:2.407900577,C(F)(F)(F)C(OC)C(F)(F)(F):5.726134241,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,,,25.0,132
+2 M LiFSI in DME,18.8,1.27,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,133
+1 M LiFSI in DME:BTFMD (1:7 v/v),2.7,0.43,COCCOC:1.2039502885,C1COC(O1)(C(F)(F)F)C(F)(F)F:6.3728757085,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,133
+2 M LiFSI in DME:BTFMD (1:3 v/v),5.5,0.74,COCCOC:2.407900577,C1COC(O1)(C(F)(F)F)C(F)(F)F:5.462464893,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,133
+1.5 M LiFSI in MNBE,3.96,0.6,CCCCOC:8.44015882,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,,,25.0,134
+1.5 M LiFSI in DME:MNBE (3:2 v/v),12.55,1.1,COCCOC:5.778961385,CCCCOC:3.376063528,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,,,25.0,134
+1.5 M LiFSI in DME:MNBE (4:1 v/v),14.97,1.18,COCCOC:7.705281846,CCCCOC:1.688031764,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,,,25.0,134
+1.5 M LiFSI in DME:MNBE (1:4 v/v),7.54,0.88,COCCOC:1.926320462,CCCCOC:6.752127056,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,,,25.0,134
+1 M LiFSI in DME,15.4,1.19,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,135
+1 M LiFSI in EME (1-ethoxy-2-methoxyethane),10.87,1.04,COCCOCC:8.231397024,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,135
+1 M LiFSI in MPE (1-methoxy-2-propoxyethane),6.91,0.84,COCCOCCC:7.120494161,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,135
+1 M LiFSI in DEE,8.62,0.94,CCOCCOCC:7.125207325,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,135
+2 M LiFSI in F2EME,6.97,0.84,COCCOCC(F)(F):7.783803068,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,135
+2 M LiFSI in F3EME,4.6,0.66,COCCOCC(F)(F)(F):7.199494151,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,135
+2 M LiFSI in F3DEE,3.79,0.58,FC(F)(F)COCCOCC:6.21558194112043,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,135
+1 M LiFSI in N-Pyrrolidine-trifluoromethanesulfonamide (TFSPY),0.92,-0.04,C(F)(F)(F)S(=O)(=O)N1CCCC1:6.398897421,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,137
+1 M LiFSI in N-Piperidine-trifluoromethanesulfonamide (TFSPD),0.63,-0.2,C(F)(F)(F)S(=O)(=O)N1CCCCC1:5.986369497,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,137
+1 M LiFSI in N-Morpholine-trifluoromethanesulfonamide (TFSMP),0.1,-1.0,C(F)(F)(F)S(=O)(=O)N1CCOCC1:5.930656934,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,137
+1.8 M LiFSI in DME/TFMB (1:1.1:2.2 molar ratio),2.43,0.39,COCCOC:1.1,C1=CC=C(C=C1)OC(F)(F)F:2.2,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,140
+1.8 M LiFSI in DME/BZTF (1:1.1:2.2 molar ratio),3.46,0.54,COCCOC:1.1,C1=CC=C(C=C1)C(F)(F)F:2.2,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,140
+1.8 M LiFSI in DME/TTE (1:1.1:2.2 molar ratio),1.62,0.21,COCCOC:1.1,FC(F)C(F)(F)COC(F)(F)C(F)F:2.2,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,140
+1m LiFSI in TEP,6.33,0.8,CCOP(=O)(OCC)OCC:5.885162473,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,141
+2m LiFSI in TEP,3.62,0.56,CCOP(=O)(OCC)OCC:5.885162473,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,141
+3m LiFSI in TEP,1.27,0.1,CCOP(=O)(OCC)OCC:5.885162473,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,141
+4m LiFSI in TEP,0.65,-0.19,CCOP(=O)(OCC)OCC:5.885162473,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4,,,25.0,141
+5m LiFSI in TEP,0.58,-0.24,CCOP(=O)(OCC)OCC:5.885162473,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:5,,,25.0,141
+"1m LiFSI in TEP:TTE=1:3 vol/vol (TEP-LHCE), LiFSI:TEP = 1:1.5 (mol %)",0.75,-0.13,CCOP(=O)(OCC)OCC:1.471290618,FC(F)C(F)(F)COC(F)(F)C(F)F:4.951805827,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,141
+1m LiFSI in DMEP,3.39,0.53,CCOP(=O)(OCC)COCCOC:4.597599523,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,141
+2m LiFSI in DMEP,1.79,0.25,CCOP(=O)(OCC)COCCOC:4.597599523,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,141
+3m LiFSI in DMEP,1.17,0.07,CCOP(=O)(OCC)COCCOC:4.597599523,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,141
+4m LiFSI in DMEP,0.88,-0.06,CCOP(=O)(OCC)COCCOC:4.597599523,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4,,,25.0,141
+5m LiFSI in DMEP,0.55,-0.26,CCOP(=O)(OCC)COCCOC:4.597599523,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:5,,,25.0,141
+6.6m LiFSI in DMEP,0.33,-0.48,CCOP(=O)(OCC)COCCOC:4.597599523,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:6.6,,,25.0,141
+"LiFSI:DMEP=6.6m (molality), DMEP:TTE=1:4 vol/vol (DMEP-LHCE)",1.26,0.1,CCOP(=O)(OCC)COCCOC:0.9195199045,FC(F)C(F)(F)COC(F)(F)C(F)F:5.281926216,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:6.6,,,25.0,141
+1 M LiTFSI in EC/DMC (1:1 v/v),8.9,0.95,C1COC(=O)O1:7.5,COC(=O)OC:5.94,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,143
+1 M LiTFSI in MOX/DMC (1:1 v/v),12.7,1.1,CN1CCOC1=O:5.786350148,COC(=O)OC:5.939297054,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,143
+1 M LiTFSI + 0.2 M LiNO3 in MOX/DMC (1:1 v/v),9.4,0.97,CN1CCOC1=O:5.786350148,COC(=O)OC:5.939297054,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,[Li+].[N+](=O)([O-])[O-]:0.2,,25.0,143
+1 M LiPF6 in EA:FEC (v/v = 10:1),6.3,0.8,O=C(OCC)C:9.307182421,C1C(OC(=O)O1)F:1.246363345,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,144
+"1 M LiPF6 with 2 vt% 1,3-propanesultone (PS) additive in EA:FEC (v/v = 10:1)",8.04,0.9,O=C(OCC)C:9.307182421,C1C(OC(=O)O1)F:1.246363345,O=S1(OCCC1)=O:0.2279351564,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,144
+"1 m LiFSI in MODL (2-methoxyl-1,3-dioxolane), no additives",3.43,0.54,COC1OCCO1:10.48991354,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,145
+"3 m LiFSI in MODL (2-methoxyl-1,3-dioxolane), no additives",2.65,0.42,COC1OCCO1:10.48991354,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,145
+"5 m LiFSI in MODL (2-methoxyl-1,3-dioxolane), no additives",1.11,0.05,COC1OCCO1:10.48991354,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:5,,,25.0,145
+"6 m LiFSI in MODL (2-methoxyl-1,3-dioxolane), no additives",0.89,-0.05,COC1OCCO1:10.48991354,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:6.6,,,25.0,145
+"10 m LiFSI in MODL (2-methoxyl-1,3-dioxolane), no additives",0.25,-0.6,COC1OCCO1:10.48991354,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:10,,,25.0,145
+"1 M LiFSI in THP/FEC (95:5, v:v) with 3 wt% LiNO3",3.88,0.59,C1CCOCC1:9.706257982,C1C(OC(=O)O1)F:0.6854998397,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,[Li+].[N+](=O)([O-])[O-]:0.4767672226,,25.0,147
+1 M LiFSI in F5DEE,2.72,0.43,FC(F)COCCOCC(F)(F)(F):6.197989737,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,148
+"1 M LiFSI in F3DEE:F4DEE:F5DEE:F6DEE (F3-6DEE, equivolume mixture of four fluorinated DEE derivatives)",4.32,0.64,FC(F)(F)COCCOCC:1.55389548528011,FC(F)COCCOCC(F)(F):1.63037761649311,FC(F)COCCOCC(F)(F)(F):1.54949743432053,FC(F)(F)COCCOCC(F)(F)(F):1.54782331817941,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,148
+"1 M LiFSI in EMC:TTE (15:85, v/v)",0.88,-0.05,CCOC(=O)OC:1.449512026,FC(F)C(F)(F)COC(F)(F)C(F)F:5.612046604,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,148
+"1 M LiFSI in EMC:DMC:DEC:TTE (7.5:3.75:3.75:85, v/v)",0.92,-0.04,CCOC(=O)OC:0.7247560132,COC(=O)OC:0.445447279,O=C(OCC)OCC:0.3095107085,FC(F)C(F)(F)COC(F)(F)C(F)F:5.612046604,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,148
+"1 M LiFSI in EMC:DMC:DEC:TTE:BTFE (7.5:3.75:3.75:42.5:42.5, v/v)",1.59,0.2,CCOC(=O)OC:0.7247560132,COC(=O)OC:0.445447279,O=C(OCC)OCC:0.3095107085,FC(F)C(F)(F)COC(F)(F)C(F)F:2.806023302,C(C(F)(F)F)OCC(F)(F)F:3.277274924,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,148
+1 M LiFSI in DME (10% v/v) + TTE (90% v/v),1.67,0.22,COCCOC:0.9631602308,FC(F)C(F)(F)COC(F)(F)C(F)F:5.942166993,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,148
+1 M LiFSI in DME (5% v/v) + DEE (2.5% v/v) + DEGDME (2.5% v/v) + TTE (90% v/v),1.89,0.28,COCCOC:0.4815801154,CCOCCOCC:0.1781301831,COCCOCCOC:0.1745919356,FC(F)C(F)(F)COC(F)(F)C(F)F:5.942166993,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,148
+1 M LiFSI in DME (5% v/v) + DEE (2.5% v/v) + DEGDME (2.5% v/v) + TTE (45% v/v) + BTFE (45% v/v),3.57,0.55,COCCOC:0.4815801154,CCOCCOCC:0.1781301831,COCCOCCOC:0.1745919356,FC(F)C(F)(F)COC(F)(F)C(F)F:2.971083496,C(C(F)(F)F)OCC(F)(F)F:3.470055802,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,148
+1 M LiFSI in DME:HFC (1:7 v/v),5.69,0.76,COCCOC:1.203950289,C(C(C(F)(F)F)F)(C(C(F)(F)F)(F)F)F:5.554453481,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,149
+4 M LiFSI in DME (HCE),5.12,0.71,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4,,,25.0,149
+1.0 m LiTFSI in DME,17.2,1.24,COCCOC:9.631602308,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,150
+1.0 m LiTFSI in DME/DOL,15.4,1.19,O1CCOC1:7.15462080509733,COCCOC:4.81580115401687,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,150
+1.0 m LiFSI in DME/DOL,21.7,1.34,O1CCOC1:7.15462080509733,COCCOC:4.81580115401687,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,150
+"1.0 m LiFSI, 0.1 m LiNO3 in DME/DOL",22.3,1.35,O1CCOC1:7.15462080509733,COCCOC:4.81580115401687,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,[Li+].[N+](=O)([O-])[O-]:0.1,,25.0,150
+1 M LiTFSI in Succinonitrile (SN),3.97,0.6,C(CC#N)C#N:12.298664,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,151
+1 M LiTFSI in Succinonitrile (SN) with 10 wt% FEC,4.1,0.61,C(CC#N)C#N:12.298664,C1C(OC(=O)O1)F:1.199473853,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,151
+2.1 M LiTFSI in Succinonitrile (SN) with 10 wt% FEC,2.06,0.31,C(CC#N)C#N:12.298664,C1C(OC(=O)O1)F:1.497245743,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:2.1,,,25.0,151
+1 M LiTFSI in SN/TTE (40:60 vol/vol) with 10 wt.% FEC,1.89,0.28,C(CC#N)C#N:4.919465601,FC(F)C(F)(F)COC(F)(F)C(F)F:3.961444662,C1C(OC(=O)O1)F:1.238406849,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,151
+1 M LiTFSI in EC/TTE (40:60 vol/vol) with 10 wt.% FEC,2.84,0.45,C1COC(=O)O1:5.995775703,FC(F)C(F)(F)COC(F)(F)C(F)F:3.961444662,C1C(OC(=O)O1)F:1.364757576,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,151
+"2 M LiTFSI in DEE:FEC (7:3 vol/vol), denoted as 2T",7.09,0.85,CCOCCOCC:4.987645127,C1C(OC(=O)O1)F:4.112999038,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:2,,,25.0,154
+"1 M LiTFSI + 1 M LiBF4 in DEE:FEC (7:3 vol/vol), denoted as TB (dual salt)",7.33,0.87,CCOCCOCC:4.987645127,C1C(OC(=O)O1)F:4.112999038,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,[Li+].F[B-](F)(F)(F):1,,25.0,154
+"2 M LiBF4 in DEE:FEC (7:3 vol/vol), denoted as 2B",5.49,0.74,CCOCCOCC:4.987645127,C1C(OC(=O)O1)F:4.112999038,,,,[Li+].F[B-](F)(F)(F):2,,,25.0,154
+"2 M LiFSI in TMMS (tetramethyl-1,3-dimethoxydisiloxane), no additives",1.59,0.2,CO[Si](C)(C)O[Si](C)(C)OC:4.583804918,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,155
+CME (0.2 M LiFNFSI in TEP:BTFE (1:1 vol/vol)),3.1,0.49,CCOP(=O)(OCC)OCC:2.942581237,C(C(F)(F)F)OCC(F)(F)F:3.855617558,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F:0.2,,,25.0,156
+CME (0.4 M LiFNFSI in TEP:BTFE (1:1 vol/vol)),3.55,0.55,CCOP(=O)(OCC)OCC:2.942581237,C(C(F)(F)F)OCC(F)(F)F:3.855617558,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F:0.4,,,25.0,156
+CME (0.6 M LiFNFSI in TEP:BTFE (1:1 vol/vol)),3.76,0.57,CCOP(=O)(OCC)OCC:2.942581237,C(C(F)(F)F)OCC(F)(F)F:3.855617558,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F:0.6,,,25.0,156
+CME (0.8 M LiFNFSI in TEP:BTFE (1:1 vol/vol)),4.05,0.61,CCOP(=O)(OCC)OCC:2.942581237,C(C(F)(F)F)OCC(F)(F)F:3.855617558,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F:0.8,,,25.0,156
+CME (1.0 M LiFNFSI in TEP:BTFE (1:1 vol/vol)),3.83,0.58,CCOP(=O)(OCC)OCC:2.942581237,C(C(F)(F)F)OCC(F)(F)F:3.855617558,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F:1,,,25.0,156
+VSE (0.2 M LiFNFSI in FEBFP),3.06,0.49,C(C(F)(F)F)OP(=O)(OCC(F)(F)F)OCCOCC(F)(F)F:3.607131815,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F:0.2,,,25.0,156
+VSE (0.4 M LiFNFSI in FEBFP),3.44,0.54,C(C(F)(F)F)OP(=O)(OCC(F)(F)F)OCCOCC(F)(F)F:3.607131815,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F:0.4,,,25.0,156
+VSE (0.6 M LiFNFSI in FEBFP),3.62,0.56,C(C(F)(F)F)OP(=O)(OCC(F)(F)F)OCCOCC(F)(F)F:3.607131815,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F:0.6,,,25.0,156
+VSE (0.8 M LiFNFSI in FEBFP),3.9,0.59,C(C(F)(F)F)OP(=O)(OCC(F)(F)F)OCCOCC(F)(F)F:3.607131815,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F:0.8,,,25.0,156
+VSE (1.0 M LiFNFSI in FEBFP),3.66,0.56,C(C(F)(F)F)OP(=O)(OCC(F)(F)F)OCCOCC(F)(F)F:3.607131815,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F:1,,,25.0,156
+1 M LiFSI DCEP,1.79,0.25,CCOP(=O)(CCC#N)OCC:5.649717514,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,157
+3 M LiFSI DCEP,0.43,-0.37,CCOP(=O)(CCC#N)OCC:5.649717514,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,157
+1.5 M LiFSI in DCEP:TTE (1:1 vol%),1.34,0.13,CCOP(=O)(CCC#N)OCC:2.824858757,FC(F)C(F)(F)COC(F)(F)C(F)F:3.301203885,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,,,25.0,157
+1 M LiFSI in DCEP:TTE (1:2 vol%),1.82,0.26,CCOP(=O)(CCC#N)OCC:1.883239171,FC(F)C(F)(F)COC(F)(F)C(F)F:4.40160518,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,157
+2.1 M LiFSI in EMP,4.8,0.68,CCOCCCOC:7.091478379,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.1,,,20.0,158
+1.1 M LiFSI in F1EMP,6.06,0.78,C(F)COCCCOC:7.204230007,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.1,,,20.0,158
+2.1 M LiFSI in F1EMP,4.8,0.68,C(F)COCCCOC:7.204230007,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.1,,,20.0,158
+1.1 M LiFSI in F2EMP,2.74,0.44,C(F)(F)COCCCOC:6.862999481,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.1,,,20.0,158
+2.1 M LiFSI in F2EMP,2.94,0.47,C(F)(F)COCCCOC:6.862999481,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.1,,,20.0,158
+1.1 M LiFSI in F3EMP,1.47,0.17,C(F)(F)(F)COCCCOC:6.372349695,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.1,,,20.0,158
+2.1 M LiFSI in F3EMP,2.09,0.32,C(F)(F)(F)COCCCOC:6.372349695,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.1,,,20.0,158
+"1.0 M LiPF6 in EC/DMC (1:1, v/v) + 4 vol% F6-0",12.4,1.09,C1COC(=O)O1:7.194930844,COC(=O)OC:5.701725172,FC1(F)C(=O)OC(=O)C(F)(F)C1(F)F:0.2979643308,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,159
+"1.0 M LiPF6 in EC/DMC (1:1, v/v) + 4 vol% F6-0 + 0.08 M LNO",12.9,1.11,C1COC(=O)O1:7.194930844,COC(=O)OC:5.701725172,FC1(F)C(=O)OC(=O)C(F)(F)C1(F)F:0.2979643308,,,[Li+].F[P-](F)(F)(F)(F)F:1,[Li+].[N+](=O)([O-])[O-]:0.08,,25.0,159
+LiFSI: FSE = 1:5 molar ratio (1.92 mol L-1),5.64,0.75,FS(CC)(=O)=O:5,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,161
+LiFSI: FSNDM = 1:5 molar ratio (1.73 mol L-1),3.07,0.49,FS(=O)(=O)N(C)C:5,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,161
+LiFSI: FSNDE = 1:5 molar ratio (1.34 mol L-1),1.51,0.18,FS(=O)(=O)N(CC)CC:5,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,161
+LiFSI: FSNP = 1:5 molar ratio (1.49 mol L-1),1.69,0.23,FS(=O)(=O)N1CCCC1:5,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,161
+"2 M LiFSI in 2,2,2-trifluoroethyl mesylate (TFEM)",3.78,0.58,C(F)(F)(F)COS(C)(=O)=O:8.533093808,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,162
+2 M LiFSI in ethyl mesylate (EM),10.36,1.02,CCOS(C)(=O)=O:9.713273196,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,162
+"1 M LiFSI in 2,2,2-trifluoroethyl mesylate (TFEM)",2.98,0.47,C(F)(F)(F)COS(C)(=O)=O:8.533093808,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,162
+"1.2 M LiFSI in 2,2,2-trifluoroethyl mesylate (TFEM)",3.19,0.5,C(F)(F)(F)COS(C)(=O)=O:8.533093808,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,,,25.0,162
+"1.5 M LiFSI in 2,2,2-trifluoroethyl mesylate (TFEM)",3.44,0.54,C(F)(F)(F)COS(C)(=O)=O:8.533093808,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,,,25.0,162
+"1.8 M LiFSI in 2,2,2-trifluoroethyl mesylate (TFEM)",3.45,0.54,C(F)(F)(F)COS(C)(=O)=O:8.533093808,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.8,,,25.0,162
+LiFSI: TFEP: PFPN (1:1.7:4 by mol.) (DWCE),0.33,-0.48,C(C(F)(F)F)OP(=O)(OCC(F)(F)F)OCC(F)(F)F:1.7,CCOP1(=NP(=NP(=N1)(F)F)(F)F)F:4,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,163
+LiFSI:TFEP = 1:1.7 (molar) (HCE formulation),0.5,-0.3,C(C(F)(F)F)OP(=O)(OCC(F)(F)F)OCC(F)(F)F:1.7,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,163
+1 M LiFSI in EGDME:TTE (1:1 vol/vol),7.15,0.85,COCCOC:4.815801154,FC(F)C(F)(F)COC(F)(F)C(F)F:3.301203885,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,165
+1 M LiFSI in EGDEE:TTE (1:1 vol/vol),6.88,0.84,CCOCCOCC:3.562603662,FC(F)C(F)(F)COC(F)(F)C(F)F:3.301203885,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,165
+1 M LiFSI in EGDBE:TTE (1:1 vol/vol),4.01,0.6,CCCCOCCOCCCC:2.409915079,FC(F)C(F)(F)COC(F)(F)C(F)F:3.301203885,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,165
+0.8 M LiFSI in TEOS,0.32,-0.49,CCO[Si](OCC)(OCC)OCC:4.478471656,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.8,,,25.0,166
+1.5 M LiFSI in TEOS,0.67,-0.17,CCO[Si](OCC)(OCC)OCC:4.478471656,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,,,25.0,166
+2.1 M LiFSI in TEOS,0.68,-0.17,CCO[Si](OCC)(OCC)OCC:4.478471656,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.1,,,25.0,166
+3 M LiFSI in TEOS,0.5,-0.3,CCO[Si](OCC)(OCC)OCC:4.478471656,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,166
+0.8 M LiFSI in MTES (methyltriethoxysilane),0.52,-0.28,CCO[Si](OCC)(C)OCC:5.019629837,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.8,,,25.0,166
+1.5 M LiFSI in MTES (methyltriethoxysilane),1.1,0.04,CCO[Si](OCC)(C)OCC:5.019629837,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,,,25.0,166
+2.1 M LiFSI in MTES (methyltriethoxysilane),1.11,0.05,CCO[Si](OCC)(C)OCC:5.019629837,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.1,,,25.0,166
+3 M LiFSI in MTES (methyltriethoxysilane),0.92,-0.03,CCO[Si](OCC)(C)OCC:5.019629837,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,166
+0.8 M LiFSI in DMMS (dimethyldimethoxysilane),1.05,0.02,CO[Si](C)(C)OC:7.319913492,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.8,,,25.0,166
+1.5 M LiFSI in DMMS (dimethyldimethoxysilane),1.89,0.28,CO[Si](C)(C)OC:7.319913492,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,,,25.0,166
+2.1 M LiFSI in DMMS (dimethyldimethoxysilane),2.12,0.33,CO[Si](C)(C)OC:7.319913492,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.1,,,25.0,166
+3 M LiFSI in DMMS (dimethyldimethoxysilane),1.64,0.21,CO[Si](C)(C)OC:7.319913492,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3,,,25.0,166
+0.5 M LiFSI in DMS (dimethyl dimethoxy siliane),0.25,-0.6,CO[Si](C)(C)OC:7.319913492,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.5,,,25.0,167
+1.5 M LiFSI in DMS (dimethyl dimethoxy siliane),1.93,0.28,CO[Si](C)(C)OC:7.319913492,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,,,25.0,167
+"LiFSI:DMAC:HFE (1.0:1.3:2.0 mol/mol/mol), denoted as LHCE-DMAC",1.63,0.21,CN(C)C(C)=O:1.3,FC(F)C(F)(F)COC(F)(F)C(F)F:2,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,169
+"LiFSI:DMC:HFE (1.0:1.6:2.0 mol/mol/mol), denoted as LHCE-DMC",1.27,0.1,COC(=O)OC:1.6,FC(F)C(F)(F)COC(F)(F)C(F)F:2,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,169
+"1.0 m LiFSI in 1,2-dimethoxyethane (DME)",12.4,1.09,COCCOC:9.631602308,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,170
+1.0 m LiFSI in bis(2-methoxyethoxy)methane (BME),3.6,0.56,COCCOCOCCOC:6.059683313,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,170
+LHCE-G1: LiFSI:G1:TTE = 1:1.2:3 (molar ratio),1.7,0.23,COCCOC:1.2 ,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,171
+LHCE-G2: LiFSI:G2:TTE = 1:1:3 (molar ratio),2.5,0.4,COCCOCCOC:1,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,171
+LHCE-G3: LiFSI:G3:TTE = 1:1:3 (molar ratio),3.23,0.51,COCCOCCOCCOC:1,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,171
+LHCE-G4: LiFSI:G4:TTE = 1:0.64:3 (molar ratio),5.51,0.74,COCCOCCOCCOCCOC:0.64,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,171
+"1 M LiPF6 in AN2-DME:FEC:TTE (2:2:1, vol%)",3.14,0.5,C(COCCOCCC#N)C#N:2.544589774,C1C(OC(=O)O1)F:5.483998718,FC(F)C(F)(F)COC(F)(F)C(F)F:1.320481554,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,172
+"1 M LiPF6 in DME:FEC:TTE (2:2:1, vol%)",10.98,1.04,COCCOC:3.852640923,C1C(OC(=O)O1)F:5.483998718,FC(F)C(F)(F)COC(F)(F)C(F)F:1.320481554,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,172
+"1 M LiPF6 in AN:FEC:TTE (2:2:1, vol%)",18.55,1.27,CC#N:7.658206265,C1C(OC(=O)O1)F:5.483998718,FC(F)C(F)(F)COC(F)(F)C(F)F:1.320481554,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,172
+"LiFSI:DME:TTE = 1:1:3 (molar ratio), labeled as C2-ELY",1.7,0.23,COCCOC:1,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,173
+"LiFSI:DMP:TTE = 1:1:3 (molar ratio), labeled as C3-ELY",4.33,0.64,COCCCOC:1,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,173
+"LiFSI:DMB:TTE = 1:1:3 (molar ratio), labeled as C4-ELY",5.9,0.77,COCCCCOC:1,FC(F)C(F)(F)COC(F)(F)C(F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,173
+2 M LiTFSI in DOL,13.2,1.12,O1CCOC1:14.30924161,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:2,,,25.0,174
+2 M LiFSI in TFDOL,3.7,0.57,C1OCOC1C(F)(F)F:9.853811666,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2,,,25.0,174
+1 M LiFSI in TOF,5.5,0.74,CCOC(OCC)OCC:6.012145749,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,175
+1 M LiFSI in cFTOF,0.7,-0.15,C1OC(OCC)OC1C(F)(F)F:6.769462204,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,175
+1.0 M LiFSI + 0.3 M LiNO3 in CNTHP (4-cyanotetrahydropyran) (CHEE),1.5,0.18,C1COCCC1C#N:9.087637214,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,[Li+].[N+](=O)([O-])[O-]:0.3,,25.0,176
+1 m LiPF6 in FEC:DEC (1:1 vol/vol),6.51,0.81,C1C(OC(=O)O1)F:6.854998397,O=C(OCC)OCC:4.126809447,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,177
+1 m LiPF6 in DFEC:DEC (1:1 vol/vol),4.73,0.67,FC1OC(=O)OC1F:6.127055788,O=C(OCC)OCC:4.126809447,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,177
+1 M LiPF6 in DEC,2.43,0.39,O=C(OCC)OCC:8.253618894,,,,,[Li+].F[P-](F)(F)(F)(F)F:1,,,25.0,177
+"1.2 M LiPF6 in 2,2-difluoroethyl acetate (DFEA) with 10 wt% FEC",7.2,0.86,CC(=O)OCC(F)F:9.750987187,C1C(OC(=O)O1)F:1.312808569,,,,[Li+].F[P-](F)(F)(F)(F)F:1.2,,,25.0,179
+"1.2 M LiPF6 in 2,2,2-trifluoroethyl acetate (TFEA)",2.5,0.4,CC(=O)OCC(F)F:9.750987187,,,,,[Li+].F[P-](F)(F)(F)(F)F:1.2,,,25.0,179
+LiFSI-2.5TMOS-0FB135,0.46,-0.34,CO[Si](C)(C)C:2.5,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,180
+LiFSI-2.5TMOS-1.0FB135,0.92,-0.04,CO[Si](C)(C)C:2.5,Fc1cc(F)cc(F)c1:1,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,180
+LiFSI-2.5TMOS-2.0FB135,1.21,0.08,CO[Si](C)(C)C:2.5,Fc1cc(F)cc(F)c1:2,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,180
+LiFSI-2.5TMOS-3.0FB135,1.25,0.1,CO[Si](C)(C)C:2.5,Fc1cc(F)cc(F)c1:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,180
+LiFSI-2.5TMOS-3.5FB135,1.18,0.07,CO[Si](C)(C)C:2.5,Fc1cc(F)cc(F)c1:3.5,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,180
+LiFSI-2.5TMOS-4.0FB135,0.87,-0.06,CO[Si](C)(C)C:2.5,Fc1cc(F)cc(F)c1:4,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,180
+LiFSI-2.5TMOS-0FB123,0.46,-0.34,CO[Si](C)(C)C:2.5,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,180
+LiFSI-2.5TMOS-1.0FB123,0.9,-0.05,CO[Si](C)(C)C:2.5,C1=CC(=C(C(=C1)F)F)F:1,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,180
+LiFSI-2.5TMOS-2.0FB123,1.13,0.05,CO[Si](C)(C)C:2.5,C1=CC(=C(C(=C1)F)F)F:2,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,180
+LiFSI-2.5TMOS-3.0FB123,1.2,0.08,CO[Si](C)(C)C:2.5,C1=CC(=C(C(=C1)F)F)F:3,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,180
+LiFSI-2.5TMOS-3.5FB123,1.1,0.04,CO[Si](C)(C)C:2.5,C1=CC(=C(C(=C1)F)F)F:3.5,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,180
+LiFSI-2.5TMOS-4.0FB123,0.8,-0.1,CO[Si](C)(C)C:2.5,C1=CC(=C(C(=C1)F)F)F:4,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,25.0,180
+1.0 M LiFSI in F2DEO,1.39,0.14,FCCO[Si](C)(C)OCCF:5.644198415,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,182
+1.0 M LiFSI in MFS,0.95,-0.02,C[Si](C)(C)OCCF:6.3123899,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,182
+1.0 M LiFSI in DEO,0.75,-0.12,CCO[Si](C)(C)OCC:5.799838144,,,,,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1,,,30.0,182
+1 M LiTFSI in FEON,2.87,0.46,C(COCC(F)(F)F)C#N:7.857609406,,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,30.0,183
+1 M LiTFSI in FEC:FEON (1:1 by vol.),2.97,0.47,C1C(OC(=O)O1)F:6.854998397,C(COCC(F)(F)F)C#N:3.928804703,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,30.0,183
+0.8 M LiTFSI + 0.4 M LiDFOB in FMMA:FEC (7:3 by volume),4.8,0.68,CON(C)C(=O)C(F)(F)F:5.788401553,C1C(OC(=O)O1)F:4.112999038,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:0.8,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:0.4,,25.0,184
+0.8 M LiTFSI + 0.4 M LiDFOB in FDMA:FEC (7:3 by volume),2.3,0.36,CN(C)C(=O)C(F)(F)F:6.2509745,C1C(OC(=O)O1)F:4.112999038,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:0.8,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:0.4,,25.0,184
+0.8 M LiTFSI + 0.4 M LiDFOB in DMA:FEC (7:3 by volume),6.3,0.8,CN(C)C(C)=O:7.528696051,C1C(OC(=O)O1)F:4.112999038,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:0.8,[Li+].[B-]1(OC(=O)C(=O)O1)(F)F:0.4,,25.0,184
+"1 M LiTFSI EC:EMC (3:7, v/v)",5.7,0.76,C1COC(=O)O1:4.496831778,CCOC(=O)OC:6.764389457,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F:1,,,25.0,185
+"1 M LiDFTFSI EC:EMC (3:7, v/v)",3.7,0.57,C1COC(=O)O1:4.496831778,CCOC(=O)OC:6.764389457,,,,[Li+].C(F)(F)(F)S(=O)(=O)[N-]S(=O)(=O)C(F)(F):1,,,25.0,185

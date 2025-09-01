@@ -1,0 +1,107 @@
+Electrolyte,Ionic Conductivity,LIC,Temperature,CE (%),LCE,Method,Current (mA/cm2),Capacity (mAh/cm2),Cycle,Solvent,Class,Fluorinated,Salt,Reference
+1 M LiFSI DMB,3.8,0.58,25.0,97.7,1.638,Aurbach,0.5,1.0,10,COCCCCOC:7.24367870561554,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,3
+2.2 M LiFSI TEP (= 1:2 MR),1.3,0.11,25.0,99.0,2.0,Cycle,0.2,1.0,140,CCOP(=O)(OCC)OCC:5.88516247330541,Phosphate,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.2,8
+3.2 M LiFSI TEP,0.52,-0.28,25.0,97.3,1.569,Aurbach,0.5,1.0,10,CCOP(=O)(OCC)OCC:5.88516247330541,Phosphate,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.2,13
+4 M LiFSI DME,5.7,0.76,25.0,99.1,2.046,Cycle,0.2,1.0,>500,COCCOC:9.63160230803373,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4.0,18
+5.5 M LiFSI DMC,1.0,0.0,30.0,99.2,2.097,Aurbach,0.5,1.0,10,COC(=O)OC:1.1,Carbonate,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,23
+LiFSI DMC (1:1.5 mol),2.3,0.36,25.0,98.3,1.77,Cycle,1.0,1.0,200,COC(=O)OC:1.5,Carbonate,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,25
+LiFSI-DME (1:1.2),4.18,0.62,30.0,99.1,2.046,Aurbach,0.5,1.0,10,COCCOC:1.2,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,32
+1 M LiFSI in tetraglyme,25.0,1.4,30.0,94.0,1.222,Cycle,0.1,0.2,30,COCCOCCOCCOCCOC:4.53940146484551,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,42
+1 M LiFSI THF,5.86,0.77,25.1,95.8,1.377,Cycle,1.0,1.0,40,C1CCOC1:12.3155442139132,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,45
+"1 M LiFSI 1,4-DX",2.02,0.31,25.2,97.5,1.602,Cycle,1.0,1.0,40,O1CCOCC1:10.3789288162146,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,45
+1 M LiFSI MeTHF,6.18,0.79,25.3,98.2,1.745,Cycle,1.0,1.0,40,CC1CCC(C)O1:9.91524439800302,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,45
+1 M LiFSI DMeTHF,2.69,0.43,25.4,98.4,1.796,Cycle,1.0,1.0,40,CC1CCC(C)O1:8.31702544031311,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,45
+2 M LiFSI FEC,4.72,0.67,25.0,96.76,1.489,Cycle,0.25,0.5,100,C1C(OC(=O)O1)F:13.709996794086,Carbonate,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,47
+4 M LiFSI FEC,1.65,0.22,25.0,97.41,1.587,Cycle,0.25,0.5,100,C1C(OC(=O)O1)F:13.709996794086,Carbonate,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4.0,47
+7 M LiFSI FEC,1.24,0.09,25.0,97.74,1.646,Cycle,0.25,0.5,100,C1C(OC(=O)O1)F:13.709996794086,Carbonate,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:7.0,47
+LiFSI SL (1:3 molar),1.95,0.29,30.0,97.3,1.569,Cycle,1.0,0.5,370,O=S1(=O)CCCC1:3.0,Sulfone,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,50
+LiFSI SL (1:2.5 molar),1.71,0.23,30.0,98.0,1.699,Cycle,1.0,0.5,440,O=S1(=O)CCCC1:2.5,Sulfone,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,50
+6 M LiFSI DMC,5.38,0.73,25.0,98.7,1.886,Cycle,0.2,1.0,200,COC(=O)OC:11.8785941073292,Carbonate,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:6.0,52
+10 M LiFSI DMC,1.58,0.2,25.0,99.2,2.097,Cycle,0.2,1.0,200,COC(=O)OC:11.8785941073292,Carbonate,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:10.0,52
+4.6 M LiFSI DME,8.35,0.92,25.0,98.2,1.745,Cycle,0.5,0.5,200,COCCOC:9.63160230803373,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4.6,56
+1 LiFSI - 3 TMS (SL),1.74,0.24,25.0,98.2,1.745,Cycle,0.5,1.0,150,O=S1(=O)CCCC1:3.0,Sulfone,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,57
+1 M LiFSI Diethyl Ether,0.96,-0.02,23.0,98.9,1.959,Aurbach,0.5,1.0,10,CCOCC:9.62493254182407,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,61
+1.2 M LiFSI DEE,11.0,1.04,25.0,99.0,2.0,Aurbach,0.5,1.0,10,CCOCCOCC:7.125207325,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,62
+1.2 M LiFSI F3DEE,6.18,0.79,25.0,99.3,2.155,Aurbach,0.5,1.0,10,FC(F)(F)COCCOCC:6.21558194112043,Ether,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,62
+1.2 M LiFSI F6DEE,4.48,0.65,25.0,99.3,2.155,Aurbach,0.5,1.0,10,FC(F)(F)COCCOCC(F)(F)(F):6.19129327271762,Ether,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,62
+1.2 M LiFSI F4DEE,4.76,0.68,25.0,99.5,2.301,Aurbach,0.5,1.0,10,FC(F)COCCOCC(F)(F):6.52151046597244,Ether,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,62
+1.2 M LiFSI F5DEE,5.01,0.7,25.0,99.5,2.301,Aurbach,0.5,1.0,10,FC(F)COCCOCC(F)(F)(F):6.19798973728211,Ether,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,62
+LiFSI-TEP 1:1 molar,0.39,-0.41,25.0,99.2,2.097,Cycle,0.2,1.0,300,CCOP(=O)(OCC)OCC:1.0,Phosphate,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,66
+2 M LiFSI/DME,6.79,0.83,25.0,98.09,1.719,Cycle,0.5,1.0,250,COCCOC:9.63160230803373,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,72
+2 M LiFSI/DEE,6.43,0.81,25.0,98.69,1.883,Cycle,0.5,1.0,175,CCOCCOCC:7.12520732491622,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,72
+2 M LiFSI/DPE,2.72,0.43,25.0,98.76,1.907,Cycle,0.5,1.0,175,CC(C)OCCOC(C)C:5.60783455520298,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,72
+2 M LiFSI DEP,1.51,0.18,25.0,99.53,2.328,Cycle,0.5,1.0,400,CCOCC(C)OCC:6.27846109623444,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,72
+2 M LiFSI/DME,6.79,0.83,25.0,98.32,1.775,Aurbach,0.5,1.0,10,COCCOC:9.63160230803373,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,72
+2 M LiFSI/DEE,6.43,0.81,25.0,98.66,1.873,Aurbach,0.5,1.0,10,CCOCCOCC:7.12520732491622,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,72
+2 M LiFSI/DPE,2.72,0.43,25.0,98.88,1.951,Aurbach,0.5,1.0,10,CC(C)OCCOC(C)C:5.60783455520298,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,72
+2 M LiFSI DEP,1.51,0.18,25.0,99.68,2.495,Aurbach,0.5,1.0,10,CCOCC(C)OCC:6.27846109623444,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,72
+5 M LiFSI DME,7.3,0.86,25.0,98.0,1.699,Aurbach,1.0,1.0,10,COCCOC:9.63160230803373,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:5.0,84
+1 M LiFSI DME,17.14,1.23,25.0,97.5,1.602,Aurbach,1.0,1.0,10,COCCOC:9.63160230803374,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,84
+0.3 M LiFSI DME,6.19,0.79,25.0,96.47,1.452,Aurbach,1.0,1.0,10,COCCOC:9.63160230803375,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.3,84
+2 M LiFSI DEE,11.13,1.05,25.0,99.45,2.26,Aurbach,0.5,0.5,50,CCOCCOCC:7.12520732491622,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,99
+4 M LiFSI DEE,5.5,0.74,25.0,99.57,2.367,Aurbach,0.5,0.5,50,CCOCCOCC:7.12520732491622,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:4.0,99
+1LiFSI:2.27TG ,3.45,0.54,25.0,98.37,1.788,Aurbach,0.5,1.0,10,COCCOCCOCCOCCOC:2.27,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,106
+1 M LiFSI DTDL,1.4,0.15,30.0,97.8,1.658,Cycle,1.0,1.0,300,COC1(OCC(O1)C(F)(F)F)OC:6.480977589,Ether,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,109
+1.8 M LiFSI DME,13.74,1.14,25.0,99.23,2.114,Aurbach,0.5,1.0,10,COCCOC:9.63160230803373,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.8,111
+1 M LiFSI THF2,2.22,0.35,25.0,98.04,1.708,Aurbach,0.5,1.0,10,CC1CCCO1:9.91593516325299,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,114
+1 M LiFSI F2DEM,2.32,0.37,25.0,99.8,2.699,Aurbach,0.5,0.5,10,FCCOCOCCF:8.778190123,Ether,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,116
+"2 M LiFSI (1,2-dimethoxypropane) DMP",7.66,0.88,25.0,99.2,2.097,Aurbach,0.5,1.0,10,COCC(C)OC:8.20931349,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,122
+2 M LiFSI TFDMP,7.4,0.87,25.0,99.6,2.398,Aurbach,0.5,1.0,10,COCC(C(F)(F)(F))OC:7.08322792815583,Ether,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,123
+2 M LiFSI BFE,7.99,0.9,30.0,99.75,2.602,Aurbach,0.5,1.0,10,C(F)COCCF:8.900756564,Ether,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,124
+0.9 M LiFSI DMM,2.93,0.47,25.0,99.3,2.155,Aurbach,0.5,1.0,10,COCOC:9.631602308,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.9,125
+3 M LiFSI DMM,8.03,0.9,25.0,99.4,2.222,Aurbach,0.5,1.0,10,COCOC:9.631602308,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.0,125
+0.9 M LiFSI DEM,0.88,-0.05,25.0,99.2,2.097,Aurbach,0.5,1.0,10,CCOCOCC:7.97887662,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.9,125
+3 M LiFSI DEM,2.73,0.44,25.0,99.3,2.155,Aurbach,0.5,1.0,10,CCOCOCC:7.97887662,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.0,125
+1.2 M LiFSI BMC,2.56,0.41,25.0,95.8,1.377,Aurbach,0.5,1.0,10,COCCOC(=O)OCCOC:5.999551016,Carbonate,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.2,127
+1.6 M LiFSI AzTFSA (1-azetidine trifluoromethanesulfonamide),1.05,0.02,25.0,99.4,2.222,Aurbach,0.5,0.5,10,C(F)(F)(F)S(=O)(=O)N1CCC1:6.872488898,Sulfone,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.6,129
+1.6 M LiFSI PyTFSA (1-pyrrolidine trifluoromethanesulfonamide),0.73,-0.14,25.0,99.2,2.097,Aurbach,0.5,0.5,10,C(F)(F)(F)S(=O)(=O)N1CCCC1:6.398897421,Sulfone,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.6,129
+1 M LiFSI PiTFSA (1-piperidine trifluoromethanesulfonamide),0.32,-0.49,25.0,98.7,1.886,Aurbach,0.5,0.5,10,C(F)(F)(F)S(=O)(=O)N1CCCCC1:5.986369497,Sulfone,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,129
+1.6 M LiFSI DmTFSA (dimethyl trifluoromethyl sulfonamide),1.36,0.13,25.0,99.4,2.222,Aurbach,0.5,0.5,10,C(F)(F)(F)S(=O)(=O)N(C)C:7.338413774,Sulfone,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.6,129
+1.8 M LiFSI DPE (dipropyl ether),0.61,-0.22,25.0,99.42,2.237,Aurbach,0.5,1.0,10,CCCOCCC:7.203186627,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.8,130
+1.8 M LiFSI DEE (diethyl ether),1.35,0.13,25.0,99.47,2.276,Aurbach,0.5,1.0,10,CCOCC:9.624932542,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.8,130
+1.5 M LiFSI MBE (n-butyl methyl ether),3.96,0.6,25.0,99.6,2.398,Aurbach,0.5,1.0,10,CCCCOC:8.44015882,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,134
+1 M LiFSI EME,10.87,1.04,25.0,99.12,2.056,Aurbach,0.5,1.0,10,COCCOCC:8.231397024,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,135
+1 M LiFSI MPE,6.91,0.84,25.0,99.13,2.06,Aurbach,0.5,1.0,10,COCCOCCC:7.120494161,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,135
+2 M LiFSI F2EME,6.97,0.84,25.0,99.2,2.097,Aurbach,0.5,1.0,10,COCCOCC(F)(F):7.783803068,Ether,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,135
+2 M LiFSI F3EME,4.6,0.66,25.0,99.5,2.301,Aurbach,0.5,1.0,10,COCCOCC(F)(F)(F):7.199494151,Ether,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,135
+1 M LiFSI PyTFSA,0.92,-0.04,25.0,99.85,2.824,Aurbach,0.5,1.0,10,C(F)(F)(F)S(=O)(=O)N1CCCC1:6.398897421,Sulfone,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,137
+1 M LiFSI PiTFSA,0.63,-0.2,25.0,99.49,2.292,Aurbach,0.5,1.0,10,C(F)(F)(F)S(=O)(=O)N1CCCCC1:5.986369497,Sulfone,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,137
+1 M LiFSI MoTFSA,0.1,-1.0,25.0,97.88,1.674,Aurbach,0.5,1.0,10,C(F)(F)(F)S(=O)(=O)N1CCOCC1:5.930656934,Sulfone,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,137
+1 M LiFSI MODOL,3.43,0.54,25.0,99.1,2.046,Aurbach,1.0,1.0,10,COC1OCCO1:10.48991354,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,145
+3 M LiFSI MODOL,2.65,0.42,25.0,99.36,2.194,Aurbach,1.0,1.0,10,COC1OCCO1:10.48991354,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.0,145
+5 M LiFSI MODOL,1.11,0.05,25.0,99.25,2.125,Aurbach,1.0,1.0,10,COC1OCCO1:10.48991354,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:5.0,145
+2 M LiFSI TMMS,1.59,0.2,25.0,99.6,2.398,Aurbach,0.5,1.0,10,CO[Si](C)(C)O[Si](C)(C)OC:4.583804918,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,155
+1 M LiFSI DCEP,1.79,0.25,25.0,98.0,1.699,Aurbach,0.1,0.2,10,CCOP(=O)(CCC#N)OCC:5.649717514,Phosphate,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,157
+2.1 M LiFSI EMP,4.8,0.68,20.0,99.0,2.0,Aurbach,0.5,1.0,10,CCOCCCOC:7.091478379,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.1,158
+2.1 M LiFSI F1EMP,4.8,0.68,20.0,98.47,1.815,Aurbach,0.5,1.0,10,C(F)COCCCOC:7.204230007,Ether,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.1,158
+2.1 M LiFSI F2EMP,2.94,0.47,20.0,99.35,2.187,Aurbach,0.5,1.0,10,C(F)(F)COCCCOC:6.862999481,Ether,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.1,158
+2.1 M LiFSI F3EMP,2.09,0.32,20.0,99.43,2.244,Aurbach,0.5,1.0,10,C(F)(F)(F)COCCCOC:6.372349695,Ether,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.1,158
+1LiFSI:5ESF,5.64,0.75,25.0,99.15,2.071,Aurbach,0.5,1.0,10,FS(CC)(=O)=O:5.0,Sulfone,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,161
+1LiFSI:5DMFSA,3.07,0.49,25.0,99.8,2.699,Aurbach,0.5,1.0,10,FS(=O)(=O)N(C)C:5.0,Sulfone,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,161
+1LiFSI:5DEFSA,1.51,0.18,25.0,99.8,2.699,Aurbach,0.5,1.0,10,FS(=O)(=O)N(CC)CC:5.0,Sulfone,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,161
+1LiFSI:5PyFSA,1.69,0.23,25.0,99.6,2.398,Aurbach,0.5,1.0,10,FS(=O)(=O)N1CCCC1:5.0,Sulfone,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,161
+2M LiFSI EM,10.36,1.02,25.0,92.96,1.152,Aurbach,0.5,1.0,9,CCOS(C)(=O)=O:9.713273196,Sulfone,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,162
+2M LiFSI TFEM,3.78,0.58,25.0,99.14,2.066,Aurbach,0.5,1.0,9,C(F)(F)(F)COS(C)(=O)=O:8.533093808,Sulfone,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,162
+0.8 M LiFSI in TEOS (tetraethoxysilane),0.32,-0.49,25.0,99.07,2.033,Aurbach,1.0,1.0,50,CCO[Si](OCC)(OCC)OCC:4.478471656,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.8,166
+1.5 M LiFSI in TEOS (tetraethoxysilane),0.67,-0.17,25.0,99.32,2.166,Aurbach,1.0,1.0,50,CCO[Si](OCC)(OCC)OCC:4.478471656,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,166
+2.1 M LiFSI in TEOS (tetraethoxysilane),0.68,-0.17,25.0,99.18,2.088,Aurbach,1.0,1.0,50,CCO[Si](OCC)(OCC)OCC:4.478471656,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.1,166
+3 M LiFSI in TEOS (tetraethoxysilane),0.5,-0.3,25.0,98.86,1.943,Aurbach,1.0,1.0,50,CCO[Si](OCC)(OCC)OCC:4.478471656,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.0,166
+0.8 M LiFSI in MTES (methyltriethoxysilane),0.52,-0.28,25.0,99.26,2.128,Aurbach,1.0,1.0,50,CCO[Si](OCC)(C)OCC:5.019629837,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.8,166
+1.5 M LiFSI in MTES (methyltriethoxysilane),1.1,0.04,25.0,99.5,2.298,Aurbach,1.0,1.0,50,CCO[Si](OCC)(C)OCC:5.019629837,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,166
+2.1 M LiFSI in MTES (methyltriethoxysilane),1.11,0.05,25.0,99.13,2.059,Aurbach,1.0,1.0,50,CCO[Si](OCC)(C)OCC:5.019629837,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.1,166
+3 M LiFSI in MTES (methyltriethoxysilane),0.92,-0.03,25.0,99.08,2.037,Aurbach,1.0,1.0,50,CCO[Si](OCC)(C)OCC:5.019629837,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.0,166
+0.8 M LiFSI in DMMS (dimethyldimethoxysilane),1.05,0.02,25.0,99.76,2.618,Aurbach,1.0,1.0,50,CO[Si](C)(C)OC:7.319913492,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.8,166
+1.5 M LiFSI in DMMS (dimethyldimethoxysilane),1.89,0.28,25.0,99.81,2.71,Aurbach,1.0,1.0,50,CO[Si](C)(C)OC:7.319913492,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,166
+2.1 M LiFSI in DMMS (dimethyldimethoxysilane),2.12,0.33,25.0,99.66,2.466,Aurbach,1.0,1.0,50,CO[Si](C)(C)OC:7.319913492,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.1,166
+3 M LiFSI in DMMS (dimethyldimethoxysilane),1.64,0.21,25.0,99.43,2.241,Aurbach,1.0,1.0,50,CO[Si](C)(C)OC:7.319913492,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:3.0,166
+1.5 M LiFSI DMDMS,1.93,0.28,25.0,99.4,2.222,Cycle,0.5,2.0,200,CO[Si](C)(C)OC:7.319913492,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,167
+0.5 M LiFSI DMDMS,0.25,-0.6,25.0,97.09,1.536,Aurbach,0.5,0.5,10,CO[Si](C)(C)OC:7.319913492,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:0.5,167
+1.5 M LiFSI DMDMS,1.93,0.28,25.0,98.47,1.815,Aurbach,0.5,0.5,10,CO[Si](C)(C)OC:7.319913492,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.5,167
+1 M LiFSI BMEM,3.6,0.56,25.0,98.5,1.824,Aurbach,0.5,0.5,20,COCCOCOCCOC:6.059683313,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,170
+2 M LiFSI TFDOL,3.7,0.57,25.0,98.5,1.824,Cycle,1.0,1.0,120,C1OCOC1C(F)(F)F:9.853811666,Ether,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:2.0,174
+1 M LiFSI TEOF,5.5,0.74,25.0,95.6,1.357,Cycle,0.5,1.0,100,CCOC(OCC)OCC:6.012145749,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,175
+1 M LiFSI TFEDOL,0.7,-0.15,25.0,98.6,1.854,Cycle,0.5,1.0,300,C1OC(OCC)OC1C(F)(F)F:6.769462204,Ether,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,175
+1 M LiFSI TEOF,5.5,0.74,25.0,97.8,1.658,Cycle,1.0,1.0,100,CCOC(OCC)OCC:6.012145749,Ether,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,175
+1 M LiFSI TFEDOL,0.7,-0.15,25.0,99.0,2.0,Cycle,1.0,1.0,200,C1OC(OCC)OC1C(F)(F)F:6.769462204,Ether,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,175
+1 M LiFSI DETMS,0.75,-0.12,30.0,99.1,2.046,Aurbach,0.5,1.0,10,CCO[Si](C)(C)OCC:5.799838144,Silane,False,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,182
+1 M LiFSI F2DETMS,1.39,0.14,30.0,99.3,2.155,Aurbach,0.5,1.0,10,FCCO[Si](C)(C)OCCF:5.644198415,Silane,True,[Li+].[N-](S(=O)(=O)F)S(=O)(=O)F:1.0,182

@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Electrolyte CE vs Conductivity (Vanilla JS + RDKit Hover + Log Toggles)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Plotly + PapaParse CDNs -->
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <!-- Pre-generated molecular structure mapping -->
+  <script src="molecules/smiles_mapping.js"></script>
+
+  <style>
+    body { font-family: Georgia, serif; margin: 20px; }
+    
+    /* Dual View Header Styles */
+    .view-selector {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 20px;
+    }
+    .view-option {
+      text-align: center;
+      cursor: pointer;
+      padding: 20px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+    .view-option:hover {
+      background: #f9fafb;
+      border-color: #d1d5db;
+    }
+    .view-option.active {
+      background: #f0f9ff;
+      border-color: #3b82f6;
+    }
+    .view-option h1 {
+      font-family: Georgia, serif;
+      font-size: 2.5rem;
+      margin: 0 0 15px 0;
+      color: #1f2937;
+    }
+    .view-option p {
+      font-family: Georgia, serif;
+      font-size: 1.1rem;
+      color: #555;
+      margin: 0;
+      line-height: 1.6;
+    }
+    .view-option.active h1 {
+      color: #1e40af;
+    }
+    .controls-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 12px; }
+    .row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 12px; }
+    .row > div { display: flex; flex-direction: column; }
+    label { font-size: 12px; font-weight: 600; margin-bottom: 6px; }
+    select, input[type="file"] { padding: 6px; border: 1px solid #ccc; border-radius: 6px; }
+    details { margin: 12px 0; }
+    #plot { width: 100%; height: 72vh; border: 1px solid #e5e7eb; border-radius: 12px; }
+    /* Visual Legend Styles */
+    .visual-legend { 
+      position: relative;
+      margin-top: 20px; 
+      padding: 15px; 
+      background: #f9fafb; 
+      border-radius: 10px; 
+      border: 1px solid #e5e7eb;
+      min-height: 80px;
+      width: 100%;
+    }
+    .legend-section { 
+      position: absolute;
+      display: flex; 
+      flex-direction: column; 
+      align-items: center;
+      gap: 8px;
+      transform: translateX(-50%);
+    }
+    .legend-section:nth-child(1) { left: 25%; }
+    .legend-section:nth-child(2) { left: 50%; }
+    .legend-section:nth-child(3) { left: 75%; }
+    .legend-title { 
+      font-weight: 600; 
+      font-size: 13px; 
+      color: #374151; 
+      text-align: center;
+      white-space: nowrap;
+    }
+    .color-legend, .size-legend, .shape-legend { 
+      display: flex; 
+      gap: 12px; 
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .color-item, .size-item, .shape-item { display: flex; align-items: center; gap: 6px; font-size: 12px; }
+    .color-dot { width: 12px; height: 12px; border-radius: 50%; border: 1px solid #333; }
+    .size-dot { background: hsl(200, 70%, 50%); border-radius: 50%; border: 1px solid #333; }
+    .size-dot.small { width: 10px; height: 10px; }
+    .size-dot.medium { width: 16px; height: 16px; }
+    .size-dot.large { width: 24px; height: 24px; }
+    .shape-dot { width: 12px; height: 12px; background: hsl(200, 70%, 50%); border: 1px solid #333; }
+    .shape-dot.circle { border-radius: 50%; }
+    .shape-dot.square { border-radius: 2px; }
+    
+    /* View-specific visibility */
+    .electrolyte-only { display: flex; }
+    .solvent-view .electrolyte-only { display: none; }
+    .solvent-view .method-filter-container { display: none; }
+    .solvent-view #log-toggles { display: none; }
+    
+    /* Solvent view - center the single legend section */
+    .solvent-view .legend-section:nth-child(1) { left: 50%; }
+
+    /* Hover tooltip */
+    #hoverTip {
+      position: fixed; pointer-events: none; z-index: 9999; background: #fff;
+      border: 1px solid #e5e7eb; border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      padding: 10px 12px; min-width: 260px; max-width: 360px; font-size: 13px; display: none;
+    }
+    #hoverTip h4 { margin: 0 0 6px; font-size: 14px; }
+    #hoverTip .kv { margin: 6px 0 0; color: #374151; }
+    #hoverTip .mol { margin-top: 6px; border: 1px dashed #e5e7eb; border-radius: 8px; padding: 6px; }
+
+    .toggles {
+      display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 12px;
+      align-items: end;
+    }
+    .toggle-box { display: flex; gap: 8px; align-items: center; }
+    .muted { color: #6b7280; font-size: 12px; }
+    .badge { display: inline-block; padding: 2px 6px; border:1px solid #e5e7eb; border-radius: 999px; background:#fff; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <!-- Dual View Header -->
+  <div class="view-selector">
+    <div class="view-option active" id="electrolyte-view" data-view="electrolyte">
+      <h1>Electrolyte Landscape</h1>
+      <p>Interactive visualization of single-salt single-solvent electrolyte performance data. Hover over a point for details.</p>
+    </div>
+    <div class="view-option" id="solvent-view" data-view="solvent">
+      <h1>Solvent Landscape</h1>
+      <p>Interactive visualization of solvent molecules in the electrolytes. Hover over a point for details.</p>
+    </div>
+  </div>
+
+  <div class="controls-row">
+    <div>
+      <label>Filter — Solvent Class</label>
+      <select id="filterClass"><option>ALL</option></select>
+    </div>
+    <div id="method-filter" class="method-filter-container">
+      <label>Filter — Method</label>
+      <select id="filterMethod"><option>ALL</option></select>
+    </div>
+    <div>
+      <label>Reset</label>
+      <button id="resetBtn" style="padding:8px;border:1px solid #ccc;border-radius:8px;background:#fff;cursor:pointer;">Reset Filters</button>
+    </div>
+    <div></div>
+  </div>
+
+  <!-- Log toggles - only shown for electrolyte view -->
+  <div class="toggles" id="log-toggles">
+    <div class="toggle-box">
+      <input type="checkbox" id="logX" />
+      <label for="logX">Log scale — Ionic Conductivity (x-axis)</label>
+    </div>
+    <div class="toggle-box">
+      <input type="checkbox" id="logY" />
+      <label for="logY">Log scale — CE (y-axis)</label>
+    </div>
+    <div class="muted">
+      <span class="badge" id="excludedBadge" title="Points hidden due to non-positive values on a log-scaled axis">Excluded: 0</span>
+    </div>
+  </div>
+
+
+
+  <div id="plot">
+    <div id="loading" style="text-align:center;padding:40px;color:#666;font-size:16px;">
+      Loading electrolyte data visualization...
+    </div>
+  </div>
+  <div id="hoverTip"></div>
+
+  <!-- Visual Legend -->
+  <div class="visual-legend">
+    <div class="legend-section">
+      <div class="legend-title">Solvent Class</div>
+      <div class="color-legend">
+        <div class="color-item"><div class="color-dot" style="background: hsl(30, 70%, 50%)"></div> Ether</div>
+        <div class="color-item"><div class="color-dot" style="background: hsl(280, 70%, 50%)"></div> Phosphate</div>
+        <div class="color-item"><div class="color-dot" style="background: hsl(120, 70%, 50%)"></div> Carbonate</div>
+        <div class="color-item"><div class="color-dot" style="background: hsl(200, 70%, 50%)"></div> Sulfone</div>
+        <div class="color-item"><div class="color-dot" style="background: hsl(340, 70%, 50%)"></div> Silane</div>
+      </div>
+    </div>
+    <div class="legend-section electrolyte-only">
+      <div class="legend-title">Salt:Solvent Ratio</div>
+      <div class="size-legend">
+        <div class="size-item"><div class="size-dot small"></div> 1:8</div>
+        <div class="size-item"><div class="size-dot medium"></div> 1:4</div>
+        <div class="size-item"><div class="size-dot large"></div> 1:2</div>
+      </div>
+    </div>
+    <div class="legend-section electrolyte-only">
+      <div class="legend-title">Method</div>
+      <div class="shape-legend">
+        <div class="shape-item"><div class="shape-dot circle"></div> Cycle</div>
+        <div class="shape-item"><div class="shape-dot square"></div> Aurbach</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ---------- Pre-generated molecule images ----------
+    function smilesToImagePath(smiles) {
+      if (!smiles || !window.SMILES_TO_FILE) return null;
+      const filename = window.SMILES_TO_FILE[smiles];
+      return filename ? `molecules/${filename}` : null;
+    }
+
+    // ---------- Plot state & utils ----------
+    const CLASS_BASE_HUES = {
+      Ether: 30, Phosphate: 280, Carbonate: 120, Sulfone: 200, Silane: 340,
+      Ester: 35, Nitrile: 210, Alcohol: 180, Amide: 300, Aromatic: 10, Other: 0
+    };
+    function hashStringToInt(str) {
+      let h = 0; for (let i=0;i<str.length;i++){ h = (h<<5) - h + str.charCodeAt(i); h |= 0; }
+      return Math.abs(h);
+    }
+    function hslFromClassAndSolvent(solventClass, solvent) {
+      const baseHue = CLASS_BASE_HUES[solventClass] ?? 220;
+      const h = (baseHue + (hashStringToInt(solvent) % 24) * 3) % 360;
+      const s = 70;
+      const l = 50 + (hashStringToInt(solvent + "x") % 8);
+      return `hsl(${h}, ${s}%, ${l}%)`;
+    }
+    function extractSMILES(solventData) {
+      if (!solventData) return null;
+      const s = String(solventData).trim();
+      // Extract SMILES before the colon (format: "SMILES:ratio")
+      const colonIndex = s.indexOf(':');
+      return colonIndex > 0 ? s.substring(0, colonIndex) : s;
+    }
+
+    function extractMolFromSalt(saltData) {
+      if (!saltData) return null;
+      const s = String(saltData).trim();
+      const colonIndex = s.lastIndexOf(':');
+      if (colonIndex > 0) {
+        const molSalt = parseFloat(s.substring(colonIndex + 1));
+        return molSalt || null;
+      }
+      return null;
+    }
+
+    function extractMolFromSolvent(solventData) {
+      if (!solventData) return null;
+      const s = String(solventData).trim();
+      const colonIndex = s.lastIndexOf(':');
+      if (colonIndex > 0) {
+        const molSolvent = parseFloat(s.substring(colonIndex + 1));
+        return molSolvent || null;
+      }
+      return null;
+    }
+
+    function calculateSaltSolventRatio(saltData, solventData) {
+      const molSalt = extractMolFromSalt(saltData);
+      const molSolvent = extractMolFromSolvent(solventData);
+      
+      if (!molSalt || !molSolvent) return null;
+      
+      const solventPerSalt = molSolvent / molSalt;
+      return { salt: 1, solvent: solventPerSalt };
+    }
+
+    function formatRatioForDisplay(saltData, solventData) {
+      const ratio = calculateSaltSolventRatio(saltData, solventData);
+      if (ratio && ratio.solvent) {
+        return `1:${ratio.solvent.toFixed(1)}`;
+      }
+      return "(unknown ratio)";
+    }
+
+    function parseRatio(r) {
+      if (r == null) return null;
+      if (typeof r === "number") return { salt: r, solvent: 1 };
+      const s = String(r).trim();
+      const m = s.match(/^(\d+(?:\.\d+)?)\s*[:\/\- ]\s*(\d+(?:\.\d+)?)/);
+      if (!m) return null;
+      return { salt: parseFloat(m[1]), solvent: parseFloat(m[2]) };
+    }
+    function ratioToSize(ratio, baseSize = 11) {
+      if (!ratio || typeof ratio !== 'object' || !ratio.salt || !ratio.solvent) return baseSize;
+      
+      const solventPerSalt = ratio.solvent / ratio.salt; // e.g., 2.0 for 1:2, 8.0 for 1:8
+      
+      // Scale sizes: lower solvent:salt ratios = larger dots
+      // Reference: 1:4 ratio (solventPerSalt = 4) gives size = baseSize
+      const referenceSolventPerSalt = 4.0;
+      const factor = referenceSolventPerSalt / (solventPerSalt || referenceSolventPerSalt);
+      
+      // Apply moderate scaling - less dramatic but still noticeable
+      const scaledFactor = Math.pow(factor, 1.2); // Reduced power scaling
+      const clamped = Math.max(0.5, Math.min(scaledFactor, 2.5)); // Narrower range: 0.5x to 2.5x
+      
+      return baseSize * clamped;
+    }
+    const METHOD_SYMBOL = { Cycle: "circle", Aurbach: "square" };
+
+    let rows = [];
+    let headers = [];
+    let logX = false;
+    let logY = false;
+    let currentView = 'electrolyte';
+    let molecularEmbeddings = [];
+
+    // Fixed column mappings - no more dynamic selects
+    const columnMappings = {
+      colCE: "CE (%)",
+      colCond: "Ionic Conductivity",
+      colSolvent: "Solvent",
+      colClass: "Class",
+      colRatio: "Salt",
+      colMethod: "Method",
+      colName: "Electrolyte",
+      colSmiles: "Solvent"
+    };
+
+    const selects = {
+      filterClass: document.getElementById("filterClass"),
+      filterMethod: document.getElementById("filterMethod"),
+    };
+    const logXBox = document.getElementById("logX");
+    const logYBox = document.getElementById("logY");
+    const excludedBadge = document.getElementById("excludedBadge");
+
+    function populateSelectOptions(sel, list, value) {
+      sel.innerHTML = "";
+      list.forEach((h) => {
+        const opt = document.createElement("option");
+        opt.value = h; opt.textContent = h;
+        if (h === value) opt.selected = true;
+        sel.appendChild(opt);
+      });
+    }
+
+    function setHeadersFromData(sampleRow) {
+      headers = Object.keys(sampleRow || {});
+      // No need to populate select options anymore - using fixed mappings
+    }
+
+    function uniqueValues(col) {
+      const s = new Set();
+      rows.forEach(r => { const v = r[col]; if (v!=null && String(v).trim()!=="") s.add(String(v)); });
+      return Array.from(s).sort();
+    }
+
+    function refreshFilters() {
+      const classes = uniqueValues(columnMappings.colClass);
+      const methods = uniqueValues(columnMappings.colMethod);
+      const fill = (sel, arr) => {
+        const curr = sel.value;
+        sel.innerHTML = "";
+        const all = document.createElement("option");
+        all.value = "ALL"; all.textContent = "ALL";
+        sel.appendChild(all);
+        arr.forEach(v => {
+          const o = document.createElement("option");
+          o.value = v; o.textContent = v;
+          sel.appendChild(o);
+        });
+        sel.value = (curr && [...arr, "ALL"].includes(curr)) ? curr : "ALL";
+      };
+      fill(selects.filterClass, classes);
+      fill(selects.filterMethod, methods);
+    }
+
+    function filteredRows() {
+      const cClass = selects.filterClass.value;
+      const cMethod = selects.filterMethod.value;
+      const colCE = columnMappings.colCE, colCond = columnMappings.colCond, colClass = columnMappings.colClass, colMethod = columnMappings.colMethod;
+      return rows.filter(r => {
+        const passClass = cClass === "ALL" || String(r[colClass]) === cClass;
+        const passMethod = cMethod === "ALL" || String(r[colMethod]) === cMethod;
+        const x = Number(r[colCond]); const y = Number(r[colCE]);
+        return passClass && passMethod && Number.isFinite(x) && Number.isFinite(y);
+      });
+    }
+
+    function buildTraces() {
+      const col = {
+        CE: columnMappings.colCE,
+        Cond: columnMappings.colCond,
+        Solvent: columnMappings.colSolvent,
+        Class: columnMappings.colClass,
+        Ratio: columnMappings.colRatio,
+        Method: columnMappings.colMethod,
+        Name: columnMappings.colName,
+        Smiles: columnMappings.colSmiles,
+      };
+      const data = filteredRows();
+
+      const bySolvent = new Map();
+      data.forEach(r => {
+        const key = String(r[col.Solvent]);
+        if (!bySolvent.has(key)) bySolvent.set(key, []);
+        bySolvent.get(key).push(r);
+      });
+
+      let excluded = 0;
+      const traces = [];
+      for (const [solvent, arr] of bySolvent.entries()) {
+        const solventClass = String(arr[0]?.[col.Class] ?? "Other");
+        const color = hslFromClassAndSolvent(solventClass, solvent);
+
+        const xAll = arr.map(r => Number(r[col.Cond]));
+        const yAllRaw = arr.map(r => Number(r[col.CE]));
+        
+        // Transform CE to LCE if log scale is enabled: -log_10(1-CE/100)
+        const yAll = yAllRaw.map(ce => {
+          if (logY && Number.isFinite(ce)) {
+            const fraction = ce / 100; // Convert percentage to fraction
+            if (fraction >= 1) return 0; // Handle CE >= 100%
+            return -Math.log10(1 - fraction);
+          }
+          return ce;
+        });
+
+        // Filter out non-positive where required by log axes, or invalid LCE values
+        const keep = arr.map((r, i) => {
+          const okX = !logX || xAll[i] > 0;
+          const okY = !logY || (yAllRaw[i] < 100 && yAllRaw[i] > 0); // For LCE, need 0 < CE < 100
+          return okX && okY && Number.isFinite(yAll[i]);
+        });
+
+        const x = []; const y = []; const size = []; const symbol = []; const keptRows = [];
+        keep.forEach((k, i) => {
+          if (k) {
+            x.push(xAll[i]);
+            y.push(yAll[i]);
+            const ratioData = calculateSaltSolventRatio(arr[i][col.Ratio], arr[i][col.Solvent]);
+            size.push(ratioToSize(ratioData, 11));
+            symbol.push(METHOD_SYMBOL[String(arr[i][col.Method])] || "circle-open");
+            keptRows.push(arr[i]);
+          } else {
+            excluded += 1;
+          }
+        });
+
+        if (!x.length) continue;
+
+        traces.push({
+          x, y,
+          type: "scatter", mode: "markers",
+          name: solvent,
+          marker: { size, color, line: { width: 0.5, color: "#333" }, symbol },
+          customdata: keptRows,
+          hovertemplate: "<extra></extra>",
+          showlegend: false
+        });
+      }
+      excludedBadge.textContent = `Excluded: ${excluded}`;
+      return traces;
+    }
+
+    function buildSolventTraces() {
+      if (!molecularEmbeddings.length) return [];
+      
+      const cClass = selects.filterClass.value;
+      
+      // Filter embeddings by solvent class
+      const filteredEmbeddings = molecularEmbeddings.filter(mol => {
+        return cClass === "ALL" || mol.class === cClass;
+      });
+      
+      // Group by solvent class
+      const byClass = new Map();
+      filteredEmbeddings.forEach(mol => {
+        const key = mol.class || "Other";
+        if (!byClass.has(key)) byClass.set(key, []);
+        byClass.get(key).push(mol);
+      });
+      
+      const traces = [];
+      for (const [solventClass, molecules] of byClass.entries()) {
+        const color = hslFromClassAndSolvent(solventClass, solventClass);
+        
+        const x = molecules.map(mol => mol.x);
+        const y = molecules.map(mol => mol.y);
+        const size = molecules.map(() => 12); // Fixed size for solvent view
+        
+        traces.push({
+          x, y,
+          type: "scatter", mode: "markers",
+          name: solventClass,
+          marker: { size, color, line: { width: 0.5, color: "#333" } },
+          customdata: molecules,
+          hovertemplate: "<extra></extra>",
+          showlegend: false
+        });
+      }
+      
+      return traces;
+    }
+
+    function renderPlot() {
+      const traces = currentView === 'electrolyte' ? buildTraces() : buildSolventTraces();
+      
+      const layout = currentView === 'electrolyte' ? {
+        title: "Electrolyte Landscape: CE vs Ionic Conductivity",
+        xaxis: {
+          title: "Ionic Conductivity (mS/cm)",
+          zeroline: false, gridcolor: "#eee",
+          type: logX ? "log" : "linear",
+          exponentformat: logX ? "power" : "none",
+          minor: { show: logX }
+        },
+        yaxis: {
+          title: logY ? "LCE" : "Coulombic Efficiency (%)",
+          range: logY ? null : [90, 100],
+          gridcolor: "#eee",
+          type: logY ? "log" : "linear",
+          exponentformat: logY ? "power" : "none",
+          minor: { show: logY }
+        },
+        showlegend: false,
+        margin: { l: 60, r: 20, t: 60, b: 70 },
+        hovermode: "closest"
+      } : {
+        title: "Solvent Landscape: Molecular Embedding Space",
+        xaxis: {
+          title: "Embedding Dimension 1",
+          zeroline: false, gridcolor: "#eee",
+          showgrid: true
+        },
+        yaxis: {
+          title: "Embedding Dimension 2",
+          gridcolor: "#eee",
+          showgrid: true,
+          zeroline: false
+        },
+        showlegend: false,
+        margin: { l: 60, r: 20, t: 60, b: 70 },
+        hovermode: "closest"
+      };
+
+      Plotly.newPlot("plot", traces, layout, {
+        displaylogo: false, responsive: true, toImageButtonOptions: { filename: "electrolyte_ce_vs_cond" }
+      }).then(gd => {
+        // Remove loading message
+        const loadingEl = document.getElementById('loading');
+        if (loadingEl) loadingEl.remove();
+        gd.on('plotly_hover', (ev) => {
+          const tip = document.getElementById('hoverTip');
+          if (!ev.points || !ev.points.length) return;
+          const p = ev.points[0];
+          const data = p.customdata || {};
+          
+          let html = '';
+          
+          if (currentView === 'solvent') {
+            // Solvent view - data is molecular embedding object
+            const name = data.name || "(unknown)";
+            const smiles = data.smiles;
+            const solventClass = data.class || "Other";
+            
+            html = `<h4>${escapeHtml(String(name))}</h4>`;
+            if (smiles) {
+              const imagePath = smilesToImagePath(String(smiles));
+              if (imagePath) {
+                html += `<div class="mol"><img src="${imagePath}" alt="Molecular structure" style="max-width:300px;max-height:200px;border:1px solid #e5e7eb;border-radius:6px;"/></div>`;
+              } else {
+                html += `<div class="mol" style="color:#999;">(Molecular structure not available)</div>`;
+              }
+            } else {
+              html += `<div class="mol" style="color:#999;">(No SMILES data)</div>`;
+            }
+            html += `<div class="kv"><b>SMILES:</b> ${escapeHtml(String(smiles || ""))}</div>`;
+            html += `<div class="kv"><b>Class:</b> ${escapeHtml(String(solventClass))}</div>`;
+            html += `<div class="kv"><b>Embedding Position:</b> (${Number(data.x).toFixed(2)}, ${Number(data.y).toFixed(2)})</div>`;
+          } else {
+            // Electrolyte view - data is CSV row object
+            const row = data;
+            const col = {
+              CE: columnMappings.colCE,
+              Cond: columnMappings.colCond,
+              Solvent: columnMappings.colSolvent,
+              Class: columnMappings.colClass,
+              Ratio: columnMappings.colRatio,
+              Method: columnMappings.colMethod,
+              Name: columnMappings.colName,
+              Smiles: columnMappings.colSmiles,
+            };
+
+            const name = row[col.Name] || row[col.Solvent] || "(unknown)";
+            const cond = row[col.Cond];
+            const ce   = row[col.CE];
+            const method = row[col.Method];
+            const smiles = extractSMILES(row[col.Smiles]);
+
+            html = `<h4>${escapeHtml(String(name))}</h4>`;
+            if (smiles) {
+              const imagePath = smilesToImagePath(String(smiles));
+              if (imagePath) {
+                html += `<div class="mol"><img src="${imagePath}" alt="Molecular structure" style="max-width:300px;max-height:200px;border:1px solid #e5e7eb;border-radius:6px;"/></div>`;
+              } else {
+                html += `<div class="mol" style="color:#999;">(Molecular structure not available)</div>`;
+              }
+            } else {
+              html += `<div class="mol" style="color:#999;">(No SMILES data)</div>`;
+            }
+            html += `<div class="kv"><b>Solvent:</b> ${escapeHtml(String(smiles || ""))}</div>`;
+            html += `<div class="kv"><b>Ionic Conductivity:</b> ${Number(cond).toLocaleString()} mS/cm</div>`;
+            html += `<div class="kv"><b>CE:</b> ${Number(ce).toLocaleString()}% <span style="color:#6b7280;">(${escapeHtml(String(method ?? ""))})</span></div>`;
+            html += `<div class="kv"><b>Salt:Solvent:</b> ${escapeHtml(formatRatioForDisplay(row[col.Ratio], row[col.Solvent]))}</div>`;
+          }
+
+          tip.innerHTML = html;
+          tip.style.display = 'block';
+          positionTip(tip, ev.event);
+        });
+
+        gd.on('plotly_unhover', () => { document.getElementById('hoverTip').style.display = 'none'; });
+        gd.addEventListener('mousemove', (e) => {
+          const tip = document.getElementById('hoverTip');
+          if (tip.style.display === 'block') positionTip(tip, e);
+        });
+      }).catch(error => {
+        console.error('Failed to create Plotly plot:', error);
+      });
+    }
+
+    function positionTip(tip, mouseEvent) {
+      const pad = 12;
+      const tipRect = tip.getBoundingClientRect();
+      const viewportWidth = window.innerWidth;
+      const viewportHeight = window.innerHeight;
+      
+      let left = mouseEvent.clientX + pad;
+      let top = mouseEvent.clientY + pad;
+      
+      // Adjust horizontal position if tooltip would go off-screen
+      if (left + tipRect.width > viewportWidth) {
+        left = mouseEvent.clientX - tipRect.width - pad;
+      }
+      
+      // Adjust vertical position if tooltip would go off-screen
+      if (top + tipRect.height > viewportHeight) {
+        top = mouseEvent.clientY - tipRect.height - pad;
+      }
+      
+      // Ensure tooltip doesn't go off the left or top edges
+      left = Math.max(pad, left);
+      top = Math.max(pad, top);
+      
+      tip.style.left = left + 'px';
+      tip.style.top = top + 'px';
+    }
+
+    function escapeHtml(s) {
+      return s.replace(/[&<>\"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+    }
+
+    function loadCSVText(text) {
+      const parsed = Papa.parse(text, { header: true, dynamicTyping: true, skipEmptyLines: true });
+      rows = parsed.data || [];
+      if (!rows.length) {
+        console.error('No data found in CSV');
+        return;
+      }
+      setHeadersFromData(rows[0]);
+      refreshFilters();
+      renderPlot();
+    }
+
+    // Load the dataset.csv file automatically
+    function loadDataset() {
+      fetch('dataset.csv')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+          }
+          return response.text();
+        })
+        .then(csvText => {
+          loadCSVText(csvText);
+        })
+        .catch(error => {
+          console.error('Failed to load dataset:', error);
+          const loadingEl = document.getElementById('loading');
+          if (loadingEl) {
+            loadingEl.innerHTML = `<div style="color:#dc2626;">Failed to load dataset: ${error.message}<br/><small>Make sure you're accessing via http://localhost:8000</small></div>`;
+          }
+        });
+    }
+
+
+
+    // Load molecular embeddings
+    function loadMolecularEmbeddings() {
+      fetch('molecule_embedding/molecular_embeddings.json')
+        .then(response => response.json())
+        .then(data => {
+          molecularEmbeddings = data;
+          console.log('Loaded molecular embeddings:', data.length);
+        })
+        .catch(error => {
+          console.error('Failed to load molecular embeddings:', error);
+        });
+    }
+
+    // View switching functionality
+    function switchView(viewType) {
+      currentView = viewType;
+      
+      // Update active state
+      document.querySelectorAll('.view-option').forEach(el => el.classList.remove('active'));
+      document.getElementById(viewType + '-view').classList.add('active');
+      
+      // Update body class for CSS targeting
+      document.body.className = viewType + '-view';
+      
+      // Re-render plot
+      renderPlot();
+    }
+
+    // Load dataset on page load
+    loadDataset();
+    loadMolecularEmbeddings();
+
+    // ---------- Events ----------
+    // View switching
+    document.getElementById('electrolyte-view').addEventListener('click', () => switchView('electrolyte'));
+    document.getElementById('solvent-view').addEventListener('click', () => switchView('solvent'));
+    
+    // Re-render on filter changes only (no more column mapping selects)
+    ["filterClass","filterMethod"]
+      .forEach(id => document.getElementById(id).addEventListener("change", () => {
+        renderPlot();
+      }));
+
+    document.getElementById("resetBtn").addEventListener("click", () => {
+      document.getElementById("filterClass").value = "ALL";
+      document.getElementById("filterMethod").value = "ALL";
+      renderPlot();
+    });
+
+    // NEW: log toggles
+    logXBox.addEventListener("change", () => { logX = logXBox.checked; renderPlot(); });
+    logYBox.addEventListener("change", () => { logY = logYBox.checked; renderPlot(); });
+  </script>
+</body>
+</html>
