@@ -121,9 +121,37 @@
       border: 1px solid #e5e7eb; border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.12);
       padding: 10px 12px; min-width: 260px; max-width: 360px; font-size: 13px; display: none;
     }
+
     #hoverTip h4 { margin: 0 0 6px; font-size: 14px; }
     #hoverTip .kv { margin: 6px 0 0; color: #374151; }
     #hoverTip .mol { margin-top: 6px; border: 1px dashed #e5e7eb; border-radius: 8px; padding: 6px; }
+    .ref-link { 
+      color: #3b82f6; cursor: pointer; text-decoration: underline; display: inline-flex; align-items: center; gap: 4px;
+    }
+    .ref-link:hover { color: #1d4ed8; }
+
+    /* Reference Modal Styles */
+    #referenceModal {
+      display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.4);
+    }
+    .modal-content {
+      background-color: #fff; margin: 15% auto; padding: 20px; border-radius: 12px;
+      width: 80%; max-width: 600px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    .modal-header {
+      display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;
+      border-bottom: 1px solid #e5e7eb; padding-bottom: 15px;
+    }
+    .modal-header h3 { margin: 0; font-size: 18px; color: #1f2937; }
+    .close {
+      color: #9ca3af; font-size: 28px; font-weight: bold; cursor: pointer;
+      line-height: 1; padding: 0; background: none; border: none;
+    }
+    .close:hover { color: #374151; }
+    .modal-citation {
+      line-height: 1.6; color: #374151; font-size: 14px; margin: 0;
+    }
 
     .toggles {
       display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 12px;
@@ -139,11 +167,11 @@
   <div class="view-selector">
     <div class="view-option active" id="electrolyte-view" data-view="electrolyte">
       <h1>Electrolyte Landscape</h1>
-      <p>Interactive visualization of single-salt single-solvent electrolyte performance data. Hover over a point for details.</p>
+      <p>Interactive visualization of single-salt single-solvent electrolyte performance data.</p>
     </div>
     <div class="view-option" id="solvent-view" data-view="solvent">
       <h1>Solvent Landscape</h1>
-      <p>Interactive visualization of solvent molecules in the electrolytes. Hover over a point for details.</p>
+      <p>Interactive visualization of solvent molecules in the electrolytes.</p>
     </div>
   </div>
 
@@ -173,9 +201,7 @@
       <input type="checkbox" id="logY" />
       <label for="logY">Log scale — CE (y-axis)</label>
     </div>
-    <div class="muted">
-      <span class="badge" id="excludedBadge" title="Points hidden due to non-positive values on a log-scaled axis">Excluded: 0</span>
-    </div>
+
   </div>
 
 
@@ -187,16 +213,27 @@
   </div>
   <div id="hoverTip"></div>
 
+  <!-- Reference Modal -->
+  <div id="referenceModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Reference</h3>
+        <button class="close">&times;</button>
+      </div>
+      <p class="modal-citation" id="modalCitation"></p>
+    </div>
+  </div>
+
   <!-- Visual Legend -->
   <div class="visual-legend">
     <div class="legend-section">
       <div class="legend-title">Solvent Class</div>
       <div class="color-legend">
+        <div class="color-item"><div class="color-dot" style="background: hsl(120, 70%, 50%)"></div> Carbonate</div>
         <div class="color-item"><div class="color-dot" style="background: hsl(30, 70%, 50%)"></div> Ether</div>
         <div class="color-item"><div class="color-dot" style="background: hsl(280, 70%, 50%)"></div> Phosphate</div>
-        <div class="color-item"><div class="color-dot" style="background: hsl(120, 70%, 50%)"></div> Carbonate</div>
-        <div class="color-item"><div class="color-dot" style="background: hsl(200, 70%, 50%)"></div> Sulfone</div>
         <div class="color-item"><div class="color-dot" style="background: hsl(340, 70%, 50%)"></div> Silane</div>
+        <div class="color-item"><div class="color-dot" style="background: hsl(200, 70%, 50%)"></div> Sulfone</div>
       </div>
     </div>
     <div class="legend-section electrolyte-only">
@@ -320,6 +357,8 @@
     let logY = false;
     let currentView = 'electrolyte';
     let molecularEmbeddings = [];
+    let smilesToSolventName = new Map(); // Map from SMILES to solvent name from solvents.csv
+    let referencesMap = new Map(); // Map from reference number to full citation
 
     // Fixed column mappings - no more dynamic selects
     const columnMappings = {
@@ -330,7 +369,8 @@
       colRatio: "Salt",
       colMethod: "Method",
       colName: "Electrolyte",
-      colSmiles: "Solvent"
+      colSmiles: "Solvent",
+      colReference: "Reference"
     };
 
     const selects = {
@@ -339,7 +379,6 @@
     };
     const logXBox = document.getElementById("logX");
     const logYBox = document.getElementById("logY");
-    const excludedBadge = document.getElementById("excludedBadge");
 
     function populateSelectOptions(sel, list, value) {
       sel.innerHTML = "";
@@ -466,7 +505,6 @@
           showlegend: false
         });
       }
-      excludedBadge.textContent = `Excluded: ${excluded}`;
       return traces;
     }
 
@@ -492,19 +530,63 @@
       for (const [solventClass, molecules] of byClass.entries()) {
         const color = hslFromClassAndSolvent(solventClass, solventClass);
         
-        const x = molecules.map(mol => mol.x);
-        const y = molecules.map(mol => mol.y);
-        const size = molecules.map(() => 12); // Fixed size for solvent view
+        // Separate fluorinated and non-fluorinated molecules
+        const fluorinated = molecules.filter(mol => mol.fluorinated);
+        const nonFluorinated = molecules.filter(mol => !mol.fluorinated);
         
-        traces.push({
-          x, y,
-          type: "scatter", mode: "markers",
-          name: solventClass,
-          marker: { size, color, line: { width: 0.5, color: "#333" } },
-          customdata: molecules,
-          hovertemplate: "<extra></extra>",
-          showlegend: false
-        });
+        // Non-fluorinated molecules (standard appearance)
+        if (nonFluorinated.length > 0) {
+          const x = nonFluorinated.map(mol => mol.x);
+          const y = nonFluorinated.map(mol => mol.y);
+          const size = nonFluorinated.map(() => 12);
+          
+          traces.push({
+            x, y,
+            type: "scatter", mode: "markers",
+            name: `${solventClass}`,
+            marker: { size, color, line: { width: 0.5, color: "#333" } },
+            customdata: nonFluorinated,
+            hovertemplate: "<extra></extra>",
+            showlegend: false
+          });
+        }
+        
+        // Fluorinated molecules (double ring effect)
+        if (fluorinated.length > 0) {
+          const x = fluorinated.map(mol => mol.x);
+          const y = fluorinated.map(mol => mol.y);
+          
+          // Outer ring (larger, dark border only)
+          traces.push({
+            x, y,
+            type: "scatter", mode: "markers",
+            name: `${solventClass} (F-outer)`,
+            marker: { 
+              size: fluorinated.map(() => 16), 
+              color: "rgba(0,0,0,0)", // Transparent fill
+              line: { width: 2, color: "#333" }, // Dark outer ring
+            },
+            customdata: fluorinated,
+            hovertemplate: "<extra></extra>",
+            showlegend: false,
+            hoverinfo: 'skip' // Don't interfere with inner circle hover
+          });
+          
+          // Inner circle (standard size, colored)
+          traces.push({
+            x, y,
+            type: "scatter", mode: "markers",
+            name: `${solventClass} (F)`,
+            marker: { 
+              size: fluorinated.map(() => 12), 
+              color, 
+              line: { width: 0.5, color: "#333" }, // Standard inner border
+            },
+            customdata: fluorinated,
+            hovertemplate: "<extra></extra>",
+            showlegend: false
+          });
+        }
       }
       
       return traces;
@@ -557,6 +639,7 @@
         // Remove loading message
         const loadingEl = document.getElementById('loading');
         if (loadingEl) loadingEl.remove();
+        // Two-stage interaction: Hover = basic info, Click = expanded with references
         gd.on('plotly_hover', (ev) => {
           const tip = document.getElementById('hoverTip');
           if (!ev.points || !ev.points.length) return;
@@ -566,10 +649,10 @@
           let html = '';
           
           if (currentView === 'solvent') {
-            // Solvent view - data is molecular embedding object
-            const name = data.name || "(unknown)";
+            // Solvent view - original full display (no changes needed)
             const smiles = data.smiles;
             const solventClass = data.class || "Other";
+            const name = smilesToSolventName.get(smiles) || data.name || "(unknown)";
             
             html = `<h4>${escapeHtml(String(name))}</h4>`;
             if (smiles) {
@@ -586,7 +669,7 @@
             html += `<div class="kv"><b>Class:</b> ${escapeHtml(String(solventClass))}</div>`;
             html += `<div class="kv"><b>Embedding Position:</b> (${Number(data.x).toFixed(2)}, ${Number(data.y).toFixed(2)})</div>`;
           } else {
-            // Electrolyte view - data is CSV row object
+            // Electrolyte view - full info including molecular structure, but no references
             const row = data;
             const col = {
               CE: columnMappings.colCE,
@@ -620,6 +703,7 @@
             html += `<div class="kv"><b>Ionic Conductivity:</b> ${Number(cond).toLocaleString()} mS/cm</div>`;
             html += `<div class="kv"><b>CE:</b> ${Number(ce).toLocaleString()}% <span style="color:#6b7280;">(${escapeHtml(String(method ?? ""))})</span></div>`;
             html += `<div class="kv"><b>Salt:Solvent:</b> ${escapeHtml(formatRatioForDisplay(row[col.Ratio], row[col.Solvent]))}</div>`;
+            html += `<div class="kv" style="color:#6b7280;font-size:12px;margin-top:8px;">Click to view reference</div>`;
           }
 
           tip.innerHTML = html;
@@ -627,7 +711,29 @@
           positionTip(tip, ev.event);
         });
 
-        gd.on('plotly_unhover', () => { document.getElementById('hoverTip').style.display = 'none'; });
+        gd.on('plotly_unhover', () => {
+          document.getElementById('hoverTip').style.display = 'none';
+        });
+        
+        // Click to show reference modal directly (electrolyte view only)
+        gd.on('plotly_click', (ev) => {
+          if (currentView !== 'electrolyte') return; // Only for electrolyte view
+          if (!ev.points || !ev.points.length) return;
+          const p = ev.points[0];
+          const data = p.customdata || {};
+          
+          // Hide basic tooltip
+          document.getElementById('hoverTip').style.display = 'none';
+          
+          // Show reference modal directly
+          const row = data;
+          const refNumber = row[columnMappings.colReference];
+          
+          if (refNumber && referencesMap.has(Number(refNumber))) {
+            showReference(refNumber);
+          }
+        });
+
         gd.addEventListener('mousemove', (e) => {
           const tip = document.getElementById('hoverTip');
           if (tip.style.display === 'block') positionTip(tip, e);
@@ -668,6 +774,8 @@
       return s.replace(/[&<>\"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
     }
 
+
+
     function loadCSVText(text) {
       const parsed = Papa.parse(text, { header: true, dynamicTyping: true, skipEmptyLines: true });
       rows = parsed.data || [];
@@ -703,9 +811,81 @@
 
 
 
+    // Parse author and year from citation
+    function parseAuthorYear(citation) {
+      if (!citation) return null;
+      
+      // Try to extract author and year patterns
+      // Pattern 1: "Author, X. et al. Title. Journal Year."
+      let match = citation.match(/^"?([^,]+,\s*[^.]+\.?)\s+et al\..*?(\d{4})/);
+      if (match) {
+        return `${match[1]} et al. (${match[2]})`;
+      }
+      
+      // Pattern 2: "Author, X. Title. Journal Year."  
+      match = citation.match(/^"?([^,]+,\s*[^.]+\.?)\s+.*?(\d{4})/);
+      if (match) {
+        return `${match[1]} (${match[2]})`;
+      }
+      
+      // Pattern 3: Just extract first author surname and year
+      match = citation.match(/^"?([^,\s]+).*?(\d{4})/);
+      if (match) {
+        return `${match[1]} et al. (${match[2]})`;
+      }
+      
+      return citation.substring(0, 50) + "..."; // Fallback to truncated
+    }
+
+    // Load references mapping
+    function loadReferencesMapping() {
+      fetch('references.csv')
+        .then(response => response.text())
+        .then(csvText => {
+          const lines = csvText.trim().split('\n');
+          referencesMap.clear();
+          
+          lines.forEach((line, index) => {
+            const refNumber = index + 1;
+            const citation = line.replace(/^"|"$/g, ''); // Remove surrounding quotes
+            referencesMap.set(refNumber, citation);
+          });
+          
+          console.log('Loaded references mapping:', referencesMap.size);
+        })
+        .catch(error => {
+          console.error('Failed to load references mapping:', error);
+        });
+    }
+
+    // Load solvents mapping
+    function loadSolventsMapping() {
+      fetch('solvents.csv')
+        .then(response => response.text())
+        .then(csvText => {
+          const parsed = Papa.parse(csvText, { header: true, dynamicTyping: true, skipEmptyLines: true });
+          const solventsData = parsed.data || [];
+          
+          // Build SMILES to solvent name mapping
+          smilesToSolventName.clear();
+          solventsData.forEach(row => {
+            const smiles = String(row.SMILES || '').trim();
+            const solventName = String(row.Solvent || '').trim();
+            if (smiles && solventName) {
+              smilesToSolventName.set(smiles, solventName);
+            }
+          });
+          
+          console.log('Loaded solvents mapping:', smilesToSolventName.size);
+        })
+        .catch(error => {
+          console.error('Failed to load solvents mapping:', error);
+        });
+    }
+
     // Load molecular embeddings
     function loadMolecularEmbeddings() {
-      fetch('molecule_embedding/molecular_embeddings.json')
+      fetch('molecule_embeddings/molecule_embeddings.json')
         .then(response => response.json())
         .then(data => {
           molecularEmbeddings = data;
@@ -733,6 +913,8 @@
 
     // Load dataset on page load
     loadDataset();
+    loadSolventsMapping();
+    loadReferencesMapping();
     loadMolecularEmbeddings();
 
     // ---------- Events ----------
@@ -755,6 +937,44 @@
     // NEW: log toggles
     logXBox.addEventListener("change", () => { logX = logXBox.checked; renderPlot(); });
     logYBox.addEventListener("change", () => { logY = logYBox.checked; renderPlot(); });
+
+    // Reference modal functionality
+    function showReference(refNumber) {
+      console.log('showReference called with refNumber:', refNumber);
+      const modal = document.getElementById('referenceModal');
+      const citation = document.getElementById('modalCitation');
+      const fullCitation = referencesMap.get(Number(refNumber));
+      
+      console.log('Modal element:', modal);
+      console.log('Citation element:', citation);
+      console.log('Full citation:', fullCitation);
+      
+      if (fullCitation) {
+        citation.textContent = fullCitation;
+        modal.style.display = 'block';
+        console.log('Modal should now be visible');
+      } else {
+        console.error('No citation found for reference number:', refNumber);
+      }
+    }
+
+    // Modal close functionality
+    document.querySelector('.close').addEventListener('click', () => {
+      document.getElementById('referenceModal').style.display = 'none';
+    });
+
+    // Close modal when clicking outside of it
+    window.addEventListener('click', (event) => {
+      const modal = document.getElementById('referenceModal');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+
+    // Make showReference globally accessible for onclick
+    window.showReference = showReference;
+
+
   </script>
 </body>
 </html>
