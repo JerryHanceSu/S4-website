@@ -266,6 +266,20 @@
       Ether: 30, Phosphate: 280, Carbonate: 120, Sulfone: 200, Silane: 340,
       Ester: 35, Nitrile: 210, Alcohol: 180, Amide: 300, Aromatic: 10, Other: 0
     };
+
+    // Fixed legend colors to ensure exact matching
+    const LEGEND_COLORS = {
+      Carbonate: "hsl(120, 70%, 50%)",
+      Ether: "hsl(30, 70%, 50%)",
+      Phosphate: "hsl(280, 70%, 50%)",
+      Silane: "hsl(340, 70%, 50%)",
+      Sulfone: "hsl(200, 70%, 50%)",
+      Other: "hsl(0, 70%, 50%)"
+    };
+
+    function getLegendColor(solventClass) {
+      return LEGEND_COLORS[solventClass] || LEGEND_COLORS.Other;
+    }
     function hashStringToInt(str) {
       let h = 0; for (let i=0;i<str.length;i++){ h = (h<<5) - h + str.charCodeAt(i); h |= 0; }
       return Math.abs(h);
@@ -408,7 +422,7 @@
         const curr = sel.value;
         sel.innerHTML = "";
         const all = document.createElement("option");
-        all.value = "ALL"; all.textContent = "ALL";
+        all.value = "ALL"; all.textContent = "All";
         sel.appendChild(all);
         arr.forEach(v => {
           const o = document.createElement("option");
@@ -528,7 +542,7 @@
       
       const traces = [];
       for (const [solventClass, molecules] of byClass.entries()) {
-        const color = hslFromClassAndSolvent(solventClass, solventClass);
+        const color = getLegendColor(solventClass);
         
         // Separate fluorinated and non-fluorinated molecules
         const fluorinated = molecules.filter(mol => mol.fluorinated);
