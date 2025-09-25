@@ -1,0 +1,586 @@
+[
+  {
+    "smiles": "COCCCCOC",
+    "name": "DMB",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -15.450928688049316,
+    "y": 5.255773544311523
+  },
+  {
+    "smiles": "CCOP(=O)(OCC)OCC",
+    "name": "TEP",
+    "class": "Phosphate",
+    "fluorinated": false,
+    "x": 65.16826629638672,
+    "y": -48.417205810546875
+  },
+  {
+    "smiles": "COCCOC",
+    "name": "DME",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": 6.279289722442627,
+    "y": -23.19264793395996
+  },
+  {
+    "smiles": "COC(=O)OC",
+    "name": "DMC",
+    "class": "Carbonate",
+    "fluorinated": false,
+    "x": 54.96190643310547,
+    "y": -82.84426879882812
+  },
+  {
+    "smiles": "COCCOCCOCCOCCOC",
+    "name": "Tetraglyme",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -10.085338592529297,
+    "y": -28.639537811279297
+  },
+  {
+    "smiles": "COCCOCCOCC(F)(F)OC(F)(F)OC(F)(F)COCCOCCOC",
+    "name": "DEG-FTriEG",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": -112.466796875,
+    "y": 54.513526916503906
+  },
+  {
+    "smiles": "C1CCOC1",
+    "name": "THF",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": 60.11091613769531,
+    "y": 42.802738189697266
+  },
+  {
+    "smiles": "O1CCOCC1",
+    "name": "1,4-DOX",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": 52.92054748535156,
+    "y": 24.49040412902832
+  },
+  {
+    "smiles": "CC1CCCO1",
+    "name": "MeTHF",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -50.17443084716797,
+    "y": -118.84061431884766
+  },
+  {
+    "smiles": "CC1CCC(C)O1",
+    "name": "DMeTHF",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": 5.313439846038818,
+    "y": -102.99873352050781
+  },
+  {
+    "smiles": "C1C(OC(=O)O1)F",
+    "name": "FEC",
+    "class": "Carbonate",
+    "fluorinated": true,
+    "x": 114.48126220703125,
+    "y": -0.8075976371765137
+  },
+  {
+    "smiles": "O=S1(=O)CCCC1",
+    "name": "SL",
+    "class": "Sulfone",
+    "fluorinated": false,
+    "x": -86.05394744873047,
+    "y": -100.16343688964844
+  },
+  {
+    "smiles": "CCOCC",
+    "name": "DEE",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": 13.432388305664062,
+    "y": -2.575761079788208
+  },
+  {
+    "smiles": "CCOCCOCC",
+    "name": "DEE",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -3.2314136028289795,
+    "y": -7.301878929138184
+  },
+  {
+    "smiles": "FC(F)(F)COCCOCC",
+    "name": "F3DEE",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": -30.919546127319336,
+    "y": 26.46502113342285
+  },
+  {
+    "smiles": "FC(F)(F)COCCOCC(F)(F)(F)",
+    "name": "F6DEE",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": -13.656475067138672,
+    "y": 26.180313110351562
+  },
+  {
+    "smiles": "FC(F)COCCOCC(F)(F)",
+    "name": "F4DEE",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": 29.446382522583008,
+    "y": 58.9229621887207
+  },
+  {
+    "smiles": "FC(F)COCCOCC(F)(F)(F)",
+    "name": "F5DEE",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": 17.940444946289062,
+    "y": 74.63851165771484
+  },
+  {
+    "smiles": "CC(C)OCCOC(C)C",
+    "name": "DPE",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": 100.14387512207031,
+    "y": 42.95176315307617
+  },
+  {
+    "smiles": "CCOCC(C)OCC",
+    "name": "DEP",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": 77.63184356689453,
+    "y": -20.970108032226562
+  },
+  {
+    "smiles": "COC1(OCC(O1)C(F)(F)F)OC",
+    "name": "DTDL",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": -98.62482452392578,
+    "y": -32.3587532043457
+  },
+  {
+    "smiles": "FCCOCOCCF",
+    "name": "F2DEM",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": 50.42909622192383,
+    "y": -4.026228427886963
+  },
+  {
+    "smiles": "COCC(C)OC",
+    "name": "DMP",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -54.4200553894043,
+    "y": -74.50202178955078
+  },
+  {
+    "smiles": "COCC(C(F)(F)(F))OC",
+    "name": "TFDMP",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": -3.4162211418151855,
+    "y": 106.85540008544922
+  },
+  {
+    "smiles": "C(F)COCCF",
+    "name": "BFE",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": 34.340694427490234,
+    "y": 4.74336051940918
+  },
+  {
+    "smiles": "COCOC",
+    "name": "DMM",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": 7.481298923492432,
+    "y": -48.68671417236328
+  },
+  {
+    "smiles": "CCOCOCC",
+    "name": "DEM",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": 25.20832633972168,
+    "y": -18.673194885253906
+  },
+  {
+    "smiles": "COCCOC(=O)OCCOC",
+    "name": "BMC",
+    "class": "Carbonate",
+    "fluorinated": false,
+    "x": 85.8358383178711,
+    "y": -83.0979232788086
+  },
+  {
+    "smiles": "C(F)(F)(F)S(=O)(=O)N1CCC1",
+    "name": "AzTFSA",
+    "class": "Sulfone",
+    "fluorinated": true,
+    "x": 65.35785675048828,
+    "y": 118.12284851074219
+  },
+  {
+    "smiles": "C(F)(F)(F)S(=O)(=O)N1CCCC1",
+    "name": "PyTFSA",
+    "class": "Sulfone",
+    "fluorinated": true,
+    "x": 62.82273483276367,
+    "y": 100.67628479003906
+  },
+  {
+    "smiles": "C(F)(F)(F)S(=O)(=O)N1CCCCC1",
+    "name": "PiTFSA",
+    "class": "Sulfone",
+    "fluorinated": true,
+    "x": 79.060546875,
+    "y": 103.31507873535156
+  },
+  {
+    "smiles": "C(F)(F)(F)S(=O)(=O)N(C)C",
+    "name": "DmTFSA",
+    "class": "Sulfone",
+    "fluorinated": true,
+    "x": 42.24341583251953,
+    "y": -122.39727020263672
+  },
+  {
+    "smiles": "CCCOCCC",
+    "name": "DPE",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -28.19517707824707,
+    "y": -60.31272888183594
+  },
+  {
+    "smiles": "CCCCOC",
+    "name": "MBE",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -40.911991119384766,
+    "y": -12.098512649536133
+  },
+  {
+    "smiles": "COCCOCC",
+    "name": "EME",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -19.704517364501953,
+    "y": -11.62230110168457
+  },
+  {
+    "smiles": "COCCOCCC",
+    "name": "MPE",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -16.137155532836914,
+    "y": -49.90879440307617
+  },
+  {
+    "smiles": "COCCOCC(F)(F)",
+    "name": "F2EME",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": 11.562139511108398,
+    "y": 54.14303207397461
+  },
+  {
+    "smiles": "COCCOCC(F)(F)(F)",
+    "name": "F3EME",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": 0.6378867030143738,
+    "y": 16.206995010375977
+  },
+  {
+    "smiles": "C(F)(F)(F)S(=O)(=O)N1CCOCC1",
+    "name": "MoTFSA",
+    "class": "Sulfone",
+    "fluorinated": true,
+    "x": 42.37004852294922,
+    "y": 111.51679229736328
+  },
+  {
+    "smiles": "COC1OCCO1",
+    "name": "MODOL",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -11.016371726989746,
+    "y": -133.5318145751953
+  },
+  {
+    "smiles": "CO[Si](C)(C)O[Si](C)(C)OC",
+    "name": "TMMS",
+    "class": "Silane",
+    "fluorinated": false,
+    "x": -86.290283203125,
+    "y": -3.5060017108917236
+  },
+  {
+    "smiles": "CCOP(=O)(CCC#N)OCC",
+    "name": "DCEP",
+    "class": "Phosphate",
+    "fluorinated": false,
+    "x": -123.9527359008789,
+    "y": 1.8239635229110718
+  },
+  {
+    "smiles": "CCOCCCOC",
+    "name": "EMP",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -33.01904296875,
+    "y": 4.915250301361084
+  },
+  {
+    "smiles": "C(F)COCCCOC",
+    "name": "F1EMP",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": 24.37140464782715,
+    "y": 18.59282875061035
+  },
+  {
+    "smiles": "C(F)(F)COCCCOC",
+    "name": "F2EMP",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": 26.203874588012695,
+    "y": 40.96100997924805
+  },
+  {
+    "smiles": "C(F)(F)(F)COCCCOC",
+    "name": "F3EMP",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": 3.817467451095581,
+    "y": 33.3503303527832
+  },
+  {
+    "smiles": "FS(CC)(=O)=O",
+    "name": "ESF",
+    "class": "Sulfone",
+    "fluorinated": true,
+    "x": -40.32323455810547,
+    "y": 48.564697265625
+  },
+  {
+    "smiles": "FS(=O)(=O)N(C)C",
+    "name": "DMFSA",
+    "class": "Sulfone",
+    "fluorinated": true,
+    "x": -61.71672439575195,
+    "y": 38.18619155883789
+  },
+  {
+    "smiles": "FS(=O)(=O)N(CC)CC",
+    "name": "DEFSA",
+    "class": "Sulfone",
+    "fluorinated": true,
+    "x": 107.85678100585938,
+    "y": -45.01310348510742
+  },
+  {
+    "smiles": "FS(=O)(=O)N1CCCC1",
+    "name": "PyFSA",
+    "class": "Sulfone",
+    "fluorinated": true,
+    "x": 69.06146240234375,
+    "y": 77.13548278808594
+  },
+  {
+    "smiles": "CCOS(C)(=O)=O",
+    "name": "EM",
+    "class": "Sulfone",
+    "fluorinated": false,
+    "x": -63.12556838989258,
+    "y": 104.73162078857422
+  },
+  {
+    "smiles": "C(F)(F)(F)COS(C)(=O)=O",
+    "name": "TFEM",
+    "class": "Sulfone",
+    "fluorinated": true,
+    "x": -45.532222747802734,
+    "y": 109.57428741455078
+  },
+  {
+    "smiles": "CCO[Si](OCC)(OCC)OCC",
+    "name": "TEOS",
+    "class": "Silane",
+    "fluorinated": false,
+    "x": -86.02713012695312,
+    "y": -64.65453338623047
+  },
+  {
+    "smiles": "CCO[Si](OCC)(C)OCC",
+    "name": "MTES",
+    "class": "Silane",
+    "fluorinated": false,
+    "x": -3.240896224975586,
+    "y": -73.32137298583984
+  },
+  {
+    "smiles": "CO[Si](C)(C)OC",
+    "name": "DMMS",
+    "class": "Silane",
+    "fluorinated": false,
+    "x": -69.05477905273438,
+    "y": -9.847634315490723
+  },
+  {
+    "smiles": "COCCOCOCCOC",
+    "name": "BMEM",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": 43.60988998413086,
+    "y": -24.497495651245117
+  },
+  {
+    "smiles": "C1OCOC1C(F)(F)F",
+    "name": "TFDOL",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": -73.75498962402344,
+    "y": 68.09223175048828
+  },
+  {
+    "smiles": "CCOC(OCC)OCC",
+    "name": "TEOF",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -89.48802185058594,
+    "y": 26.699453353881836
+  },
+  {
+    "smiles": "C1OC(OCC)OC1C(F)(F)F",
+    "name": "TFEDOL",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": 81.43806457519531,
+    "y": 10.741090774536133
+  },
+  {
+    "smiles": "CCO[Si](C)(C)OCC",
+    "name": "DETMS",
+    "class": "Silane",
+    "fluorinated": false,
+    "x": -56.40678787231445,
+    "y": 12.241779327392578
+  },
+  {
+    "smiles": "FCCO[Si](C)(C)OCCF",
+    "name": "F2DETMS",
+    "class": "Silane",
+    "fluorinated": true,
+    "x": -33.92823028564453,
+    "y": 75.16996002197266
+  },
+  {
+    "smiles": "CO[Si](OC)(C)OC",
+    "name": "TMMS",
+    "class": "Silane",
+    "fluorinated": false,
+    "x": 36.986637115478516,
+    "y": -54.91476058959961
+  },
+  {
+    "smiles": "CO[Si](C)(CCC(F)(F)F)OC",
+    "name": "DMOTFS",
+    "class": "Silane",
+    "fluorinated": true,
+    "x": -128.1584014892578,
+    "y": -51.54837417602539
+  },
+  {
+    "smiles": "COCCOCCCC",
+    "name": "M4C",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -49.96510314941406,
+    "y": -27.113460540771484
+  },
+  {
+    "smiles": "COCCOCCCCCC",
+    "name": "M6C",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -65.97160339355469,
+    "y": -42.97510528564453
+  },
+  {
+    "smiles": "CCOCOC",
+    "name": "MME",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": 22.886863708496094,
+    "y": -36.24692153930664
+  },
+  {
+    "smiles": "C(F)(F)COCOC",
+    "name": "DFME",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": -4.908750534057617,
+    "y": 70.35338592529297
+  },
+  {
+    "smiles": "C(F)(F)C(F)(F)COCOC",
+    "name": "TFME",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": 24.82330322265625,
+    "y": -78.09083557128906
+  },
+  {
+    "smiles": "COCCOCCOC",
+    "name": "G2",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -10.085338592529297,
+    "y": -28.639537811279297
+  },
+  {
+    "smiles": "CCCCOCCCC",
+    "name": "DBE",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -40.69266891479492,
+    "y": -42.582252502441406
+  },
+  {
+    "smiles": "C(F)(F)(F)COCCOCCOCC(F)(F)F",
+    "name": "E3F1",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": -15.119414329528809,
+    "y": 42.59043884277344
+  },
+  {
+    "smiles": "C1(F)CCOC1",
+    "name": "3FTHF",
+    "class": "Ether",
+    "fluorinated": true,
+    "x": -28.19270896911621,
+    "y": -92.8483657836914
+  },
+  {
+    "smiles": "CCCCOCCOCCCC",
+    "name": "EGBE",
+    "class": "Ether",
+    "fluorinated": false,
+    "x": -32.05884552001953,
+    "y": -28.941688537597656
+  }
+]

@@ -8,7 +8,7 @@
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
   <!-- Pre-generated molecular structure mapping -->
-  <script src="molecules/smiles_mapping.js"></script>
+  <script src="info/molecules/smiles_mapping.js"></script>
 
   <style>
     body { font-family: Georgia, serif; margin: 20px; }
@@ -258,7 +258,7 @@
     function smilesToImagePath(smiles) {
       if (!smiles || !window.SMILES_TO_FILE) return null;
       const filename = window.SMILES_TO_FILE[smiles];
-      return filename ? `molecules/${filename}` : null;
+      return filename ? `info/molecules/${filename}` : null;
     }
 
     // ---------- Plot state & utils ----------
@@ -339,6 +339,29 @@
       return "(unknown ratio)";
     }
 
+    // New helper functions for pre-calculated ratios from JSON
+    function getRatioFromRow(row) {
+      // Try to get pre-calculated ratio first
+      const preCalculatedRatio = row[columnMappings.colRatio];
+      if (preCalculatedRatio && typeof preCalculatedRatio === 'object') {
+        return preCalculatedRatio;
+      }
+      
+      // Fallback to calculation from salt/solvent data
+      return calculateSaltSolventRatio(row[columnMappings.colRatio], row[columnMappings.colSolvent]);
+    }
+
+    function getRatioDisplayFromRow(row) {
+      // Try to get pre-calculated display first
+      const preCalculatedDisplay = row[columnMappings.colRatioDisplay];
+      if (preCalculatedDisplay && preCalculatedDisplay !== "(unknown ratio)") {
+        return preCalculatedDisplay;
+      }
+      
+      // Fallback to calculation
+      return formatRatioForDisplay(row[columnMappings.colRatio], row[columnMappings.colSolvent]);
+    }
+
     function parseRatio(r) {
       if (r == null) return null;
       if (typeof r === "number") return { salt: r, solvent: 1 };
@@ -374,16 +397,19 @@
     let smilesToSolventName = new Map(); // Map from SMILES to solvent name from solvents.csv
     let referencesMap = new Map(); // Map from reference number to full citation
 
-    // Fixed column mappings - no more dynamic selects
+    // Fixed column mappings - updated for electrolytes.json structure
     const columnMappings = {
       colCE: "CE (%)",
       colCond: "Ionic Conductivity",
+      colLIC: "LIC",
+      colLCE: "LCE",
       colSolvent: "Solvent",
       colClass: "Class",
-      colRatio: "Salt",
+      colRatio: "SaltSolventRatio",
+      colRatioDisplay: "RatioDisplay",
       colMethod: "Method",
       colName: "Electrolyte",
-      colSmiles: "Solvent",
+      colSmiles: "SMILES",
       colReference: "Reference"
     };
 
@@ -498,7 +524,7 @@
           if (k) {
             x.push(xAll[i]);
             y.push(yAll[i]);
-            const ratioData = calculateSaltSolventRatio(arr[i][col.Ratio], arr[i][col.Solvent]);
+            const ratioData = getRatioFromRow(arr[i]);
             size.push(ratioToSize(ratioData, 11));
             symbol.push(METHOD_SYMBOL[String(arr[i][col.Method])] || "circle-open");
             keptRows.push(arr[i]);
@@ -700,7 +726,7 @@
             const cond = row[col.Cond];
             const ce   = row[col.CE];
             const method = row[col.Method];
-            const smiles = extractSMILES(row[col.Smiles]);
+            const smiles = row[col.Smiles];  // SMILES is now directly available
 
             html = `<h4>${escapeHtml(String(name))}</h4>`;
             if (smiles) {
@@ -716,7 +742,7 @@
             html += `<div class="kv"><b>Solvent:</b> ${escapeHtml(String(smiles || ""))}</div>`;
             html += `<div class="kv"><b>Ionic Conductivity:</b> ${Number(cond).toLocaleString()} mS/cm</div>`;
             html += `<div class="kv"><b>CE:</b> ${Number(ce).toLocaleString()}% <span style="color:#6b7280;">(${escapeHtml(String(method ?? ""))})</span></div>`;
-            html += `<div class="kv"><b>Salt:Solvent:</b> ${escapeHtml(formatRatioForDisplay(row[col.Ratio], row[col.Solvent]))}</div>`;
+            html += `<div class="kv"><b>Salt:Solvent:</b> ${escapeHtml(getRatioDisplayFromRow(row))}</div>`;
             html += `<div class="kv" style="color:#6b7280;font-size:12px;margin-top:8px;">Click to view reference</div>`;
           }
 
@@ -790,11 +816,10 @@
 
 
 
-    function loadCSVText(text) {
-      const parsed = Papa.parse(text, { header: true, dynamicTyping: true, skipEmptyLines: true });
-      rows = parsed.data || [];
+    function loadJSONData(jsonData) {
+      rows = jsonData || [];
       if (!rows.length) {
-        console.error('No data found in CSV');
+        console.error('No data found in JSON');
         return;
       }
       setHeadersFromData(rows[0]);
@@ -802,17 +827,17 @@
       renderPlot();
     }
 
-    // Load the dataset.csv file automatically
+    // Load the electrolytes.json file automatically
     function loadDataset() {
-      fetch('dataset.csv')
+      fetch('info/electrolytes.json')
         .then(response => {
           if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
           }
-          return response.text();
+          return response.json();
         })
-        .then(csvText => {
-          loadCSVText(csvText);
+        .then(jsonData => {
+          loadJSONData(jsonData);
         })
         .catch(error => {
           console.error('Failed to load dataset:', error);
@@ -899,7 +924,7 @@
 
     // Load molecular embeddings
     function loadMolecularEmbeddings() {
-      fetch('molecule_embeddings/molecule_embeddings.json')
+      fetch('info/molecules.json')
         .then(response => response.json())
         .then(data => {
           molecularEmbeddings = data;
